@@ -6,7 +6,13 @@ sidebar_position: 1
 
 A module that allows pinning messages to the chat.
 
-## Description
+## Let Me Sell You This
+
+Have you ever wanted to save a specific message, but delete all those other
+crappy ones? What if you want to refer to it later? That sounds like a lot of
+scrolling. Lame.
+
+## What This Module Does
 
 This module allows you to right-click any message in the chat log and pin or
 unpin it. This stops Foundry from deleting it when you flush the chat log.
