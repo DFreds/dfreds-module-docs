@@ -75,11 +75,11 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'modulesSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        // { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/DFreds',
           label: 'GitHub',
@@ -128,7 +128,7 @@ const config: Config = {
               to: '/blog',
             },
             {
-              label: 'Modules on GitHub',
+              label: 'Public Modules on GitHub',
               href: 'https://github.com/topics/dfreds-modules',
             },
           ],
