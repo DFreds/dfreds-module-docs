@@ -94,10 +94,6 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Welcome',
-              to: '/docs/welcome',
-            },
-            {
               label: 'Premium Modules',
               to: '/docs/premium-modules',
             },
@@ -123,10 +119,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
               label: 'Public Modules on GitHub',
               href: 'https://github.com/topics/dfreds-modules',
