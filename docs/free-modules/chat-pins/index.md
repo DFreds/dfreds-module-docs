@@ -7,23 +7,17 @@ tags:
 
 # DFreds Chat Pins
 
+<img src="https://img.shields.io/badge/Free-00aa00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
+<a href="https://foundryvtt.com/packages/dfreds-chat-pins"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<br />
+<a href="https://github.com/DFreds/dfreds-chat-pins"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-chat-pins?style=for-the-badge&label=Version"/></a>
+<img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-chat-pins/main/static/module.json&label=FVTT&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge"/>
+<a href="https://forge-vtt.com/bazaar#package=dfreds-chat-pins"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-chat-pins&colorB=68a74f&style=for-the-badge"/></a>
+<br/>
+<br/>
+
 A module that allows pinning messages to the chat.
-
-Foundry page: https://foundryvtt.com/packages/dfreds-chat-pins
-
-<details>
-    <summary>Metadata</summary>
-    <a href="https://github.com/DFreds/dfreds-chat-pins/pulse"><img src="https://img.shields.io/github/last-commit/DFreds/dfreds-chat-pins?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=302D41"/></a>
-    <a href="https://github.com/DFreds/dfreds-chat-pins/releases/latest"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-chat-pins?style=for-the-badge&logo=gitbook&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/></a>
-    <a href="https://github.com/DFreds/dfreds-chat-pins/stargazers"><img src="https://img.shields.io/github/stars/DFreds/dfreds-chat-pins?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/></a>
-    <br/>
-    <br/>
-    <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-chat-pins/main/static/module.json&label=Foundry%20Version&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge&logo=foundryvirtualtabletop"/>
-    <a href="https://forge-vtt.com/bazaar#package=dfreds-chat-pins"><img src="https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-chat-pins&colorB=68a74f&style=for-the-badge&logo=condaforge"/></a>
-    <br/>
-    <img src="https://img.shields.io/github/downloads/DFreds/dfreds-chat-pins/latest/dfreds-chat-pins.zip?color=2b82fc&label=LATEST%20DOWNLOADS&style=for-the-badge"/>
-    <img src="https://img.shields.io/github/downloads/DFreds/dfreds-chat-pins/total?color=2b82fc&label=TOTAL%20DOWNLOADS&style=for-the-badge"/>
-</details>
 
 ## Let Me Sell You This
 

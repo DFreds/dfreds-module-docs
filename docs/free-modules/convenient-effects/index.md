@@ -7,26 +7,20 @@ tags:
 
 # DFreds Convenient Effects
 
+<img src="https://img.shields.io/badge/Free-00aa00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
+<a href="https://foundryvtt.com/packages/dfreds-convenient-effects"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<br />
+<a href="https://github.com/DFreds/dfreds-convenient-effects"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-convenient-effects?style=for-the-badge&label=Version"/></a>
+<img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-convenient-effects/main/static/module.json&label=FVTT&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge"/>
+<a href="https://forge-vtt.com/bazaar#package=dfreds-convenient-effects"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-convenient-effects&colorB=68a74f&style=for-the-badge"/></a>
+<br/>
+<br/>
+
 A module that adds easy to use toggleable active effects for common use cases.
 
 Currently, the DND5e and SW5e systems have pre-created effects, but any system
 can create their own effects.
-
-Foundry page: https://foundryvtt.com/packages/dfreds-convenient-effects
-
-<details>
-    <summary>Metadata</summary>
-    <a href="https://github.com/DFreds/dfreds-convenient-effects/pulse"><img src="https://img.shields.io/github/last-commit/DFreds/dfreds-convenient-effects?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=302D41"/></a>
-    <a href="https://github.com/DFreds/dfreds-convenient-effects/releases/latest"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-convenient-effects?style=for-the-badge&logo=gitbook&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/></a>
-    <a href="https://github.com/DFreds/dfreds-convenient-effects/stargazers"><img src="https://img.shields.io/github/stars/DFreds/dfreds-convenient-effects?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/></a>
-    <br/>
-    <br/>
-    <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-convenient-effects/main/static/module.json&label=Foundry%20Version&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge&logo=foundryvirtualtabletop"/>
-    <a href="https://forge-vtt.com/bazaar#package=dfreds-convenient-effects"><img src="https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-convenient-effects&colorB=68a74f&style=for-the-badge&logo=condaforge"/></a>
-    <br/>
-    <img src="https://img.shields.io/github/downloads/DFreds/dfreds-convenient-effects/latest/dfreds-convenient-effects.zip?color=2b82fc&label=LATEST%20DOWNLOADS&style=for-the-badge"/>
-    <img src="https://img.shields.io/github/downloads/DFreds/dfreds-convenient-effects/total?color=2b82fc&label=TOTAL%20DOWNLOADS&style=for-the-badge"/>
-</details>
 
 ## Let Me Sell You This
 
