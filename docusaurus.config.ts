@@ -107,11 +107,15 @@ const config: Config = {
           items: [
             {
               label: 'Premium Modules',
-              to: '/docs/premium-modules',
+              to: '/docs/category/premium-modules',
             },
             {
               label: 'Free Modules',
-              to: '/docs/free-modules',
+              to: '/docs/category/free-modules',
+            },
+            {
+              label: 'Developers',
+              to: '/docs/category/developers',
             },
           ],
         },
