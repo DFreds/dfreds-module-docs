@@ -181,6 +181,14 @@ This also fixes the integration with Midi QoL (see section) so that any matching
 
 LibWrapper provides an easy way to wrap Foundry methods while minimizing the chances of two modules conflicting with each other. While this is not _technically_ a hard dependency, you will get a popup explaining that a fallback is being used (included with this module). You should enable libWrapper to remove this popup.
 
+### Lib: DFreds UI Extender
+
+[Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) is a library that makes it easy to add new UI elements to Foundry.
+
+#### Why have this dependency?
+
+Lib: DFreds UI Extender provides an easy way to add new buttons to the scene controls. In this case, Convenient Effects adds a button to the token controls on the left.
+
 ## Helpful Modules
 
 None of the modules listed in this section are required for Convenient Effects to work. However, they do improve the usage of various effects immensely.
