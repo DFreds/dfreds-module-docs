@@ -9,6 +9,8 @@ tags:
 
 A FoundryVTT module that makes the settings configuration more obvious in various ways.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-obvious-settings
+
 ## Let Me Sell You This
 
 When setting up your new game, isn't it a bit confusing which settings will

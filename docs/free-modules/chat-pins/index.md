@@ -9,6 +9,8 @@ tags:
 
 A module that allows pinning messages to the chat.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-chat-pins
+
 ## Let Me Sell You This
 
 Have you ever wanted to save a specific message, but delete all those other

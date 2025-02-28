@@ -9,6 +9,8 @@ tags:
 
 A FoundryVTT module that sends added and removed effects to the chat.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-effects-to-chat
+
 ## Let Me Sell You This
 
 Do you want a log of added and removed effects from your players and monsters?

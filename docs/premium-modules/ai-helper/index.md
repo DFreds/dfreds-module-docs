@@ -9,6 +9,8 @@ tags:
 
 A FoundryVTT module that uses AI to help in your game.
 
+Patreon page: https://www.patreon.com/dfreds/shop/dfreds-ai-helper-v1-0-0-1085429
+
 ## Let Me Sell You This
 
 Ever get a creative block? Don't like how you wrote a biography, or want it summarized? Use the power of "AI"!

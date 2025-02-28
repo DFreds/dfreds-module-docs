@@ -9,6 +9,8 @@ tags:
 
 A FoundryVTT module that allows configuring and editing of the status effects.
 
+Patreon page: https://www.patreon.com/dfreds/shop/dfreds-status-effects-v1-1-0-1031082
+
 ## Let Me Sell You This
 
 Wouldn't it be cool if you could manipulate the status effects that appear on

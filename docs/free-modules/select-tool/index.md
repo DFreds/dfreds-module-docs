@@ -9,6 +9,8 @@ tags:
 
 A FoundryVTT module that adds a select tool to all layers.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-select-tool
+
 ## Let Me Sell You This
 
 Did you ever think it was weird that you could select multiple tokens, tiles,

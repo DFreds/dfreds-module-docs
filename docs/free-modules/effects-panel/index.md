@@ -9,6 +9,8 @@ tags:
 
 A module that adds a panel of active effects for the selected token.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-effects-panel
+
 ## Let Me Sell You This
 
 Do you find it annoying to have to open up the character sheet just to see what

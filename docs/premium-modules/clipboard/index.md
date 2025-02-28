@@ -9,6 +9,8 @@ tags:
 
 A FoundryVTT module that adds a clipboard application to the game that keeps track of the items you copied.
 
+Patreon page: https://www.patreon.com/dfreds/shop/dfreds-clipboard-v1-0-0-1159963
+
 ## Let Me Sell You This
 
 Ever need to copy several items from one scene to the next? Hate how you have to

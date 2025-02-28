@@ -9,6 +9,8 @@ tags:
 
 A module which allows you to drag and drop an entire folder of tokens or journal entries onto the canvas as well as uploading files for tokens, tiles, sounds, or notes.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-droppables
+
 ## Let Me Sell You This
 
 Have you ever needed to drop all of your pesky players onto a scene at once? Have you ever _dreaded_ the thought of dragging them all out onto the map one by one like some kind of peasant? What about needing to upload a bunch of cool images for all sorts of awesome characters? Well, now you don't have to. Yay mild conveniences.

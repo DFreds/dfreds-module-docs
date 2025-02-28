@@ -12,6 +12,8 @@ A module that adds easy to use toggleable active effects for common use cases.
 Currently, the DND5e and SW5e systems have pre-created effects, but any system
 can create their own effects.
 
+Foundry page: https://foundryvtt.com/packages/dfreds-convenient-effects
+
 ## Let Me Sell You This
 
 Do you struggle to remember what all those conditions and spells actually do to
