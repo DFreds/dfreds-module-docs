@@ -77,7 +77,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'modulesSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
