@@ -41,8 +41,6 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
           sidebarCollapsible: true,
           sidebarCollapsed: false,
         },
@@ -85,19 +83,22 @@ const config: Config = {
         // },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
-          label: 'Patreon',
           href: 'https://www.patreon.com/dfreds',
           position: 'right',
+          className: 'patreon-button',
+          ariaLabel: 'Patreon',
         },
         {
-          label: 'Discord',
           href: 'https://discord.gg/Wq8AEV9bWb',
           position: 'right',
+          className: 'discord-button',
+          ariaLabel: 'Discord',
         },
         {
           href: 'https://github.com/DFreds',
-          label: 'GitHub',
           position: 'right',
+          className: 'github-button',
+          ariaLabel: 'GitHub',
         },
       ],
     },
