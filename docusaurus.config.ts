@@ -18,7 +18,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'DFreds', // Usually your GitHub org/user name.
-  projectName: 'dfreds-modules-docs', // Usually your repo name.
+  projectName: 'dfreds-module-docs', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -39,8 +39,11 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/DFreds/dfreds-modules-docs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+          sidebarCollapsible: true,
+          sidebarCollapsed: false,
         },
         blog: {
           showReadingTime: true,
@@ -50,8 +53,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/DFreds/dfreds-modules-docs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -80,6 +82,16 @@ const config: Config = {
           label: 'Docs',
         },
         // { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          label: 'Patreon',
+          href: 'https://www.patreon.com/dfreds',
+          position: 'right',
+        },
+        {
+          label: 'Discord',
+          href: 'https://discord.gg/Wq8AEV9bWb',
+          position: 'right',
+        },
         {
           href: 'https://github.com/DFreds',
           label: 'GitHub',
