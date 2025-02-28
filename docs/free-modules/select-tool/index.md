@@ -3,6 +3,7 @@ sidebar_position: 7
 tags:
   - free
   - module
+draft: true
 ---
 
 # DFreds Select Tool
@@ -10,6 +11,20 @@ tags:
 A FoundryVTT module that adds a select tool to all layers.
 
 Foundry page: https://foundryvtt.com/packages/dfreds-select-tool
+
+<details>
+    <summary>Metadata</summary>
+    <a href="https://github.com/DFreds/dfreds-select-tool/pulse"><img src="https://img.shields.io/github/last-commit/DFreds/dfreds-select-tool?style=for-the-badge&logo=github&color=7dc4e4&logoColor=D9E0EE&labelColor=302D41"/></a>
+    <a href="https://github.com/DFreds/dfreds-select-tool/releases/latest"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-select-tool?style=for-the-badge&logo=gitbook&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/></a>
+    <a href="https://github.com/DFreds/dfreds-select-tool/stargazers"><img src="https://img.shields.io/github/stars/DFreds/dfreds-select-tool?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/></a>
+    <br/>
+    <br/>
+    <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-select-tool/main/static/module.json&label=Foundry%20Version&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge&logo=foundryvirtualtabletop"/>
+    <a href="https://forge-vtt.com/bazaar#package=dfreds-select-tool"><img src="https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-select-tool&colorB=68a74f&style=for-the-badge&logo=condaforge"/></a>
+    <br/>
+    <img src="https://img.shields.io/github/downloads/DFreds/dfreds-select-tool/latest/dfreds-select-tool.zip?color=2b82fc&label=LATEST%20DOWNLOADS&style=for-the-badge"/>
+    <img src="https://img.shields.io/github/downloads/DFreds/dfreds-select-tool/total?color=2b82fc&label=TOTAL%20DOWNLOADS&style=for-the-badge"/>
+</details>
 
 ## Let Me Sell You This
 
