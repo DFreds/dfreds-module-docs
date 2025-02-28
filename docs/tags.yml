@@ -1,0 +1,12 @@
+developer:
+  label: Developer
+  description: Docs related to development
+free:
+  label: Free
+  description: Docs related to free modules
+premium:
+  label: Premium
+  description: Docs related to premium modules
+module:
+  label: Module
+  description: Docs related to all modules

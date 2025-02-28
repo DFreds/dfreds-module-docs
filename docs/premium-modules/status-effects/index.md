@@ -1,5 +1,8 @@
 ---
 sidebar_position: 3
+tags:
+  - premium
+  - module
 ---
 
 # DFreds Status Effects

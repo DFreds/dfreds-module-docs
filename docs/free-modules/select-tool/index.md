@@ -1,5 +1,8 @@
 ---
 sidebar_position: 7
+tags:
+  - free
+  - module
 ---
 
 # DFreds Select Tool

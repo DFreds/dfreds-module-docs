@@ -1,5 +1,8 @@
 ---
 sidebar_position: 5
+tags:
+  - free
+  - module
 ---
 
 # DFreds Effects to Chat

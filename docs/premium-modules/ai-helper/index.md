@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+tags:
+  - premium
+  - module
 ---
 
 # DFreds AI Helper

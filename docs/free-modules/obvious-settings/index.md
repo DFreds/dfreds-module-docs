@@ -1,5 +1,8 @@
 ---
 sidebar_position: 6
+tags:
+  - free
+  - module
 ---
 
 # DFreds Obvious Settings
