@@ -36,6 +36,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -45,20 +46,21 @@ const config: Config = {
           sidebarCollapsible: true,
           sidebarCollapsed: false,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -75,12 +77,12 @@ const config: Config = {
         src: 'img/dfreds-logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'modulesSidebar',
-          position: 'left',
-          label: 'Docs',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'modulesSidebar',
+        //   position: 'left',
+        //   label: 'Docs',
+        // },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
           label: 'Patreon',
@@ -100,52 +102,52 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Premium Modules',
-              to: '/docs/category/premium-modules',
-            },
-            {
-              label: 'Free Modules',
-              to: '/docs/category/free-modules',
-            },
-            {
-              label: 'Developers',
-              to: '/docs/category/developers',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Patreon',
-              href: 'https://www.patreon.com/dfreds',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.gg/Wq8AEV9bWb',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
-            {
-              label: 'Public Modules on GitHub',
-              href: 'https://github.com/topics/dfreds-modules',
-            },
-          ],
-        },
-      ],
+      // style: 'dark',
+      // links: [
+      //   {
+      //     title: 'Docs',
+      //     items: [
+      //       {
+      //         label: 'Premium Modules',
+      //         to: '/docs/category/premium-modules',
+      //       },
+      //       {
+      //         label: 'Free Modules',
+      //         to: '/docs/category/free-modules',
+      //       },
+      //       {
+      //         label: 'Developers',
+      //         to: '/docs/category/developers',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'Community',
+      //     items: [
+      //       {
+      //         label: 'Patreon',
+      //         href: 'https://www.patreon.com/dfreds',
+      //       },
+      //       {
+      //         label: 'Discord',
+      //         href: 'https://discord.gg/Wq8AEV9bWb',
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     title: 'More',
+      //     items: [
+      //       // {
+      //       //   label: 'Blog',
+      //       //   to: '/blog',
+      //       // },
+      //       {
+      //         label: 'Public Modules on GitHub',
+      //         href: 'https://github.com/topics/dfreds-modules',
+      //       },
+      //     ],
+      //   },
+      // ],
       copyright: `Copyright © ${new Date().getFullYear()} DFreds.`,
     },
     prism: {
