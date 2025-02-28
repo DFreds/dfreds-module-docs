@@ -7,9 +7,14 @@ tags:
 
 # DFreds AI Helper
 
-A FoundryVTT module that uses AI to help in your game.
+<img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
+<a href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/></a>
+<img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
+<a href="https://www.patreon.com/dfreds/shop/dfreds-ai-helper-v1-0-0-1085429"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<br/>
+<br/>
 
-Patreon page: https://www.patreon.com/dfreds/shop/dfreds-ai-helper-v1-0-0-1085429
+A FoundryVTT module that uses AI to help in your game.
 
 ## Let Me Sell You This
 
