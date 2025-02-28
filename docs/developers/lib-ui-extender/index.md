@@ -2,6 +2,7 @@
 sidebar_position: 1
 tags:
   - developer
+  - library
 ---
 
 # Lib: DFreds UI Extender

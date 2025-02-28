@@ -1,6 +1,12 @@
 developer:
   label: Developer
-  description: Docs related to development
+  description: Docs intended for developers
+library:
+  label: Library
+  description: Docs related to libraries
+template:
+  label: Template
+  description: Docs related to module templates
 free:
   label: Free
   description: Docs related to free modules

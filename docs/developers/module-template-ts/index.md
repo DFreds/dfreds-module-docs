@@ -2,6 +2,7 @@
 sidebar_position: 2
 tags:
   - developer
+  - template
 ---
 
 # DFreds Module Template TS
