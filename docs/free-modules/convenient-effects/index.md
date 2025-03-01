@@ -9,11 +9,11 @@ tags:
 
 <img src="https://img.shields.io/badge/Free-00aa00?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
-<a href="https://foundryvtt.com/packages/dfreds-convenient-effects"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<a target="_blank" href="https://foundryvtt.com/packages/dfreds-convenient-effects"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br />
-<a href="https://github.com/DFreds/dfreds-convenient-effects"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-convenient-effects?style=for-the-badge&label=Version"/></a>
+<a target="_blank" href="https://github.com/DFreds/dfreds-convenient-effects"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-convenient-effects?style=for-the-badge&label=Version"/></a>
 <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-convenient-effects/main/static/module.json&label=FVTT&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge"/>
-<a href="https://forge-vtt.com/bazaar#package=dfreds-convenient-effects"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-convenient-effects&colorB=68a74f&style=for-the-badge"/></a>
+<a target="_blank" href="https://forge-vtt.com/bazaar#package=dfreds-convenient-effects"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-convenient-effects&colorB=68a74f&style=for-the-badge"/></a>
 <br/>
 <br/>
 

@@ -8,9 +8,9 @@ tags:
 # DFreds Status Effects
 
 <img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
-<a href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/></a>
+<a target="_blank" href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/></a>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
-<a href="https://www.patreon.com/dfreds/shop/dfreds-status-effects-v1-1-0-1031082"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<a target="_blank" href="https://www.patreon.com/dfreds/shop/dfreds-status-effects-v1-1-0-1031082"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br/>
 <br/>
 
