@@ -31,8 +31,8 @@ removing effects prematurely? Well! Now you can make sure they ain't cheatin'.
 This module creates a chat message whenever an effect is added or removed from
 an actor.
 
-![Effects to Chat](./showcase.png)
+![Effects to Chat](./img/showcase.png)
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)

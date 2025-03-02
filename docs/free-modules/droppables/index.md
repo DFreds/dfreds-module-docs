@@ -29,8 +29,8 @@ Have you ever needed to drop all of your pesky players onto a scene at once? Hav
 
 On the drag and drop of an actor folder or journal entries folder onto the canvas, Droppables creates tokens (for actors) or notes (for journal entries) for each item in that folder. Note that it will not do anything for any sub-folders, as that could get sort of insane.
 
-![Dropping Actors](./droppables.gif)
-![Dropping Journals](./droppables2.gif)
+![Dropping Actors](./img/droppables.gif)
+![Dropping Journals](./img/droppables2.gif)
 
 ### Droppable Files on the Canvas
 
@@ -44,7 +44,7 @@ A new actor is created of a chosen type with the actor image and token image set
 
 Supported Files: Images
 
-![Dropping Tokens](./droppable-tokens.gif)
+![Dropping Tokens](./img/droppable-tokens.gif)
 
 #### Tiles Layer
 
@@ -52,7 +52,7 @@ A new tile is created using the dropped image or video.
 
 Supported Files: Images and videos
 
-![Dropping Tiles](./droppable-tiles.gif)
+![Dropping Tiles](./img/droppable-tiles.gif)
 
 #### Sounds Layer
 
@@ -60,7 +60,7 @@ A new ambient audio is created using the dropped audio.
 
 Supported Files: Audio (duh)
 
-![Dropping Sounds](./droppable-sounds.gif)
+![Dropping Sounds](./img/droppable-sounds.gif)
 
 #### Notes Layer
 
@@ -68,7 +68,7 @@ A single journal is created with journal entries corresponding to each of the fi
 
 Supported Files: Images, videos, PDFs, and text files
 
-![Dropping Notes](./droppable-notes.gif)
+![Dropping Notes](./img/droppable-notes.gif)
 
 ## Required Modules
 

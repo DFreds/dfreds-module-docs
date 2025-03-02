@@ -35,7 +35,7 @@ Pin Log application by clicking the pin icon above the chat text box.
 Right-clicking any of the pinned chats in this chat log will provide an
 additional option to jump to it in the main chat log.
 
-![Chat Pins](./chat-pins.png)
+![Chat Pins](./img/chat-pins.png)
 
 ## Required Modules
 

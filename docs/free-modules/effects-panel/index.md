@@ -43,11 +43,11 @@ the following:
   - Immediately delete the effect
   - Show a dialog to let you pick what to do
 
-![Effects Panel](./effects-panel.png)
+![Effects Panel](./img/effects-panel.png)
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)
 
 ## Required Modules
 

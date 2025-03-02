@@ -32,15 +32,15 @@ sounds, and notes.
 
 Lighting:
 
-![Select Lighting](./select-lighting.png)
+![Select Lighting](./img/select-lighting.png)
 
 Sounds:
 
-![Select Sounds](./select-sounds.png)
+![Select Sounds](./img/select-sounds.png)
 
 Templates:
 
-![Select Templates](./select-templates.png)
+![Select Templates](./img/select-templates.png)
 
 ## Required Modules
 

@@ -42,13 +42,13 @@ provides dozens of pre-configured effects for conditions and spells.
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)
 
 ## How to Use
 
-Check the [User Guide](./user-guide) for details.
+Check the [User Guide](./img/user-guide) for details.
 
-Developers should check out the [Developer Guide](./developer-guide).
+Developers should check out the [Developer Guide](./img/developer-guide).
 
 ## Required Modules
 

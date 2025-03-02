@@ -34,8 +34,8 @@ per user).
 
 It also indicates if a setting is not set to its default value.
 
-![Obvious Settings](./showcase.png)
+![Obvious Settings](./img/showcase.png)
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)

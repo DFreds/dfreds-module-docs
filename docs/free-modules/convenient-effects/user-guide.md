@@ -6,7 +6,7 @@ Convenient Effects adds a new button to the token controls.
 
 When the Convenient Effects button is pressed, the Convenient Effects app will open showing multiple collapsed folders. You can expand or collapse any folder and hover over an effect for a brief description of what it does. To apply an effect, select any number of tokens on the canvas and then select the effect you want from the list. This will toggle it on or off for all selected tokens.
 
-![Convenient Effects App](./convenient-effects-app.png)
+![Convenient Effects App](./img/convenient-effects-app.png)
 
 You can also click and drag any effect from the Convenient Effects app onto an actor sheet to apply it to that actor. This is useful for when that actor isn't currently on the canvas.
 
@@ -14,7 +14,7 @@ You can also click and drag any effect from the Convenient Effects app onto an a
 
 Certain effects have multiple types of effects to choose from when adding or removing them. For instance, Enhance Ability has six different effects to choose from. These nested effects are indicated by a multiple trees icon in the app. When chosen, a dialog is displayed allowing you to choose which of the nested effects to apply.
 
-![Nested Effects Dialog](./nested-effects.png)
+![Nested Effects Dialog](./img/nested-effects.png)
 
 **Note**: Built-in nested effects are hidden by default. They can be shown as normal in the Convenient Effects app by toggling the Show Nested Effects icon in the app as indicated by the tree.
 
@@ -26,27 +26,27 @@ Convenient Effects allows you to create your own effects using the standard acti
 
 New folders can be created by clicking the "Create Folder" button.
 
-![Creating Folders](./creating-folders.png)
+![Creating Folders](./img/creating-folders.png)
 
 ### Creating New Effects
 
 New effects can be created by either pressing the "Create Effect" button or by right clicking and existing effect and clicking "Duplicate".
 
-![Creating Effects](./creating-effects.png)
+![Creating Effects](./img/creating-effects.png)
 
 If you choose to create a new effect, you're presented with the active effect config sheet with all the default values. If you choose to duplicate an effect, all values will be filled in with the duplicated effects values.
 
-![Active Effect Sheet](./active-effect-sheet.png)
+![Active Effect Sheet](./img/active-effect-sheet.png)
 
 From here, you can also turn open the Convenient Config to modify additional Convenient Effect configuration options.
 
-![Convenient Config](./convenient-config.png)
+![Convenient Config](./img/convenient-config.png)
 
 ### Importing/Exporting Custom Effects
 
 Any effect folders can be imported from a JSON file or exported to a JSON file. This is helpful when you want to transfer effects between worlds.
 
-![Import/Export Effects](./import-export-effects.png)
+![Import/Export Effects](./img/import-export-effects.png)
 
 To export the effects, right-click a folder and click the "Export Data" menu item. This will open a native file handler which allows you to rename the file. Please do not change the file extension from `.json`.
 
@@ -58,7 +58,7 @@ To import custom effects, right-click a folder and click the "Import Data" menu 
 
 In the case that a system has pre-defined effects, the "View Backups" button can be clicked to view any of the initial effects.
 
-![Backup Effects](./backup-effects.png)
+![Backup Effects](./img/backup-effects.png)
 
 You can restore a single effect by clicking and dragging it to the desired folder in the regular app.
 
@@ -139,7 +139,7 @@ Midi does this by checking the name of the feature that was used and checking to
 
 To enable this behavior, you need to enable the "Auto apply item effects to targets" and the "Apply Convenient Effects" settings located in the Midi workflow configuration settings.
 
-![Midi Settings](./midi-settings.png)
+![Midi Settings](./img/midi-settings.png)
 
 ## Module Configuration
 
@@ -159,7 +159,7 @@ This control can be disabled for everyone by setting the selection to 'None'.
 
 **NOTE**: The provided role needs to be able to create items.
 
-![Item Permissions](./item-permissions.png)
+![Item Permissions](./img/item-permissions.png)
 
 ## Dependency Modules
 
