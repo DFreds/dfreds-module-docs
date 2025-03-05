@@ -68,6 +68,11 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/dfreds-social-card.jpg',
+    algolia: {
+      appId: 'V92TN6YDYA',
+      apiKey: 'fea86a831910e81825da696f080e88c9',
+      indexName: 'dfreds-module-vercel',
+    },
     navbar: {
       title: 'DFreds Modules',
       logo: {
