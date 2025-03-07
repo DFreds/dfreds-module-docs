@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://dfreds-modules.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -72,6 +72,10 @@ const config: Config = {
       appId: 'V92TN6YDYA',
       apiKey: 'fea86a831910e81825da696f080e88c9',
       indexName: 'dfreds-module-vercel',
+      replaceSearchResultPathname: {
+        from: '/docs/',
+        to: '/',
+      },
     },
     navbar: {
       title: 'DFreds Modules',
