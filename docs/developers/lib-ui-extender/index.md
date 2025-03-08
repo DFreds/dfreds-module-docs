@@ -7,6 +7,16 @@ tags:
 
 # Lib: DFreds UI Extender
 
+<img src="https://img.shields.io/badge/Free-00aa00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
+<a target="_blank" href="https://foundryvtt.com/packages/lib-dfreds-ui-extender"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<br />
+<a target="_blank" href="https://github.com/DFreds/lib-dfreds-ui-extender"><img src="https://img.shields.io/github/v/release/DFreds/lib-dfreds-ui-extender?style=for-the-badge&label=Version"/></a>
+<img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/lib-dfreds-ui-extender/main/static/module.json&label=FVTT&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge"/>
+<a target="_blank" href="https://forge-vtt.com/bazaar#package=lib-dfreds-ui-extender"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/lib-dfreds-ui-extender&colorB=68a74f&style=for-the-badge"/></a>
+<br/>
+<br/>
+
 A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
 ## Usage
@@ -25,7 +35,7 @@ Currently, these are the supported API methods:
 
 A scene control is a button that is located on a specific layer. Under the hood, this uses the `getSceneControlButtons` hook.
 
-![Scene Control](./scene-control.png)
+![Scene Control](./img/scene-control.png)
 
 ```js
 registerSceneControl(input: SceneControlInput)
@@ -193,7 +203,7 @@ export function mySampleModule() {
 
 A HUD button is a button located located on a specific item on the canvas when you right click. Under the hood, this uses the `render${type}HUD` hook.
 
-![HUD Button](./hud-button.png)
+![HUD Button](./img/hud-button.png)
 
 ```js
 registerHudButton(input: HudButtonInput)
