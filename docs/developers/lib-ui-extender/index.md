@@ -19,13 +19,28 @@ tags:
 
 A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
+## Features
+
+- Easily add new scene controls to any layer controls (token, tiles, drawings, walls, etc.)
+- Easily add new HUD controls to tokens, tiles, or drawings
+
 ## Usage
 
 To use this in your own module, you can do any of the following:
+
 - Use the `uiExtender.init` hook (which fires based on Foundry's `init` hook) and register your UI elements on the provided instance of `uiExtender`
 - Use the `window.UiExtender` (accessible as just `UiExtender` in console and code) and register in Foundry's init method.
 
-Note that everything will be ready to render when the Foundry `setup` hook is complete.
+:::info
+Everything will be ready to render when the Foundry `setup` hook is complete.
+:::
+
+## Hooks
+
+Lib: DFreds UI Extender provides a few hooks.
+
+- `uiExtender.init` - This is called once on Foundry's `init` hook. It should be used to register your controls using the provided instance of `uiExtender`.
+- `uiExtender.setup` - This is called once on Foundry's `setup` hook. At this point, all controls will be created and available when they render.
 
 ## API Methods
 
