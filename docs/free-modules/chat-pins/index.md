@@ -19,6 +19,13 @@ tags:
 
 A module that allows pinning messages to the chat.
 
+## Features
+
+- Easily pin or unpin any message by right-clicking it
+- View an entirely separate chat log of all the pinned messages by pressing the button above the message box
+- Jump to the location of the pin in the main chat log by right-clicking it in the pinned chat log
+- When flushing the entire chat log, all pinned messages will remain
+
 ## Let Me Sell You This
 
 Have you ever wanted to save a specific message, but delete all those other
