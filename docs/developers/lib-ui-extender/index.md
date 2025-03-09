@@ -67,7 +67,7 @@ interface SceneControlInput {
     moduleId: string;
 
     /**
-     * The name of the token layer
+     * The name of the control layer
      */
     name:
         | "token"
