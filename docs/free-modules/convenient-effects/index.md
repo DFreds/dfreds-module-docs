@@ -22,6 +22,14 @@ A module that adds easy to use toggleable active effects for common use cases.
 Currently, the DND5e and SW5e systems have pre-created effects, but any system
 can create their own effects.
 
+## Features
+
+- Adds a new application to the token scene controls
+- Provides a repository to create and share easy-to-use toggleable active effects
+- Includes dozens of pre-built effects for the DND5e and SW5e systems
+- First-class support for popular modules, such as Midi-QoL, Times Up, DAE, Active Token Lighting, and Token Magic FX
+- Extensive API for use in macros
+
 ## Let Me Sell You This
 
 Do you struggle to remember what all those conditions and spells actually do to
