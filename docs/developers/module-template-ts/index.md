@@ -22,7 +22,10 @@ A FoundryVTT module template that uses Typescript and Vite for development.
 
 - Full use of well-defined types provided by [pf2e](https://foundryvtt.com/packages/pf2e)
 - Symlink integration, so you aren't directly messing with the foundry data folder
-- Usage of [nvm](https://github.com/nvm-sh/nvm) and npm for node and package management
+- Use of [nvm](https://github.com/nvm-sh/nvm) and npm for node and package management
+- Use of [vite](https://vite.dev/) for building
+- Commands to build for production, staging, or development
+- Commands to configure and run different versions of FoundryVTT
 - Tools to automatically rename the name of the module, update the types, and enforce code linting
 - Powerful GitHub actions that handle releases and (optionally) posting updates to a Discord channel
 
@@ -34,10 +37,20 @@ A FoundryVTT module template that uses Typescript and Vite for development.
         - Owner: DFreds
         - Repository name: `dfreds-new-cool-module`
 1. Clone the repo OUTSIDE of the Foundry data path
-1. Copy `foundryconfig.example.json` to `foundryconfig.json` and update the data and pf2e paths
-    - This will allow the setup scripts to run
+1. Copy `foundryconfig.example.json` to `foundryconfig.json`
+1. Within `foundryconfig.json`, update the `dataPath`, `pf2e`, and `fvtt` paths
     - Example:
-        - Windows: `"dataPath": "C:\\Users\\DFreds\\AppData\\Local\\FoundryVTT\\Data"`
+        - ```json
+            {
+                "dataPath": "C:\\Users\\DFreds\\AppData\\Local\\FoundryVTT\\Data",
+                "pf2eRepoPath": "C:\\src\\foundry-modules\\pf2e",
+                "fvtt": {
+                    "11": "C:\\src\\foundry-versions\\FoundryVTT-11.315",
+                    "12": "C:\\src\\foundry-versions\\FoundryVTT-12.331",
+                    "13": "C:\\src\\foundry-versions\\FoundryVTT-13.337"
+                }
+            }
+          ```
 1. If not already installed, download and install [nvm](https://github.com/nvm-sh/nvm).
 1. Run `nvm use` or `nvm install <version>` and `nvm use`
     - Ensures a common node version is used regardless of user environment
@@ -55,8 +68,61 @@ A FoundryVTT module template that uses Typescript and Vite for development.
     - Symlinks the built `/dist` folder to your Foundry data path set in `foundryconfig.json`
 1. If you want to use the publish to discord action, then be sure to add a repository secret called `DISCORD_WEBHOOK_URL` that points to your configured webhook. You should also update the content and release username if applicable.
     - To point to role IDs, use `"<@&{role_id}>"` in the content.
-1. If you don't plan on using any 3rd party dependencies, then be sure to remove `vendor.mjs` from the `module.json` file.
+
+:::warning
+If you don't plan on using any 3rd party dependencies, then be sure to remove `vendor.mjs` from the `module.json` file.
     - Note that the UUID dependency was included to get started. It's likely you don't need this specific dependency, but the module won't build without at least one dependency if the references to `vendor.mjs` exists in the project.
+:::
+
+## Commands
+
+All commands can be found in the `package.json` file. The main ones are described below.
+
+### `npm run build`
+
+Runs the module in "production" mode, which minifies the module and deletes the
+lock file.
+
+### `npm run stage`
+
+Runs the module in "stage" mode, which minifies the module but does not delete
+the lock file. Mostly useful to run before changing which module you're working
+on.
+
+### `npm run dev`
+
+Runs the module in "development" mode, which allows you to debug typescript in
+the console.
+
+### `npm run watch`
+
+Runs the module in "development" mode and hot reloads the files on change.
+
+:::info
+You still need to refresh Foundry to see the changes (Esc -> Reload)
+:::
+
+:::warning
+At the moment, any changes to files in the `static` folder needs a full re-run
+of this command. They will not be updated on save.
+:::
+
+### `npm run foundry`
+
+Prompts you to start a node version of foundry that is configured in the
+`foundryconfig.json` file. If configured correctly, you should be able to run
+this command and go to `localhost:{configured-port}`. The configured port is
+usually localhost:30000, but could be different depending on if you changed it.
+
+### `npm run update-types && npm run lint:fix`
+
+Updates the pf2e types and auto-fixes any linting issues to reduce the diff in Git. It's recommended to run this periodically.
+
+:::warning
+Since this is dependent on an external integration, types may be slow to update
+or inaccurate, especially when a new version of Foundry releases. You can always
+change the types yourself in `types/foundry`.
+:::
 
 ## Static Files
 
