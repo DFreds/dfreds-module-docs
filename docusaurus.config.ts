@@ -158,7 +158,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} DFreds.`,
+      copyright: `Copyright © ${new Date().getFullYear()} DFreds Modules.`,
     },
     prism: {
       theme: prismThemes.github,
