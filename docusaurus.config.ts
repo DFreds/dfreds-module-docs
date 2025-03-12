@@ -42,7 +42,7 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
           sidebarCollapsible: true,
-          sidebarCollapsed: false,
+          sidebarCollapsed: true,
         },
         blog: false,
         // blog: {
