@@ -92,6 +92,10 @@ const config: Config = {
         // },
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
+          type: 'search',
+          position: 'right',
+        },
+        {
           href: 'https://www.patreon.com/dfreds',
           position: 'right',
           className: 'patreon-button',
