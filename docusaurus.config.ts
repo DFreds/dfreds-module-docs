@@ -15,11 +15,6 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'DFreds', // Usually your GitHub org/user name.
-  projectName: 'dfreds-module-docs', // Usually your repo name.
-
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
@@ -38,27 +33,10 @@ const config: Config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
           sidebarCollapsible: true,
           sidebarCollapsed: true,
         },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -67,6 +45,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // announcementBar: {
+    //   id: 'status-effects-supporters',
+    //   content: 'Status Effects is now available for Supporters!',
+    //   backgroundColor: '#fafbfc',
+    //   textColor: '#091e42',
+    //   isCloseable: true,
+    // },
     image: 'img/dfreds-social-card.jpg',
     algolia: {
       appId: 'V92TN6YDYA',
@@ -77,6 +62,9 @@ const config: Config = {
         to: '/',
       },
     },
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'DFreds Modules',
       logo: {
@@ -84,13 +72,6 @@ const config: Config = {
         src: 'img/dfreds-logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'modulesSidebar',
-        //   position: 'left',
-        //   label: 'Docs',
-        // },
-        // { to: '/blog', label: 'Blog', position: 'left' },
         {
           type: 'search',
           position: 'right',
@@ -116,52 +97,6 @@ const config: Config = {
       ],
     },
     footer: {
-      // style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Premium Modules',
-      //         to: '/docs/category/premium-modules',
-      //       },
-      //       {
-      //         label: 'Free Modules',
-      //         to: '/docs/category/free-modules',
-      //       },
-      //       {
-      //         label: 'Developers',
-      //         to: '/docs/category/developers',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Patreon',
-      //         href: 'https://www.patreon.com/dfreds',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discord.gg/Wq8AEV9bWb',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       // {
-      //       //   label: 'Blog',
-      //       //   to: '/blog',
-      //       // },
-      //       {
-      //         label: 'Public Modules on GitHub',
-      //         href: 'https://github.com/topics/dfreds-modules',
-      //       },
-      //     ],
-      //   },
-      // ],
       copyright: `Copyright © ${new Date().getFullYear()} DFreds Modules.`,
     },
     prism: {
