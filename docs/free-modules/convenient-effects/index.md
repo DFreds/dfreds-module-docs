@@ -5,7 +5,7 @@ tags:
   - module
 ---
 
-# DFreds Convenient Effects
+# Convenient Effects
 
 <img src="https://img.shields.io/badge/Free-00aa00?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>

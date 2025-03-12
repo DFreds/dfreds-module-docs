@@ -5,7 +5,7 @@ tags:
   - module
 ---
 
-# DFreds AI Helper
+# AI Helper
 
 <img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
 <a target="_blank" href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/></a>

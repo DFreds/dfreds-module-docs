@@ -5,7 +5,7 @@ tags:
   - module
 ---
 
-# DFreds Status Effects
+# Status Effects
 
 <img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
 <a target="_blank" href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Supporters-3498db?style=for-the-badge"/></a>
