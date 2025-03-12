@@ -16,6 +16,13 @@ tags:
 
 A FoundryVTT module that adds a clipboard application to the game that keeps track of the items you copied.
 
+## Features
+
+- Adds a clipboard button to each layer (tokens, tiles, walls, etc.) that opens a convenient clipboard interface
+- Maintains a history of copied items for each layer, making it easy to paste previously copied items individually or all at once
+- Remembers copied items between scenes, so you can copy from one scene and paste into another
+- Customize how many items are stored in the clipboard history through module settings
+
 ## Let Me Sell You This
 
 Ever need to copy several items from one scene to the next? Hate how you have to
