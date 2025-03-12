@@ -28,39 +28,39 @@ placeable items that have been copied for the current session.
 
 Copied tokens:
 
-![Clipboard Tokens](./clipboard-tokens.png)
+![Clipboard Tokens](./img/clipboard-tokens.png)
 
 Copied templates:
 
-![Clipboard Templates](./clipboard-templates.png)
+![Clipboard Templates](./img/clipboard-templates.png)
 
 Copied tiles:
 
-![Clipboard Tiles](./clipboard-tiles.png)
+![Clipboard Tiles](./img/clipboard-tiles.png)
 
 Copied drawings:
 
-![Clipboard Drawings](./clipboard-drawings.png)
+![Clipboard Drawings](./img/clipboard-drawings.png)
 
 Copied walls:
 
-![Clipboard Walls](./clipboard-walls.png)
+![Clipboard Walls](./img/clipboard-walls.png)
 
 Copied lights:
 
-![Clipboard Lights](./clipboard-lights.png)
+![Clipboard Lights](./img/clipboard-lights.png)
 
 Copied sounds:
 
-![Clipboard Sounds](./clipboard-sounds.png)
+![Clipboard Sounds](./img/clipboard-sounds.png)
 
 Copied notes:
 
-![Clipboard Notes](./clipboard-notes.png)
+![Clipboard Notes](./img/clipboard-notes.png)
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)
 
 ## Keybindings
 
