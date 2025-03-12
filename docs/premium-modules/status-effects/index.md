@@ -16,6 +16,12 @@ tags:
 
 A FoundryVTT module that allows configuring and editing of the status effects.
 
+## Features
+
+- Adds a new button to the token config for new status effects
+- Provides a simple to use config sheet to drag/drop or create new status effects
+- Optionally allows hiding the default status effects HUD button
+
 ## Let Me Sell You This
 
 Wouldn't it be cool if you could manipulate the status effects that appear on
@@ -53,6 +59,6 @@ will be used instead.
 While not strictly required, the functionalities provided by these modules
 drastically improve the usage of this module.
 
-- [DFreds ConvenientEffects](https://foundryvtt.com/packages/dfreds-convenient-effects) by DFreds
+- [DFreds Convenient Effects](https://foundryvtt.com/packages/dfreds-convenient-effects) by DFreds
 (that's me) - A module that provides an easy way to create active effects that
 can do lots of cool things.
