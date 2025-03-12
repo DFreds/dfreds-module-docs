@@ -88,3 +88,32 @@
 [data-theme='dark'] .github-button:before {
   background-color: #e3e3e3;
 }
+
+@font-face {
+  font-family: "Signika";
+  src: url("/static/fonts/signika-regular.woff2") format("woff2 supports variations"),
+    url("/static/fonts/signika-regular.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("/static/fonts/amiri-regular.woff2") format("woff2 supports variations"),
+    url("/static/fonts/amiri-regular.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+html {
+  font-family: "Signika";
+} 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amiri";
+}
