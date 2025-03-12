@@ -36,15 +36,15 @@ the order in the list by dragging and dropping.
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)
 
 Configure your status effects:
 
-![Config](./config.png)
+![Config](./img/config.png)
 
 And then view them on the token HUD:
 
-![Status Effects](./status-effects.png)
+![Status Effects](./img/status-effects.png)
 
 ## Required Modules
 
