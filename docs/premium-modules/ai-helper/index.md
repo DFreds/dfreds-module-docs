@@ -16,9 +16,16 @@ tags:
 
 A FoundryVTT module that uses AI to help in your game.
 
+## Features
+
+- Chat with an AI that remembers your conversations using the Foundry built-in chat messages
+- Ask one-off questions about anything related to your system
+- Use AI in text editors to summarize or rewrite selected text
+- Use AI in text editors to create new documents by providing a prompt
+
 ## Let Me Sell You This
 
-Ever get a creative block? Don't like how you wrote a biography, or want it summarized? Use the power of "AI"!
+Ever get a creative block? Don't like how you wrote a biography, or want it summarized? Use the power of AI!
 
 ## What This Module Does
 

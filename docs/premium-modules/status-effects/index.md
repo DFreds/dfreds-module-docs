@@ -8,7 +8,7 @@ tags:
 # DFreds Status Effects
 
 <img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
-<a target="_blank" href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/></a>
+<a target="_blank" href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Supporters-3498db?style=for-the-badge"/></a>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
 <a target="_blank" href="https://www.patreon.com/dfreds/shop/dfreds-status-effects-v1-1-0-1031082"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br/>
@@ -26,7 +26,7 @@ A FoundryVTT module that allows configuring and editing of the status effects.
 
 Wouldn't it be cool if you could manipulate the status effects that appear on
 the token HUD? Maybe you could delete them, edit them, or even create your own.
-Wow. Crazy. Anyway, now you can.
+Well, now you can.
 
 ## What This Module Does
 
