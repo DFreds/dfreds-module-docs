@@ -26,19 +26,19 @@ This module adds some chat commands to talk to an AI. It also adds some new edit
 
 Chat with an AI that remembers your conversation:
 
-![Chat](./chat.png)
+![Chat](./img/chat.png)
 
 Ask it a one-off questions:
 
-![Ask](./ask.png)
+![Ask](./img/ask.png)
 
 Use it directly in text editors:
 
-![Text](./text-editors.png)
+![Text](./img/text-editors.png)
 
 You can configure some stuff:
 
-![Settings](./settings.png)
+![Settings](./img/settings.png)
 
 ## Generating API Keys
 
