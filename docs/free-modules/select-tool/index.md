@@ -19,6 +19,11 @@ tags:
 
 A FoundryVTT module that adds a select tool to all layers.
 
+## Features
+
+- Adds a select tool to all layers, including templates, lights, sounds and notes
+- Copy and paste multiple items like any other layer
+
 ## Let Me Sell You This
 
 Did you ever think it was weird that you could select multiple tokens, tiles,
