@@ -19,6 +19,11 @@ tags:
 
 A FoundryVTT module that sends added and removed effects to the chat.
 
+## Features
+
+- Sends chat messages when an effect is added, removed, or expires
+- Configure if the effect description should be shown or not
+
 ## Let Me Sell You This
 
 Do you want a log of added and removed effects from your players and monsters?
