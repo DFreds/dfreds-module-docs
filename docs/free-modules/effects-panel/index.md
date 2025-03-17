@@ -19,6 +19,14 @@ tags:
 
 A module that adds a panel of active effects for the selected token.
 
+## Features
+
+- View all effects (active, disabled, and passive) on your selected token in a convenient panel
+- Hover over effects to see their name, description, and remaining duration
+- Double-click any effect to quickly access its configuration
+- Customize right-click behavior to enable, disable, or delete effects with a single click
+- Configure visibility settings for different effect types and adjust panel behavior to match your preferences
+
 ## Let Me Sell You This
 
 Do you find it annoying to have to open up the character sheet just to see what
@@ -64,13 +72,3 @@ drastically improve the usage of the features in this module.
 - [DFreds Convenient Effects](https://foundryvtt.com/packages/dfreds-convenient-effects) by DFreds (hey that's me) - Includes a ton of pre-configured effects for the DnD 5e system. It also adds a description box to the active effect config sheet which will be displayed on the effects panel.
 - [Simple Calendar](https://foundryvtt.com/packages/foundryvtt-simple-calendar) by vigorator - Handles all your game time management needs
 - [Times Up](https://foundryvtt.com/packages/times-up) by tposney - Deletes effects when their time is up or after a certain number of rounds or turns
-
-## This Looks Familiar
-
-If you've ever played the Pathfinder 2e system on Foundry, this module is going
-to look very familiar. That is because it almost a straight port of their
-feature for doing the same thing. However, now you can have that nice bit of
-functionality in any game system!
-
-For obvious reasons, it is not recommended to use this module in conjunction
-with the Pathfinder 2e system.
