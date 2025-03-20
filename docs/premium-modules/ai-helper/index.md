@@ -16,34 +16,37 @@ tags:
 
 A FoundryVTT module that uses AI to help in your game.
 
-## Features
+## Overview
 
-- Chat with an AI that remembers your conversations using the Foundry built-in chat messages
-- Ask one-off questions about anything related to your system
-- Use AI in text editors to summarize or rewrite selected text
-- Use AI in text editors to create new documents by providing a prompt
+AI Helper enhances Foundry VTT by integrating artificial intelligence
+capabilities directly into your gaming experience. Whether you're facing
+writer's block while crafting character biographies, need help summarizing
+lengthy text, or want assistance generating creative content, this module
+leverages AI to streamline your creative process.
 
-## Let Me Sell You This
-
-Ever get a creative block? Don't like how you wrote a biography, or want it summarized? Use the power of AI!
-
-## What This Module Does
-
-This module adds some chat commands to talk to an AI. It also adds some new editor buttons to manipulate any selected text.
-
-Chat with an AI that remembers your conversation:
+The module seamlessly integrates with Foundry's chat system and text editors,
+providing multiple ways to interact with AI. Through chat commands, you can
+engage in persistent conversations with an AI that maintains context, or ask
+one-off questions about your game system. Additionally, the module adds
+convenient editor buttons that allow you to manipulate selected text or generate
+new content directly within any text editor.
 
 ![Chat](./img/chat.png)
 
-Ask it a one-off questions:
-
 ![Ask](./img/ask.png)
-
-Use it directly in text editors:
 
 ![Text](./img/text-editors.png)
 
-You can configure some stuff:
+## Features
+
+- Chat with an AI that remembers your conversations using the Foundry built-in chat messages
+ - Ask one-off questions about anything related to your system
+ - Use AI in text editors to summarize or rewrite selected text
+ - Use AI in text editors to create new documents by providing a prompt
+
+## Configuration
+
+Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
 
