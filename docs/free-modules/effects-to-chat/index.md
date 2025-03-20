@@ -19,25 +19,27 @@ tags:
 
 A FoundryVTT module that sends added and removed effects to the chat.
 
+## Overview
+
+Effects to Chat enhances Foundry VTT's effect management by providing a detailed
+log of all effects as they are added and removed from actors. This allows Game
+Masters and players to easily track effect changes and view effect descriptions
+directly in the chat, eliminating the need to dig through actor sheets.
+
+The module automatically generates chat messages whenever an effect is added,
+removed, or expires from any actor, providing transparency and accountability in
+effect management while helping Game Masters ensure effects are being handled
+appropriately during gameplay.
+
+![Effects to Chat](./img/showcase.png)
+
 ## Features
 
 - Sends chat messages when an effect is added, removed, or expires
 - Configure if the effect description should be shown or not
 
-## Let Me Sell You This
+## Configuration
 
-Do you want a log of added and removed effects from your players and monsters?
-Do you want to know what an effect does without having to dig into the effect on
-the actor sheet?  Do you want to make sure none of your pesky players are
-removing effects prematurely? Well! Now you can make sure they ain't cheatin'.
-
-## What This Module Does
-
-This module creates a chat message whenever an effect is added or removed from
-an actor.
-
-![Effects to Chat](./img/showcase.png)
-
-You can configure some stuff:
+Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
