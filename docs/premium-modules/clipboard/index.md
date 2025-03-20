@@ -16,6 +16,20 @@ tags:
 
 A FoundryVTT module that adds a clipboard application to the game that keeps track of the items you copied.
 
+## Overview
+
+Clipboard enhances Foundry VTT's copy and paste functionality by providing a
+persistent clipboard that maintains a history of copied items across scenes.
+Whether you're duplicating tokens, templates, tiles, or any other placeable
+objects, this module eliminates the frustration of having to repeatedly copy
+the same items when working between scenes.
+
+The module adds a dedicated clipboard interface accessible from each layer,
+allowing you to view and manage your copied items. You can paste individual
+items or entire groups with ease, and your clipboard history persists
+throughout your gaming session, making scene setup and management more
+efficient than ever.
+
 ## Features
 
 - Adds a clipboard button to each layer (tokens, tiles, walls, etc.) that opens a convenient clipboard interface
@@ -23,49 +37,43 @@ A FoundryVTT module that adds a clipboard application to the game that keeps tra
 - Remembers copied items between scenes, so you can copy from one scene and paste into another
 - Customize how many items are stored in the clipboard history through module settings
 
-## Let Me Sell You This
+## Showcase
 
-Ever need to copy several items from one scene to the next? Hate how you have to
-re-copy the same items over and over again? Well, this module is for you!
-
-## What This Module Does
-
-This module adds a clipboard application to the game that keeps track of all
-placeable items that have been copied for the current session.
-
-Copied tokens:
+### Tokens
 
 ![Clipboard Tokens](./img/clipboard-tokens.png)
 
-Copied templates:
+### Templates
 
 ![Clipboard Templates](./img/clipboard-templates.png)
 
-Copied tiles:
+### Tiles
 
 ![Clipboard Tiles](./img/clipboard-tiles.png)
 
-Copied drawings:
+### Drawings
 
 ![Clipboard Drawings](./img/clipboard-drawings.png)
 
-Copied walls:
+### Walls
 
 ![Clipboard Walls](./img/clipboard-walls.png)
 
-Copied lights:
+### Lights
 
 ![Clipboard Lights](./img/clipboard-lights.png)
 
-Copied sounds:
+### Sounds
 
 ![Clipboard Sounds](./img/clipboard-sounds.png)
 
-Copied notes:
+### Notes
 
 ![Clipboard Notes](./img/clipboard-notes.png)
 
-You can configure some stuff:
+## Configuration
+
+Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
 
@@ -79,4 +87,4 @@ You can toggle the clipboard application with `Ctrl+Shift+C` by default.
   library that wraps core Foundry methods to make it easier for module
   developers to add functionality. Note that if you for some reason don't want
   to install this, a shim will be used instead.
-- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds (that's me) - A library that makes it easy to add new UI elements to Foundry
+- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry
