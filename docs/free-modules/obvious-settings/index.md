@@ -19,28 +19,30 @@ tags:
 
 A FoundryVTT module that makes the settings configuration more obvious in various ways.
 
+## Overview
+
+Obvious Settings enhances Foundry VTT's settings interface by providing clear
+visual indicators that help users understand the scope and state of each
+configuration option. When managing settings across a game, it can be
+challenging to distinguish between settings that affect all players versus those
+that only impact individual users. This module addresses that confusion by
+adding intuitive icons that instantly communicate a setting's scope.
+
+The module places a 🌎 icon before "world" settings that apply globally to all
+players, and a 👤 icon before "client" settings that are personal to each user.
+Additionally, it provides visual indicators when settings have been modified
+from their default values, making it easy to track which configurations have
+been customized.
+
+![Obvious Settings](./img/showcase.png)
+
 ## Features
 
 - Displays what settings are client based or world based
 - Shows when a setting is not set to it's default value
 
-## Let Me Sell You This
+## Configuration
 
-When setting up your new game, isn't it a bit confusing which settings will
-impact players, and which settings will only impact yourself? Do you forget what
-settings are different from their default values? Well, if only there was a
-module to help you out...
-
-## What This Module Does
-
-This module adds a 🌎 icon before settings scoped to "world" (will be set for
-all players) and a 👤 icon before settings scoped to "client" (personal settings
-per user).
-
-It also indicates if a setting is not set to its default value.
-
-![Obvious Settings](./img/showcase.png)
-
-You can configure some stuff:
+Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
