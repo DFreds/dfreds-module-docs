@@ -19,41 +19,42 @@ tags:
 
 A module that adds a panel of active effects for the selected token.
 
-## Features
+## Overview
 
-- View all effects (active, disabled, and passive) on your selected token in a convenient panel
-- Hover over effects to see their name, description, and remaining duration
-- Double-click any effect to quickly access its configuration
-- Customize right-click behavior to enable, disable, or delete effects with a single click
-- Configure visibility settings for different effect types and adjust panel behavior to match your preferences
+Managing active effects in Foundry VTT often requires opening character sheets
+and navigating through menus, which can disrupt gameplay flow. The Effects Panel
+streamlines this process by providing quick access to effect management directly
+from the canvas.
 
-## Let Me Sell You This
+When you select a token, a convenient panel appears in the top-right corner
+displaying all active effects on that actor. This panel allows you to view
+effect details, remaining durations, expiration status, and descriptions by
+hovering over the icons. 
 
-Do you find it annoying to have to open up the character sheet just to see what
-effects are applied? Is it annoying to delete them or edit them on the fly?
-Well, this module makes that slightly less annoying! Yay...?
-
-## What This Module Does
-
-On selecting a token on the canvas, this module shows a little panel in the top
-right of all the currently active effects for that actor. From here, you can do
-the following:
-
-- You can hover over the icon to see the name, description (if using DFreds
-  Convenient Effects), and the time remaining. This integrates nicely with
-  modules that handle time management such as Simple Calendar to show the time
-  until it expires. When an effect runs out of time, it will be labeled with
-  "Expired".
-- You can double click the icon to immediately open the configuration sheet for
-  that effect.
-- You can configure the behavior when you right click a passive or temporary effect to either
-  - Immediately disable the effect
-  - Immediately delete the effect
-  - Show a dialog to let you pick what to do
+The panel offers intuitive controls for effect management - double-click an
+effect to open its configuration, and right-click to quickly enable, disable, or
+delete effects based on your preferred settings. This streamlined interface
+eliminates the need to constantly open character sheets, keeping your focus on
+the game rather than the interface.
 
 ![Effects Panel](./img/effects-panel.png)
 
-You can configure some stuff:
+## Features
+
+- View all effects (active, disabled, and passive) on your selected token in a
+convenient panel
+ - Hover over effects to see their name, description, and
+remaining duration
+ - Double-click any effect to quickly access its
+configuration
+ - Customize right-click behavior to enable, disable, or delete
+effects with a single click
+ - Configure visibility settings for different
+effect types and adjust panel behavior to match your preferences
+
+## Configuration
+
+Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
 
@@ -64,10 +65,14 @@ You can configure some stuff:
   developers to add functionality. Note that if you for some reason don't want
   to install this, a shim will be used instead.
 
-## Modules That Help
+## Helpful Modules
 
 While not strictly required, the functionalities provided by these modules
 drastically improve the usage of the features in this module.
 
-- [DFreds Convenient Effects](https://foundryvtt.com/packages/dfreds-convenient-effects) by DFreds (hey that's me) - Includes a ton of pre-configured effects for the DnD 5e system. It also adds a description box to the active effect config sheet which will be displayed on the effects panel.
-- [Times Up](https://foundryvtt.com/packages/times-up) by tposney - Deletes effects when their time is up or after a certain number of rounds or turns
+- [DFreds Convenient Effects](https://foundryvtt.com/packages/dfreds-convenient-effects) by DFreds -
+Includes a ton of pre-configured effects for the DnD 5e system. It also adds a
+description box to the active effect config sheet which will be displayed on the
+effects panel.
+- [Times Up](https://foundryvtt.com/packages/times-up) by tim posney - Deletes
+effects when their time is up or after a certain number of rounds or turns
