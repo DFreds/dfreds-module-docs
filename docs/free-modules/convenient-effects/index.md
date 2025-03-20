@@ -17,10 +17,27 @@ tags:
 <br/>
 <br/>
 
-A module that adds easy to use toggleable active effects for common use cases.
+A module that allows creation of easy-to-use toggleable active effects.
 
-Currently, the DND5e and SW5e systems have pre-created effects, but any system
-can create their own effects.
+Currently, the DND5e and SW5e systems come with pre-created effects, but any
+system can create their own effects.
+
+## Overview 
+
+Managing effects in tabletop roleplaying games can be complex and
+time-consuming. Game masters often need to track multiple simultaneous effects,
+from spell durations to status conditions, all while keeping the game running
+smoothly.
+
+This module simplifies effect management through an intuitive interface that's
+accessible right from your token controls. With just a few clicks, you can
+apply, remove, and track effects without disrupting the flow of your game.
+
+For DND5e and SW5e systems, the module comes pre-configured with dozens of
+commonly used effects, making it ready to use out of the box. The effects are
+designed to work seamlessly with popular modules like Midi-QoL and DAE,
+providing automatic tracking of effect durations, conditions, and their
+interactions.
 
 ## Features
 
@@ -30,33 +47,20 @@ can create their own effects.
 - First-class support for popular modules, such as Midi-QoL, Times Up, DAE, Active Token Lighting, and Token Magic FX
 - Extensive API for use in macros
 
-## Let Me Sell You This
+## Quick Start
 
-Do you struggle to remember what all those conditions and spells actually do to
-players and NPCs? Or how they interact? Consider this. Your player just rolled,
-but you forgot that they were invisible and should have rolled with advantage.
-But wait a minute, the enemy is also invisible! So now it cancels out. "Oh
-drats," you think to yourself to further prove this crazy point, "the player
-also has Bless cast on them! Has that expired yet??"
+1. Open the application with the button on the token controls
+1. Select a token and click an effect to toggle it on or off
 
-Sure, you could figure all that out... if you wanna be lame. Or you could be
-cool and just use this module.
+![Convenient Effects App](./img/convenient-effects-app.png)
 
-## What This Module Does
+## Advanced Usage
 
-This module helps with the types of issues described above by allowing creation
-of active effects that can be applied quickly and easily. For DND5e and SW5e, it
-provides dozens of pre-configured effects for conditions and spells.
+If you are a regular user, see the [User Guide](./user-guide) for more details
+on all the features provided.
 
-You can configure some stuff:
-
-![Settings](./img/settings.png)
-
-## How to Use
-
-Check the [User Guide](./user-guide) for details.
-
-Developers should check out the [Developer Guide](./developer-guide).
+If you are a developer or want to learn how to write macros using the API, check
+out the [Developer Guide](./developer-guide).
 
 ## Required Modules
 
@@ -68,7 +72,7 @@ Developers should check out the [Developer Guide](./developer-guide).
   library that makes it easy to do difficult things with sockets
 - [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds (that's me) - A library that makes it easy to add new UI elements to Foundry
 
-## Modules That Help
+## Helpful Modules
 
 While not strictly required, the functionalities provided by these modules
 drastically improve the usage of the various effects included in this module.
