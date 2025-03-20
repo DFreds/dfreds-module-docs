@@ -54,9 +54,9 @@ You can configure some stuff:
 
 ## How to Use
 
-Check the [User Guide](./img/user-guide) for details.
+Check the [User Guide](./user-guide) for details.
 
-Developers should check out the [Developer Guide](./img/developer-guide).
+Developers should check out the [Developer Guide](./developer-guide).
 
 ## Required Modules
 

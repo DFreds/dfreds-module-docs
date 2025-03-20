@@ -76,7 +76,7 @@ To create a macro, click and drag a Convenient Effect from the app to the hotbar
 
 ### Creating Macros
 
-Convenient Effects includes an API for usage in macros or by other developers. See the [Developer Guide](https://github.com/DFreds/dfreds-convenient-effects/wiki/Developer-Guide) for more information.
+Convenient Effects includes an API for usage in macros or by other developers. See the [Developer Guide](./developer-guide) for more information.
 
 #### Example for Toggling Effects on Specific Actors
 
@@ -143,7 +143,7 @@ To enable this behavior, you need to enable the "Auto apply item effects to targ
 
 ## Module Configuration
 
-![Settings](https://github.com/DFreds/dfreds-convenient-effects/blob/main/docs/settings.png)
+![Settings](./img/settings.png)
 
 ### App Controls Permission
 
@@ -219,4 +219,4 @@ Midi-QoL has also explicitly integrated with Convenient Effects to allow users t
 
 [Token Magic FX](https://foundryvtt.com/packages/tokenmagic) allows for active effects to add visual FX to tokens via active effects. For example, the Blur spell can actually make the token look blurred.
 
-This requires enabling [DAE](https://github.com/DFreds/dfreds-convenient-effects/wiki/User-Guide#dae) as it uses the `macro.tokenMagic` active effect added by it.
+This requires enabling [DAE](#dae) as it uses the `macro.tokenMagic` active effect added by it.
