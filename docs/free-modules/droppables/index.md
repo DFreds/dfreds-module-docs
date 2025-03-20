@@ -19,61 +19,51 @@ tags:
 
 A module which allows you to drag and drop an entire folder of tokens or journal entries onto the canvas as well as uploading files for tokens, tiles, sounds, or notes.
 
+## Overview
+
+Droppables streamlines the process of adding content to your Foundry VTT scenes
+by enabling powerful drag-and-drop functionality. Instead of placing tokens and
+assets one by one, you can now drop entire folders of actors or journal entries
+onto your canvas in a single action. The module automatically creates and
+positions tokens or notes for each item in the folder, saving valuable
+preparation time.
+
+Additionally, Droppables revolutionizes how you import external files into
+Foundry. Simply drag files directly onto your canvas, and based on the currently
+selected layer, the module will automatically create the appropriate game
+elements - whether that's new actors with tokens, tiles, ambient sounds, or
+journal entries. This eliminates the traditional multi-step process of uploading
+files and then creating game elements separately.
+
 ## Features
 
 - Easily drop entire folders of actors onto the canvas in a stack, line, or randomly
 - Easily drop folders of notes onto the canvas
-- Drop various files onto the canvas to automatically upload them to your world and create tokens, tiles, sounds, or notes
+- Drop various files onto the canvas to automatically upload them to your world
+and create tokens, tiles, sounds, or notes
 
-## Let Me Sell You This
+## Configuration
 
-Have you ever needed to drop all of your pesky players onto a scene at once? Have you ever _dreaded_ the thought of dragging them all out onto the map one by one like some kind of peasant? What about needing to upload a bunch of cool images for all sorts of awesome characters? Well, now you don't have to. Yay mild conveniences.
+Settings are provided to configure the module.
 
-## What This Module Does
+![Settings](./img/settings.png)
 
-### Droppable Actor and Journal Folders on the Canvas
+## Examples
 
-On the drag and drop of an actor folder or journal entries folder onto the canvas, Droppables creates tokens (for actors) or notes (for journal entries) for each item in that folder. Note that it will not do anything for any sub-folders, as that could get sort of insane.
-
+### Folder Dropping
 ![Dropping Actors](./img/droppables.gif)
 ![Dropping Journals](./img/droppables2.gif)
 
-### Droppable Files on the Canvas
-
-On the drag and drop of one or many files onto the canvas, Droppables creates either a token, tile, ambient audio, or journal entry depending on the currently selected layer for each file.
-
-Here's how it works:
-
-#### Token Layer
-
-A new actor is created of a chosen type with the actor image and token image set to the dropped image.
-
-Supported Files: Images
-
+### File Dropping on Token Layer
 ![Dropping Tokens](./img/droppable-tokens.gif)
 
-#### Tiles Layer
-
-A new tile is created using the dropped image or video.
-
-Supported Files: Images and videos
-
+### File Dropping on Tiles Layer  
 ![Dropping Tiles](./img/droppable-tiles.gif)
 
-#### Sounds Layer
-
-A new ambient audio is created using the dropped audio.
-
-Supported Files: Audio (duh)
-
+### File Dropping on Sounds Layer
 ![Dropping Sounds](./img/droppable-sounds.gif)
 
-#### Notes Layer
-
-A single journal is created with journal entries corresponding to each of the files dropped. In the case of a text file, it will copy all the text to the new journal entry.
-
-Supported Files: Images, videos, PDFs, and text files
-
+### File Dropping on Notes Layer
 ![Dropping Notes](./img/droppable-notes.gif)
 
 ## Required Modules
