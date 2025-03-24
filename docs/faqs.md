@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 # FAQs
@@ -21,21 +21,9 @@ sidebar_position: 5
 
   <summary>How do I install premium modules?</summary>
 
-  At the moment, the only way to install the premium modules is to unzip them into
-  your Foundry data folder.
+  Premium modules can be installed using the built-in FoundryVTT interface after linking your Foundry VTT account and your Patreon account.
 
-  **Installation**
-
-  Download the zip file and extract it into your /FoundryVTT/Data/modules folder.
-  On Windows, this typically looks like this:
-  C:\Users\{username}\AppData\Local\FoundryVTT\Data\modules. The end result should
-  have a folder like /FoundryVTT/Data/modules/dfreds-sample-module
-
-  **Note for Updating**:
-
-  It's probably safest to delete the existing
-  /FoundryVTT/Data/modules/dfreds-sample-module, and then re-extracting the update
-  using the installation steps above.
+  See the [Installation](installation) page for detailed instructions.
 
 </details>
 
