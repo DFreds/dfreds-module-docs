@@ -93,7 +93,15 @@
   font-family: "Signika";
   src: url("/static/fonts/signika-regular.woff2") format("woff2 supports variations"),
     url("/static/fonts/signika-regular.woff2") format("woff2-variations");
-  font-weight: 200 900;
+  font-weight: 400;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("/static/fonts/signika-bold.woff2") format("woff2 supports variations"),
+    url("/static/fonts/signika-bold.woff2") format("woff2-variations");
+  font-weight: 700;
   font-stretch: 75% 125%;
 }
 
