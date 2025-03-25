@@ -10,7 +10,12 @@ tags:
 <img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
 <a target="_blank" href="https://www.patreon.com/dfreds"><img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/></a>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
+<!-- <a target="_blank" href="https://foundryvtt.com/packages/dfreds-ai-helper"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a> -->
 <a target="_blank" href="https://www.patreon.com/dfreds/shop/dfreds-ai-helper-v1-0-0-1085429"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
+<br />
+<img src="https://img.shields.io/badge/Version-v1.0.0-007ec6?style=for-the-badge&labelColor=555555" />
+<img src="https://img.shields.io/badge/FVTT-12-fe6a1f?style=for-the-badge&labelColor=555555" />
+<!-- <a target="_blank" href="https://forge-vtt.com/bazaar#package=dfreds-ai-helper"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-ai-helper&colorB=68a74f&style=for-the-badge"/></a> -->
 <br/>
 <br/>
 
