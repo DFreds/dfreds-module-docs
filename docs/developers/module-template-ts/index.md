@@ -12,7 +12,7 @@ tags:
 <a target="_blank" href="https://github.com/DFreds/dfreds-module-template-ts"><img src="https://img.shields.io/badge/Use Template-2e2e2e?style=for-the-badge"/></a>
 <br />
 <a target="_blank" href="https://github.com/DFreds/dfreds-module-template-ts"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-module-template-ts?style=for-the-badge&label=Version"/></a>
-<img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/DFreds/dfreds-module-template-ts/main/static/module.json&label=FVTT&query=$.compatibility.verified&colorB=fe6a1f&style=for-the-badge"/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FDFreds%2Fdfreds-module-template-ts%2Freleases%2Flatest%2Fdownload%2Fmodule.json&query=%24.compatibility.verified&style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version&color=%23fe6a1f"/>
 <br/>
 <br/>
 
