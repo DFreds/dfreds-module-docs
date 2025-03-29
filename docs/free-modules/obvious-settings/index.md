@@ -28,8 +28,8 @@ challenging to distinguish between settings that affect all players versus those
 that only impact individual users. This module addresses that confusion by
 adding intuitive icons that instantly communicate a setting's scope.
 
-The module places a 🌎 icon before "world" settings that apply globally to all
-players, and a 👤 icon before "client" settings that are personal to each user.
+The module places a globe icon before "world" settings that apply globally to all
+players, and a user icon before "client" settings that are personal to each user.
 Additionally, it provides visual indicators when settings have been modified
 from their default values, making it easy to track which configurations have
 been customized.
@@ -39,7 +39,7 @@ been customized.
 ## Features
 
 - Displays what settings are client based or world based
-- Shows when a setting is not set to it's default value
+- Shows when a setting is not set to its default value
 
 ## Configuration
 
