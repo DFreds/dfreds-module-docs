@@ -23,6 +23,7 @@ A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
 - Easily add new scene controls to any layer controls (token, tiles, drawings, walls, etc.)
 - Easily add new HUD controls to tokens, tiles, or drawings
+- Fully typed library included in repository for Typescript projects
 
 ## Usage
 
@@ -33,6 +34,11 @@ To use this in your own module, you can do any of the following:
 
 :::info
 Everything will be ready to render when the Foundry `setup` hook is complete.
+:::
+
+:::tip
+Check the [Migration Guides](./migration-guides) for details on updating a module
+between Foundry Versions.
 :::
 
 ## Hooks
@@ -48,7 +54,8 @@ Currently, these are the supported API methods:
 
 ### Register Scene Control
 
-A scene control is a button that is located on a specific layer. Under the hood, this uses the `getSceneControlButtons` hook.
+A scene control is a button that is located on a specific layer. Under the hood,
+this uses the `getSceneControlButtons` hook.
 
 ![Scene Control](./img/scene-control.png)
 
@@ -56,139 +63,8 @@ A scene control is a button that is located on a specific layer. Under the hood,
 registerSceneControl(input: SceneControlInput)
 ```
 
-The data objects are described below:
-
-```ts
-interface SceneControlInput {
-    /**
-     * The ID of the module registering
-     *
-     */
-    moduleId: string;
-
-    /**
-     * The name of the control layer
-     */
-    name:
-        | "token"
-        | "measure"
-        | "tiles"
-        | "drawings"
-        | "walls"
-        | "lighting"
-        | "sounds"
-        | "regions"
-        | "notes";
-
-    /**
-     * The position to put the button. If no number is given, it will append it to the end
-     */
-    position?: number;
-
-    /**
-     * The predicate to determine if the control should be visible
-     *
-     * @param data The data for the controls
-     * @returns true if the control should be added, false otherwise
-     */
-    predicate?: (data: any) => boolean;
-
-    /**
-     * The tool data
-     */
-    tool: SceneControlTool;
-}
-
-interface SceneControlTool {
-    /**
-     * The name of the tool. This is used to identify the tool in the scene
-     * control tools.
-     */
-    name: string;
-
-    /**
-     * The title of the tool that display on hover.
-     */
-    title: string;
-
-    /**
-     * The icon used for the tool. This is the icon class from Font Awesome.
-     */
-    icon: string;
-
-    /**
-     * Determines if the tool is visible in the scene control tools. Note that
-     * it might be better to use the predicate function instead, based on when
-     * the tool is registered.
-     */
-    visible: boolean;
-
-    /**
-     * Determines if the tool should be toggleable. If true, the tool will render as on/off rather than selected/deselected.
-     */
-    toggle?: boolean;
-
-    /**
-     * Determines if the tool is active or not
-     */
-    active?: boolean;
-
-    /**
-     * Determines if the tool should render as a button. If false, the tool will
-     * remain active after clicking.
-     */
-    button?: boolean;
-
-    /**
-     * The click handler
-     */
-    onClick?: () => void;
-
-    /**
-     * Configuration for rendering the tool's toolclip.
-     */
-    toolclip?: ToolclipConfiguration;
-}
-
-interface ToolclipConfiguration {
-    /**
-     * The filename of the toolclip video.
-     */
-    src: string;
-
-    /**
-     * The heading string.
-     */
-    heading: string;
-
-    /**
-     * The items in the toolclip body.
-     */
-    items: ToolclipConfigurationItem[];
-}
-
-interface ToolclipConfigurationItem {
-    /**
-     * A plain paragraph of content for this item.
-     */
-    paragraph?: string;
-
-    /**
-     * A heading for the item.
-     */
-    heading?: string;
-
-    /**
-     * Content for the item.
-     */
-    content?: string;
-
-    /**
-     * If the item is a single key reference, use this instead of content.
-     */
-    reference?: string;
-}
-```
+For the type information for `SceneControlInput`, look at the types defined in
+the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 
 An example:
 
@@ -196,21 +72,20 @@ An example:
 export function mySampleModule() {
   Hooks.once("uiExtender.init", (uiExtender) => {
     uiExtender.registerSceneControl({
-      moduleId: "my-module-id",
-      name: "token",
-      position: 2,
+      moduleId: MODULE_ID,
+      name: "tokens",
       tool: {
         name: "testing-button",
         title: "DFreds Test Button",
         icon: "fas fa-robot",
         button: true,
-        visible: true,
-        onClick: () => {
-          ui.notifications.info("You clicked me!")
-        }
-      }
-    })
-  })
+        order: 2,
+        onChange: (event, active) => {
+          console.log("onChange", event, active);
+          ui.notifications.info(`You clicked me! Active: ${active}`);
+        },
+      },
+    });
 }
 ```
 
@@ -224,65 +99,8 @@ A HUD button is a button located located on a specific item on the canvas when y
 registerHudButton(input: HudButtonInput)
 ```
 
-The data objects are described below:
-
-```ts
-interface HudButtonInput {
-    /**
-     * The ID of the module registering
-     */
-    moduleId: string;
-
-    /**
-     * The type of HUD to use
-     */
-    hudType: "token" | "tile" | "drawing";
-
-    /**
-     * The tooltip when hovering on the HUD button
-     */
-    tooltip: string;
-
-    /**
-     * The name of action when clicking the button
-     */
-    action?: string;
-
-    /**
-     * The HTML that will be used in the button
-     */
-    icon: string;
-
-    /**
-     * The location of the button
-     */
-    location: "div.left" | "div.right";
-
-    /**
-     * The predicate to determine if the button should be added
-     *
-     * @param data The data for the item with the HUD
-     * @returns true if the button should be added, false otherwise
-     */
-    predicate?: (data: any) => boolean;
-
-    /**
-     * The click handler
-     *
-     * @param event The click event
-     * @param data The data for the item with the HUD
-     */
-    onClick?: (event: JQuery.ClickEvent, data: any) => void;
-
-    /**
-     * The right-click handler
-     *
-     * @param event The context menu event
-     * @param data The data for the item with the HUD
-     */
-    onRightClick?: (event: JQuery.ContextMenuEvent, data: any) => void;
-}
-```
+For the type information for `HudButtonInput`, look at the types defined in
+the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 
 Some examples:
 
@@ -290,43 +108,71 @@ Some examples:
 export function mySampleModule() {
   Hooks.once("uiExtender.init", (uiExtender) => {
     uiExtender.registerHudButton({
-      moduleId: "my-module-id",
+      moduleId: MODULE_ID,
       hudType: "token",
-      tooltip: "New Token Button",
+      tooltip: "Show Art Button",
       icon: `<i class="fas fa-image fa-fw"></i>`,
       location: "div.left",
-      onClick: (_event, token) => {
-        console.log("Clicked!")
+      onClick: (
+        _event: JQuery.ClickEvent,
+        _button: JQuery,
+        _token: any,
+      ) => {
+          console.log("clicked");
       },
-      onRightClick: (_event, token) => {
-        console.log("Right clicked!")
-      }
-    })
+      onRightClick: (
+        _event: JQuery.ContextMenuEvent,
+        _button: JQuery,
+        _token: any,
+      ) => {
+          console.log("right clicked");
+      },
+    });
 
     uiExtender.registerHudButton({
-      moduleId: "my-module-id",
+      moduleId: MODULE_ID,
       hudType: "tile",
-      tooltip: "New Tile Button",
+      tooltip: "Show Art Button",
       icon: `<i class="fas fa-image fa-fw"></i>`,
-      location: "div.right",
-      onClick: (_event, tile) => {
-        console.log("Clicked!")
+      location: "div.left",
+      onClick: (
+        _event: JQuery.ClickEvent,
+        _button: JQuery,
+        tile: any,
+      ) => {
+        new ImagePopout(tile.texture, {
+          title: "Tile Image",
+          shareable: true,
+        }).render(true);
       },
-      onRightClick: (_event, tile) => {
-        console.log("Right clicked!")
-      }
-    })
+      onRightClick: (
+        _event: JQuery.ContextMenuEvent,
+        _button: JQuery,
+        tile: any,
+      ) => {
+        new ImagePopout(tile.texture, {
+          title: "Tile Image",
+          shareable: true,
+        }).render(true);
+      },
+    });
 
     uiExtender.registerHudButton({
-      moduleId: "my-module-id",
+      moduleId: MODULE_ID,
       hudType: "drawing",
       tooltip: "Say Hi",
       icon: `<i class="fas fa-robot fa-fw"></i>`,
       location: "div.right",
-      onClick: (_event, drawing) => {
-        ui.notifications.info(`Hello from drawing ${drawing.fillColor}`)
-      }
-    })
+      onClick: (
+        _event: JQuery.ClickEvent,
+        _button: JQuery,
+        drawing: any,
+      ) => {
+        ui.notifications.info(
+            `Hello from drawing ${drawing.fillColor}`,
+        );
+      },
+    });
   })
 }
 ```
