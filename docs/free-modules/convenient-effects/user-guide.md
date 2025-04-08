@@ -64,6 +64,8 @@ You can restore a single effect by clicking and dragging it to the desired folde
 
 You can restore an entire folder of effects by using the import/export behavior as discussed above.
 
+You can completely delete all existing effects and restore all backup effects by clicking the "Reset System Effects" button
+
 ## Using Macros
 
 Any effects included or created can be toggled, added, or removed using macros.
