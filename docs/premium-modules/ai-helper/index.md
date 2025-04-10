@@ -15,7 +15,6 @@ tags:
 <br />
 <img src="https://img.shields.io/badge/Version-v1.0.0-007ec6?style=for-the-badge&labelColor=555555" />
 <img src="https://img.shields.io/badge/12-fe6a1f?style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version" />
-<!-- <a target="_blank" href="https://forge-vtt.com/bazaar#package=dfreds-ai-helper"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-ai-helper&colorB=68a74f&style=for-the-badge"/></a> -->
 <br/>
 <br/>
 
