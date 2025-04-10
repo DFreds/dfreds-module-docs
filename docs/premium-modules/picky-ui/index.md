@@ -7,7 +7,7 @@ tags:
 
 # Picky UI
 
-<img src="https://img.shields.io/badge/Premium-aa0000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Early%20Access-9b59b6?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
 <a target="_blank" href="https://foundryvtt.com/packages/dfreds-picky-ui"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br />
