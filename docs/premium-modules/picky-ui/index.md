@@ -30,9 +30,10 @@ the elements you need.
 
 ## Features
 
-- Toggle individual scene controls on/off through an intuitive configuration menu
-- Automatically hides entire sections when all contained tools are disabled
-- Seamlessly works with other modules that add new controls, including those using [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender)
+- Toggle individual sidebar directories on/off through configuration menu
+- Toggle individual scene controls on/off through configuration menu
+  - Automatically hides entire sections when all contained tools are disabled
+  - Seamlessly works with other modules that add new controls, including those using [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender)
 
 ## Configuration
 
@@ -40,6 +41,10 @@ Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
 
+Configure the sidebar directories:
+
+![Directories Config](./img/directories-config.png)
+
 Configure the scene controls:
 
-![Config](./img/config.png)
+![Scene Controls Config](./img/scene-controls-config.png)
