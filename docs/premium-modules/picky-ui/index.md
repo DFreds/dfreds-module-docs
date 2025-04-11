@@ -30,16 +30,23 @@ the elements you need.
 
 ## Features
 
-- Toggle individual sidebar directories on/off through configuration menu
-- Toggle individual scene controls on/off through configuration menu
+- Toggle on and off any HUD elements on tokens, tiles, or drawings
+  - Seamlessly works with other modules that add new controls, including those using [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender)
+- Toggle on and off any sidebar directories (except Settings)
+- Toggle on and off any scene controls 
   - Automatically hides entire sections when all contained tools are disabled
   - Seamlessly works with other modules that add new controls, including those using [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender)
+- Toggle on and off the player list, hotbar, or scene navigation
 
 ## Configuration
 
 Settings are provided to configure the module.
 
 ![Settings](./img/settings.png)
+
+Configure the HUD on tokens, tiles, and drawings:
+
+![Directories Config](./img/hud-config.png)
 
 Configure the sidebar directories:
 
