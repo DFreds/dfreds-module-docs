@@ -25,6 +25,14 @@ A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 - Easily add new HUD controls to tokens, tiles, or drawings
 - Fully typed library included in repository for Typescript projects
 
+## Configuration
+
+Settings are provided to view details of registered components.
+
+![Settings](./img/settings.png)
+
+![Registration](./img/registration.png)
+
 ## Usage
 
 To use this in your own module, you can do any of the following:
