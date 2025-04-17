@@ -4,15 +4,23 @@ Convenient Effects adds some functions that developers can utilize.
 
 ## API
 
-The entirety of the API is located and documented in this file: [effect-interface.ts](https://github.com/DFreds/dfreds-convenient-effects/blob/main/src/ts/effect-interface.ts).
+The entirety of the API is documented in this file: [index.d.ts](https://github.com/DFreds/dfreds-convenient-effects/blob/main/types/convenientEffects/index.d.ts).
 
-It can be accessed via `game.dfreds.effectInterface`.
+It can be accessed via `game.modules.get("dfreds-convenient-effects").api`.
+
+:::warning
+As of Convenient Effects v8.0.0, the API moved from `game.dfreds.effectInterface`
+to `game.modules.get("dfreds-convenient-effects").api` to be consistent with
+best practices from other modules.
+
+`game.dfreds.effectInterface` will be removed in v9.0.0.
+:::
 
 ## Hooks
 
 Convenient Effects currently provides the following hooks:
 
-- 'dfreds-convenient-effects.ready' - Called when Convenient Effects is done initializing everything.
+- 'dfreds-convenient-effects.ready' - Called when Convenient Effects is done initializing everything and the API is ready.
 
 ## Data Flags
 
