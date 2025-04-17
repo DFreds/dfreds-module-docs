@@ -20,6 +20,12 @@ tags:
 
 A FoundryVTT module that uses AI to help in your game.
 
+:::warning
+AI Helper is in its very early stages, and is not yet available on Foundry. It
+can be found on the Patreon store for Early Access members, but is recommended
+that you wait for further updates.
+:::
+
 ## Overview
 
 AI Helper enhances Foundry VTT by integrating artificial intelligence
