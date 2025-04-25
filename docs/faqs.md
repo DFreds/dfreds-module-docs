@@ -10,10 +10,7 @@ sidebar_position: 3
 
   Free modules can be installed using the built-in FoundryVTT interface.
 
-  1. Select the "Add-on Modules" tab
-  1. Click the "Install Module" button
-  1. Search for the name of the module you want to install (i.e. DFreds Convenient Effects)
-  1. Click the "Install" button in the result
+  See the [Installation](installation) page for detailed instructions.
 
 </details>
 
@@ -66,15 +63,6 @@ sidebar_position: 3
   inaccessible.
 
   Additionally, any special Patreon roles in the Discord will be removed.
-
-</details>
-
-<details>
-
-  <summary>I've subscribed to the Patreon. How do I download the modules?</summary>
-
-  To install the premium modules, head over to the [Patreon shop](https://patreon.com/dfreds/shop).
-  Note that some modules are locked to the Early Access tier when they are first released.
 
 </details>
 
