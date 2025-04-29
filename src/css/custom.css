@@ -125,3 +125,14 @@ h5,
 h6 {
   font-family: "Amiri";
 }
+
+img[alt="MAD Logo"] {
+  width: 200px;
+  height: 200px;
+}
+
+img[alt="Sqyre Logo"] {
+  width: 200px;
+  height: 200px;
+}
+

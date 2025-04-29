@@ -11,6 +11,17 @@ To access these discounts, join the appropriate tier and visit the corresponding
 - Ultimate Members: https://www.patreon.com/posts/ultimate-codes-127387948
 - Early Access Members: https://www.patreon.com/posts/supporter-early-127387628
 
+## The MAD Network
+
+![MAD Logo](./img/mad-logo.png)
+
+Fantastic TTRPG products for multiple genres and systems!
+
+### Current Discounts
+
+- **Ultimate** - 15% off purchases during checkout
+- **Supporter/Early Access** - 10% off purchases during checkout
+
 ## Sqyre
 
 ![Sqyre Logo](./img/sqyre-logo.png)
