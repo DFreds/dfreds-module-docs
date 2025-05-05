@@ -86,11 +86,11 @@ Convenient Effects includes an API for usage in macros or by other developers. S
 let fromActorId = game.actors.get('some actor id').uuid; // get UUID based on some actor ID (replace it)
 let fromTokenId = canvas.tokens.get('some token id').actor.uuid; // get UUID based on some token ID (replace it)
 let fromActorName = game.actors.find(actor => actor.data.name == 'Merric (Halfling Barbarian)')?.uuid; // get UUID based on first actor name that matches
-game.dfreds.effectInterface.toggleEffect({ effectName: 'Bane', uuids: [fromActorId, fromTokenId, fromActorName] });
+game.modules.get("dfreds-convenient-effects").api.toggleEffect({ effectName: 'Bane', uuids: [fromActorId, fromTokenId, fromActorName] });
 
 
 let actorUuids = canvas.tokens.controlled.map(token => token.actor.uuid); // get multiple uuids from controlled tokens
-game.dfreds.effectInterface.toggleEffect({ effectName: 'Bane', uuids: actorUuids });
+game.modules.get("dfreds-convenient-effects").api.toggleEffect({ effectName: 'Bane', uuids: actorUuids });
 ```
 
 Essentially, providing a UUID (unique identifier) to the `toggleEffect` method will apply it only to actors that match that UUID. The macro shows several ways to get that information.
@@ -99,10 +99,10 @@ Essentially, providing a UUID (unique identifier) to the `toggleEffect` method w
 
 ```js
 const uuid = canvas.tokens.controlled[0].actor.uuid;
-const hasEffectApplied = await game.dfreds.effectInterface.hasEffectApplied({ effectName: 'Bane', uuid }); // NOTE that `uuid` is the same as `uuid: uuid`
+const hasEffectApplied = await game.modules.get("dfreds-convenient-effects").api.hasEffectApplied({ effectName: 'Bane', uuid }); // NOTE that `uuid` is the same as `uuid: uuid`
 
 if (!hasEffectApplied) {
-  game.dfreds.effectInterface.addEffect({ effectName: 'Bane', uuid });
+  game.modules.get("dfreds-convenient-effects").api.addEffect({ effectName: 'Bane', uuid });
 }
 ```
 
@@ -112,10 +112,10 @@ This will add the provided effect to the actors that match the UUID.
 
 ```js
 const uuid = canvas.tokens.controlled[0].actor.uuid;
-const hasEffectApplied = await game.dfreds.effectInterface.hasEffectApplied({ effectName: 'Bane', uuid });
+const hasEffectApplied = await game.modules.get("dfreds-convenient-effects").api.hasEffectApplied({ effectName: 'Bane', uuid });
 
 if (hasEffectApplied) {
-  game.dfreds.effectInterface.removeEffect({ effectName: 'Bane', uuid });
+  game.modules.get("dfreds-convenient-effects").api.removeEffect({ effectName: 'Bane', uuid });
 }
 ```
 
@@ -125,10 +125,10 @@ This will remove the provided effect from the actors that match the UUID.
 
 ```js
 const uuid = canvas.tokens.controlled[0].actor.uuid;
-const effectData = game.dfreds.effectInterface.findEffect({ effectName: 'Bane' }).toObject();
+const effectData = game.modules.get("dfreds-convenient-effects").api.findEffect({ effectName: 'Bane' }).toObject();
 effectData.name = 'Test';
 
-game.dfreds.effectInterface.addEffect({ effectData, uuid });
+game.modules.get("dfreds-convenient-effects").api.addEffect({ effectData, uuid });
 ```
 
 Each effect included in Convenient Effects can be customized before being added. In this example, the Bane effect is copied but renamed to 'Test'.
