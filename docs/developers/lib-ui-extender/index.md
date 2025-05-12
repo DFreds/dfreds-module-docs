@@ -21,8 +21,9 @@ A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
 ## Features
 
-- Easily add new scene controls to any layer controls (token, tiles, drawings, walls, etc.)
 - Easily add new HUD controls to tokens, tiles, or drawings
+- Easily add new scene controls to any layer controls (token, tiles, drawings, walls, etc.)
+- Easily add new sidebar directories
 - Fully typed library included in repository for Typescript projects
 
 ## Configuration
@@ -99,7 +100,7 @@ export function mySampleModule() {
 
 ### Register HUD Button
 
-A HUD button is a button located located on a specific item on the canvas when you right click. Under the hood, this uses the `render${type}HUD` hook.
+A HUD button is a button located on a specific item on the canvas when you right click. Under the hood, this uses the `render${type}HUD` hook.
 
 ![HUD Button](./img/hud-button.png)
 
@@ -180,6 +181,56 @@ export function mySampleModule() {
             `Hello from drawing ${drawing.fillColor}`,
         );
       },
+    });
+  })
+}
+```
+
+### Register Sidebar Directory
+
+A sidebar directory is a button located on the sidebar.
+
+![Sidebar Directory](./img/sidebar-directory.png)
+
+```js
+registerDirectory(input: DirectoryInput)
+```
+
+For the type information for `DirectoryInput`, look at the types defined in
+the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
+
+Some examples:
+
+```js
+const { AbstractSidebarTab } = foundry.applications.sidebar;
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+
+// An application must extend AbstractSidebarTab
+class SampleApplication extends HandlebarsApplicationMixin(AbstractSidebarTab) {
+    static DEFAULT_OPTIONS = {
+        window: {
+            title: "Sample",
+        },
+    };
+
+    static PARTS = {
+        sample: {
+            template: `modules/${MODULE_ID}/templates/sample.hbs`,
+        },
+    };
+
+    static tabName = "sample";
+}
+
+export function mySampleModule() {
+  Hooks.once("uiExtender.init", (uiExtender) => {
+    uiExtender.registerDirectory({
+        moduleId: MODULE_ID,
+        id: "sample",
+        tooltip: "Sample",
+        icon: "fas fa-robot",
+        order: 1,
+        applicationClass: SampleApplication,
     });
   })
 }
