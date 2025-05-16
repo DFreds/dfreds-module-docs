@@ -49,7 +49,7 @@ interactions.
 
 ## Quick Start
 
-1. Open the application with the button on the token controls
+1. Open the application with the button on the sidebar directory
 1. Select a token and click an effect to toggle it on or off
 
 ![Convenient Effects App](./img/convenient-effects-app.png)
