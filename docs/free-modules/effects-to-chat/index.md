@@ -13,7 +13,6 @@ tags:
 <br />
 <a target="_blank" href="https://github.com/DFreds/dfreds-effects-to-chat"><img src="https://img.shields.io/github/v/release/DFreds/dfreds-effects-to-chat?style=for-the-badge&label=Version"/></a>
 <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FDFreds%2Fdfreds-effects-to-chat%2Freleases%2Flatest%2Fdownload%2Fmodule.json&query=%24.compatibility.verified&style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version&color=%23fe6a1f"/>
-<a target="_blank" href="https://forge-vtt.com/bazaar#package=dfreds-effects-to-chat"><img src="https://img.shields.io/badge/dynamic/json?label=Installs&query=package.installs&suffix=%25&url=https://forge-vtt.com/api/bazaar/package/dfreds-effects-to-chat&colorB=68a74f&style=for-the-badge"/></a>
 <br/>
 <br/>
 
