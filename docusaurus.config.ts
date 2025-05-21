@@ -36,7 +36,20 @@ const config: Config = {
           sidebarCollapsible: true,
           sidebarCollapsed: true,
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl: 'https://github.com/DFreds/dfreds-module-docs/tree/main',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -72,6 +85,7 @@ const config: Config = {
         src: 'img/dfreds-logo.svg',
       },
       items: [
+        { to: 'blog', label: 'Blog', position: 'left' },
         {
           type: 'search',
           position: 'right',

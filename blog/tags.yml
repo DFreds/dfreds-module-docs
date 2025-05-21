@@ -1,19 +1,14 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+module-news:
+  label: Module News
+  permalink: /module-news
+  description: Module News tag description
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+promotions:
+  label: Promotions
+  permalink: /promotions
+  description: Promotions tag description
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+announcements:
+  label: Announcements
+  permalink: /announcements
+  description: Announcements tag description
