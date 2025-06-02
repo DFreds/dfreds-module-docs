@@ -8,4 +8,4 @@ tags: [module-news]
 
 Hi all!
 
-DFreds Clipboard is now out of the Early Access phase and available for all Patreon tiers!
+DFreds Picky UI is now out of the Early Access phase and available for all Patreon tiers!
