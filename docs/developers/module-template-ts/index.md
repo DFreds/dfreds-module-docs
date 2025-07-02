@@ -114,15 +114,24 @@ Prompts you to start a node version of foundry that is configured in the
 this command and go to `localhost:{configured-port}`. The configured port is
 usually localhost:30000, but could be different depending on if you changed it.
 
-### `npm run update-types && npm run lint:fix`
+### `npm run update-types`
 
-Updates the pf2e types and auto-fixes any linting issues to reduce the diff in Git. It's recommended to run this periodically.
+Updates the pf2e types that provide base Foundry types. It's recommended to run
+this periodically.
 
 :::warning
 Since this is dependent on an external integration, types may be slow to update
 or inaccurate, especially when a new version of Foundry releases. You can always
-change the types yourself in `types/foundry`.
+change the types yourself in `types/foundry`. You might have to if something isn't
+yet added by the pf2e team.
 :::
+
+### `npm run lint:fix`
+
+Fixes any lint issues to reduce the diff in Git. It's recommended to run this
+periodically or before each commit. Alternatively, you could install extensions
+like ESLint, EditorConfig, Prettier, and Prettier ESLint in VSCode to do it on
+save.
 
 ## Static Files
 
