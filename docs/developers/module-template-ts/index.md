@@ -61,7 +61,7 @@ A FoundryVTT module template that uses Typescript and Vite for development.
 1. Run `npm run update-types`
     - Copies all pf2e types to the `/types` folder using the pf2e path set in `foundryconfig.json`
 1. Run `npm run lint:fix`
-    - Fixes and formats all the types you just copied from pf2e. Recommend doing this after every type update to reduce diffs
+    - Fixes and formats all files (except types). Optional step to maintain consistent styling.
 1. Run `npm run build`
     - Builds the app into the `/dist` folder
 1. Run `npm run link`
