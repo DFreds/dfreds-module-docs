@@ -78,3 +78,13 @@ sidebar_position: 3
   from Patreon.
 
 </details>
+
+<details>
+
+  <summary>I'm having difficulty downloading the Premium modules on the Forge. What should I do?</summary>
+
+  Both your ForgeVTT account and Patreon account need to be linked up with FoundryVTT.
+
+  If you run into issues, you can contact [Forge support](https://forge-vtt.com/contact).
+
+</details>
