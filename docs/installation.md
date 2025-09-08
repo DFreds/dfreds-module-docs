@@ -36,6 +36,9 @@ If you encounter any issues, follow these steps in order:
    - Unlink and re-link your Patreon account
    - Review Foundry's [premium content guide](https://foundryvtt.com/article/premium-content/)
    - Contact [Foundry support](https://foundryvtt.com/contact-us/) if issues persist
+   - **ForgeVTT**: Make sure that both the Forge and Patreon are connected
+   to your FoundryVTT account. If you run into issues, you can contact [Forge
+   support](https://forge-vtt.com/contact)
 
 ## Free Modules Installation
 
