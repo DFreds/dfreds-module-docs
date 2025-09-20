@@ -40,6 +40,7 @@ files and then creating game elements separately.
 - Easily drop folders of notes onto the canvas
 - Drop various files onto the canvas to automatically upload them to your world
 and create tokens, tiles, sounds, or notes
+- Drag and drop documents directly from their sheet onto any supported area
 
 ## Configuration
 
@@ -64,6 +65,9 @@ Settings are provided to configure the module.
 
 ### File Dropping on Notes Layer
 ![Dropping Notes](./img/droppable-notes.gif)
+
+### Drag/Drop Document Link
+![Drag Drop Document Link](./img/drag-drop-document-link.gif)
 
 ## Required Modules
 
