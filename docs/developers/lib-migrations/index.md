@@ -39,6 +39,14 @@ Everything will be ready to migrate when the Foundry `ready` hook is complete. H
 You cannot register your module or any migrations in the Foundry `init` hook.
 :::
 
+### General Guidelines
+
+- You MUST call the run migrations method yourself. This library makes no assumption as to when it makes sense for your module's migrations to execute.
+- It is safe to always run the migrations each time, as they will not be re-ran if they succeeded.
+- Each migration should be repeatable in case the user accidentally loses the data on which migrations were run. Generally, this just boils down to doing some if/else checks before running a migration.
+- If a migration unexpectedly fails, it will not be added to the list of migrations that ran. This means the next time the migrations would run, it will attempt to run that migration again.
+- If a migration fails, all subsequent migrations (based on date) will not run. This is to allow for certain assumptions in the data you're working with based on previous migrations.
+
 ## Hooks
 
 Lib: DFreds Migrations provides a few hooks.
