@@ -38,7 +38,7 @@ Settings are provided to view details of registered components.
 To use this in your own module, you can do any of the following:
 
 - Use the `uiExtender.init` hook (which fires based on Foundry's `init` hook) and register your UI elements on the provided instance of `uiExtender`
-- Use the `window.UiExtender` (accessible as just `UiExtender` in console and code) and register in Foundry's init method.
+- Use the `window.uiExtender` (accessible as just `uiExtender` in console and code) and register in Foundry's init method.
 
 :::info
 Everything will be ready to render when the Foundry `setup` hook is complete.
