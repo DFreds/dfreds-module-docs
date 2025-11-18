@@ -1,5 +1,5 @@
 ---
-title: New Library Release - Lib: DFreds Migrations
+title: New Library Release - Lib DFreds Migrations
 authors: dfreds
 tags: [module-news]
 ---
