@@ -27,7 +27,8 @@ A FoundryVTT module template that uses Typescript and Vite for development.
 - Commands to build for production, staging, or development
 - Commands to configure and run different versions of FoundryVTT
 - Tools to automatically rename the name of the module, update the types, and enforce code linting
-- Powerful GitHub actions that handle releases and (optionally) posting updates to a Discord channel
+- Powerful GitHub actions that handle releases, (optionally) posting updates to
+a Discord channel, and optionally publishing the release to Foundry
 
 ## Getting Started
 
@@ -66,12 +67,37 @@ A FoundryVTT module template that uses Typescript and Vite for development.
     - Builds the app into the `/dist` folder
 1. Run `npm run link`
     - Symlinks the built `/dist` folder to your Foundry data path set in `foundryconfig.json`
-1. If you want to use the publish to discord action, then be sure to add a repository secret called `DISCORD_WEBHOOK_URL` that points to your configured webhook. You should also update the content and release username if applicable.
-    - To point to role IDs, use `"<@&{role_id}>"` in the content.
 
 :::warning
 If you don't plan on using any 3rd party dependencies, then be sure to remove `vendor.mjs` from the `module.json` file.
     - Note that the UUID dependency was included to get started. It's likely you don't need this specific dependency, but the module won't build without at least one dependency if the references to `vendor.mjs` exists in the project.
+:::
+
+## Optional Build Steps
+
+The module template comes with a `publish.yml` workflow that can handle
+publishing release notes to a Discord channel and automatically uploading the
+release to Foundry.
+
+If you **do not** wish to use this, simply delete the `publish.yml` file in
+`./.github/workflows`.
+
+You can also opt to use either one individually. Delete the corresponding one
+you don't want in the `publish.yml` file, and the publish to Foundry dry run in
+`release.yml` if not using it.
+
+### Publish to Discord
+
+If you want to use the publish to discord action, then be sure to add a repository secret called `DISCORD_WEBHOOK_URL` that points to your configured webhook. You should also update the content and release username if applicable.
+    - To point to role IDs, use `"<@&{role_id}>"` in the content.
+
+### Publish to Foundry
+
+If you want to use the publish to foundry action, then be sure to add a
+repository secret called `PACKAGE_TOKEN`. This token can be found on the edit page of your module, and is different per module.
+
+:::warning
+Unless you host the zip file yourself, you cannot use the publish to Foundry for premium modules. Meaning, if Foundry is the one hosting your content (i.e. https://r2.foundryvtt.com), you cannot use this.
 :::
 
 ## Commands
