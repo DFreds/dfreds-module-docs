@@ -70,6 +70,7 @@ out the [Developer Guide](./developer-guide).
 - [socketlib](https://foundryvtt.com/packages/socketlib) by Stäbchenfisch - A
   library that makes it easy to do difficult things with sockets
 - [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry
+- [Lib: DFreds Migrations](https://foundryvtt.com/packages/lib-dfreds-migrations) by DFreds - A library that makes it easy to handle data migrations
 
 ## Helpful Modules
 
