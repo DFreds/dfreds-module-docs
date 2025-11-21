@@ -83,21 +83,25 @@ If you **do not** wish to use this, simply delete the `publish.yml` file in
 `./.github/workflows`.
 
 You can also opt to use either one individually. Delete the corresponding one
-you don't want in the `publish.yml` file, and the publish to Foundry dry run in
-`release.yml` if not using it.
+you don't want in the `publish.yml` file.
 
 ### Publish to Discord
 
-If you want to use the publish to discord action, then be sure to add a repository secret called `DISCORD_WEBHOOK_URL` that points to your configured webhook. You should also update the content and release username if applicable.
+If you want to use the publish to discord action, then be sure to add a
+repository secret called `DISCORD_WEBHOOK_URL` that points to your configured
+webhook. You should also update the content and release username if applicable.
     - To point to role IDs, use `"<@&{role_id}>"` in the content.
 
 ### Publish to Foundry
 
 If you want to use the publish to foundry action, then be sure to add a
-repository secret called `PACKAGE_TOKEN`. This token can be found on the edit page of your module, and is different per module.
+repository secret called `PACKAGE_TOKEN`. This token can be found on the edit
+page of your module, and is different per module.
 
 :::warning
-Unless you host the zip file yourself, you cannot use the publish to Foundry for premium modules. Meaning, if Foundry is the one hosting your content (i.e. https://r2.foundryvtt.com), you cannot use this.
+Unless you host the zip file yourself, you cannot use the publish to Foundry for
+premium modules. Meaning, if Foundry is the one hosting your content (i.e.
+https://r2.foundryvtt.com), you cannot use this.
 :::
 
 ## Commands
