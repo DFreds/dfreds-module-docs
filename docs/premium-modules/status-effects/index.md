@@ -12,7 +12,7 @@ tags:
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
 <a target="_blank" href="https://foundryvtt.com/packages/dfreds-status-effects"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br />
-<img src="https://img.shields.io/badge/Version-v2.1.1-007ec6?style=for-the-badge&labelColor=555555" />
+<img src="https://img.shields.io/badge/Version-v2.2.0-007ec6?style=for-the-badge&labelColor=555555" />
 <img src="https://img.shields.io/badge/13-fe6a1f?style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version" />
 <br/>
 <br/>
@@ -62,6 +62,7 @@ library that wraps core Foundry methods to make it easier for modules
 developers. Note that if you for some reason don't want to install this, a shim
 will be used instead.
 - [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry
+- [Lib: DFreds Migrations](https://foundryvtt.com/packages/lib-dfreds-migrations) by DFreds - A library that makes it easy to handle data migrations
 
 ## Helpful Modules
 
