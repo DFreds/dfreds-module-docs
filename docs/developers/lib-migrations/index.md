@@ -60,4 +60,9 @@ Currently, these are the supported API methods: https://github.com/DFreds/lib-df
 
 ## Sample
 
-A sample setup can be found here: https://github.com/DFreds/lib-dfreds-migrations/blob/main/src/ts/sample.ts
+A sample setup can be found here: https://github.com/DFreds/lib-dfreds-migrations/blob/main/src/ts/sample.ts.
+
+For a more real-world example, you can view these two commits in the DFreds Convenient Effects repository that change to using the library from a built-in migration solution.
+
+- [Add migration types](https://github.com/DFreds/dfreds-convenient-effects/commit/ba184250de9ff732dde2dbff5c4d81f9de369faf)
+- [Use lib-dfreds-migrations](https://github.com/DFreds/dfreds-convenient-effects/commit/f3129913b2ec3db02393a8a1dd952e74ec59388f)
