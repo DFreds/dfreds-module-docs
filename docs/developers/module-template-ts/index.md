@@ -55,6 +55,7 @@ a Discord channel, and optionally publishing the release to Foundry
 1. If not already installed, download and install [nvm](https://github.com/nvm-sh/nvm).
 1. Run `nvm use` or `nvm install <version>` and `nvm use`
     - Ensures a common node version is used regardless of user environment
+    - Note: On Windows, `nvm use` will not automatically use the .nvmrc file. Do `nvm use $(cat .nvmrc)`
 1. Run `npm ci`
     - Installs all dependencies according to the `package-lock.json`
 1. Run `npm run rename-module`
@@ -69,7 +70,7 @@ a Discord channel, and optionally publishing the release to Foundry
     - Symlinks the built `/dist` folder to your Foundry data path set in `foundryconfig.json`
 
 :::warning
-If you don't plan on using any 3rd party dependencies, then be sure to remove `vendor.mjs` from the `module.json` file.
+If you don't plan on using any 3rd party dependencies, then be sure to remove `vendor.mjs` from the `module.json` file, as well as any regular dependencies (non-dev dependencies) in `package.json`.
     - Note that the UUID dependency was included to get started. It's likely you don't need this specific dependency, but the module won't build without at least one dependency if the references to `vendor.mjs` exists in the project.
 :::
 
