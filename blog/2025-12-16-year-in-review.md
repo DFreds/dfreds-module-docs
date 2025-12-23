@@ -20,9 +20,9 @@ I figured I'd give an update on the last year of work around my modules. Some st
 
 ### 💪 Every new and existing module updated for Foundry v13
 
-### 🌐 A brand new dedicated site
+### 🌐 A brand new [dedicated site](https://www.dfreds-modules.com/)
 
-### 🔧 A well-maintained Module Template for building your own modules
+### 🔧 A well-maintained [Module Template](https://www.dfreds-modules.com/developers/module-template-ts/) for building your own modules
 
 All of this is the result of hundreds of hours of work!
 
@@ -30,7 +30,7 @@ I wanted to give a special shout-out to my Patreon members. Without you, this wo
 
 For those of you who wish to support for the first time or once again, you can enjoy a 15% discount on yearly and monthly memberships with the code DFREDS2025. FYI: That stacks with the yearly discount 💰
 
-Finally, head on over to the Discord and give me some bug reports, feature requests, module ideas, or just vibe out. I'm responsive and available, and happy to hear your thoughts!
+Finally, head on over to the [Discord](https://discord.gg/5DyuBhBB) and give me some bug reports, feature requests, module ideas, or just vibe out. I'm responsive and available, and happy to hear your thoughts!
 
 Thanks again,
 
