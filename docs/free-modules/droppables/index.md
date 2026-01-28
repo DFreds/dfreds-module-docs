@@ -40,6 +40,7 @@ files and then creating game elements separately.
 - Easily drop folders of notes onto the canvas
 - Drop various files onto the canvas to automatically upload them to your world
 and create tokens, tiles, sounds, or notes
+- Drop images directly from browsers to automatically set the images for tokens, tiles, or notes
 - Drag and drop documents directly from their sheet onto any supported area
 
 ## Configuration
