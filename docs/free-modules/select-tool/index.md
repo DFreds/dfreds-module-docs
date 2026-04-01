@@ -3,9 +3,12 @@ sidebar_position: 8
 tags:
   - free
   - module
+  - deprecated-v14
 ---
 
 # Select Tool
+
+<img src="https://img.shields.io/badge/Deprecated%20In%20v14-aa0000?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/Free-00aa00?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
@@ -17,6 +20,10 @@ tags:
 <br/>
 
 A FoundryVTT module that adds a select tool to all layers.
+
+## Deprecated v14 and Beyond
+
+Note that this module is no longer needed for Foundry v14 and up, as it is included in the base application.
 
 ## Overview
 
