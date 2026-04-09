@@ -55,7 +55,7 @@ a Discord channel, and optionally publishing the release to Foundry
 1. If not already installed, download and install [nvm](https://github.com/nvm-sh/nvm).
 1. Run `nvm use` or `nvm install <version>` and `nvm use`
     - Ensures a common node version is used regardless of user environment
-    - Note: On Windows, `nvm use` will not automatically use the .nvmrc file. Do `nvm use $(cat .nvmrc)`
+    - Note: On Windows, `nvm use` will not automatically use the .nvmrc file. Do `nvm use $(cat .nvmrc)` or `nvm use $(Get-Content .nvmrc)`
 1. Run `npm ci`
     - Installs all dependencies according to the `package-lock.json`
 1. Run `npm run rename-module`
