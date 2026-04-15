@@ -36,7 +36,7 @@ Comprehensive Keybinds adds customizable keyboard shortcuts for quickly selectin
     - Default keybinds are Shift + Alt + (1-9, -, =)
   - Toggling directory expansion
     - Default keybind is Alt + Backspace
-  - Changing roll mode (public, GM, blind, self)
-    - Default keybinding is Alt + Arrow keys
+  - Changing message mode (public, GM, blind, self, IC)
+    - Default keybinding is Alt + (Arrow keys, Numpad 0)
   - Closing the most recent active window only
     - Default keybinding is Shift + Escape
