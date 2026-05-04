@@ -46,10 +46,6 @@ efficient than ever.
 
 ![Clipboard Tokens](./img/clipboard-tokens.png)
 
-### Templates
-
-![Clipboard Templates](./img/clipboard-templates.png)
-
 ### Tiles
 
 ![Clipboard Tiles](./img/clipboard-tiles.png)
@@ -69,6 +65,10 @@ efficient than ever.
 ### Sounds
 
 ![Clipboard Sounds](./img/clipboard-sounds.png)
+
+### Regions
+
+![Clipboard Regions](./img/clipboard-regions.png)
 
 ### Notes
 
