@@ -213,10 +213,6 @@ If you don't use this module, some included effects will only partially work.
 
 Midi-QoL has also explicitly integrated with Convenient Effects to allow users to auto apply the active effects from Convenient Effects when appropriate. See [Integrating with Midi-QoL](https://github.com/DFreds/dfreds-convenient-effects/wiki/User-Guide#integrating-with-midi-qol) for more information.
 
-### Active Token Effects
-
-[Active Token Effects](https://foundryvtt.com/packages/ATL) (or ATE) allows active effects to also manipulate dim/bright vision for a token, dim/bright light emitted by a token, or the size of a token. Certain effects (like Torch) will use ATE to change the vision or lighting on whoever it affects. 
-
 ### Token Magic FX
 
 [Token Magic FX](https://foundryvtt.com/packages/tokenmagic) allows for active effects to add visual FX to tokens via active effects. For example, the Blur spell can actually make the token look blurred.

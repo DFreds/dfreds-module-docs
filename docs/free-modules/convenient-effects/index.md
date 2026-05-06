@@ -84,9 +84,6 @@ handles various additional expiration effects such as after 1 attack or when an
 enemy is attacked
 - [Midi-QOL](https://foundryvtt.com/packages/midi-qol) by tim posney - Handles a
 vast amount of automation relating to advantage and disadvantage
-- [Active Token Lighting](https://foundryvtt.com/packages/ATL) by kaelad -
-Certain effects and spells can emit light, and this module allows active effects
-to do that
 - [Token Magic FX](https://foundryvtt.com/packages/tokenmagic) by SecretFire -
 Certain effects and spells can have an effect applied, and this module allows
 active effects to do that. Note that this requires DAE active as well.
