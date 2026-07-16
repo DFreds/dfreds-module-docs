@@ -66,6 +66,14 @@ You can restore an entire folder of effects by using the import/export behavior 
 
 You can completely delete all existing effects and restore all backup effects by clicking the "Reset System Effects" button
 
+### Automatic Backup Updates
+
+Whenever this module ships new or updated built-in effects, the backups are automatically deleted and recreated the next time the world loads. The GM will see a notification when this happens.
+
+This only affects the backups — your active effects are never changed automatically, so any customizations you've made are safe. If you want your active effects to catch up to the latest backups, use the "Reset System Effects" button described above.
+
+Both the regular app and the Backup app show a version number in their header. If the two differ, it means the backups have been updated automatically but the active effects haven't been reset yet.
+
 ## Using Macros
 
 Any effects included or created can be toggled, added, or removed using macros.

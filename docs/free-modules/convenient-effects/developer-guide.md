@@ -16,6 +16,15 @@ best practices from other modules.
 `game.dfreds.effectInterface` will be removed in v9.0.0.
 :::
 
+:::info
+The module automatically keeps the backup effects up to date: when the built-in
+effects change, the backups are deleted and recreated the next time the world
+loads. A `resetBackupEffects()` API method is available to trigger this same
+backups-only reset on demand, without affecting active effects or forcing a
+world reload. `resetSystemInitialization()` is unchanged — it always resets
+both backups and active effects and forces a reload.
+:::
+
 ## Hooks
 
 Convenient Effects currently provides the following hooks:
