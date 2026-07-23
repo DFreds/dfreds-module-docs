@@ -16,32 +16,34 @@ tags:
 <br/>
 <br/>
 
-A module which allows you to drag and drop an entire folder of tokens or journal entries onto the canvas as well as uploading files for tokens, tiles, sounds, or notes.
+A module which allows you to drag and drop an entire folder of tokens or journal entries onto the canvas, upload files for tokens, tiles, sounds, or notes, and drop files directly onto sidebar directories to instantly create the matching documents.
 
 ## Overview
 
-Droppables streamlines the process of adding content to your Foundry VTT scenes
-by enabling powerful drag-and-drop functionality. Instead of placing tokens and
-assets one by one, you can now drop entire folders of actors or journal entries
-onto your canvas in a single action. The module automatically creates and
-positions tokens or notes for each item in the folder, saving valuable
-preparation time.
-
-Additionally, Droppables revolutionizes how you import external files into
-Foundry. Simply drag files directly onto your canvas, and based on the currently
-selected layer, the module will automatically create the appropriate game
-elements - whether that's new actors with tokens, tiles, ambient sounds, or
-journal entries. This eliminates the traditional multi-step process of uploading
-files and then creating game elements separately.
+Droppables adds powerful drag-and-drop shortcuts to Foundry VTT. Drop entire
+folders of actors or journal entries onto the canvas at once, drop files onto the
+canvas to create tokens, tiles, sounds, or notes based on the active layer, or
+drop files onto a sidebar directory to instantly create the matching document -
+including importing exported `.json` files.
 
 ## Features
 
 - Easily drop entire folders of actors onto the canvas in a stack, line, or randomly
 - Easily drop folders of notes onto the canvas
-- Drop various files onto the canvas to automatically upload them to your world
-and create tokens, tiles, sounds, or notes
+- Drop a file onto the canvas to upload it and automatically create a document based on the active layer:
+  - **Token layer** - dropped images as new actors and tokens, prompting for the subtype
+  - **Tile layer** - dropped images or videos as tiles
+  - **Sound layer** - dropped audio files as ambient sounds
+  - **Notes layer** - dropped images, PDFs, videos, or text files as a journal entry pinned to the canvas
 - Drop images directly from browsers to automatically set the images for tokens, tiles, or notes
 - Drag and drop documents directly from their sheet onto any supported area
+- Drop a file onto a sidebar directory to upload it and automatically create a document of that type with the file assigned:
+  - **Actors** and **Items** - dropped images, prompting for the subtype
+  - **Scenes** - dropped images as the scene background
+  - **Journal** - dropped images, PDFs, videos, or text files as journal entry pages
+  - **Playlists** - dropped audio files as playlist sounds
+  - **Roll Tables**, **Cards**, and **Macros** - dropped images
+- Drop an exported `.json` file onto its sidebar directory to import it as a new document
 
 ## Configuration
 
