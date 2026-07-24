@@ -68,9 +68,6 @@ Settings are provided to configure the module.
 ### File Dropping on Notes Layer
 ![Dropping Notes](./img/droppable-notes.gif)
 
-### Drag/Drop Document Link
-![Drag Drop Document Link](./img/drag-drop-document-link.gif)
-
 ## Required Modules
 
 - [libWrapper](https://foundryvtt.com/packages/lib-wrapper) by ruipin - A
