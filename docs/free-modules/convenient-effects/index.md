@@ -29,7 +29,7 @@ from spell durations to status conditions, all while keeping the game running
 smoothly.
 
 This module simplifies effect management through an intuitive interface that's
-accessible right from your token controls. With just a few clicks, you can
+accessible right from its own sidebar directory. With just a few clicks, you can
 apply, remove, and track effects without disrupting the flow of your game.
 
 For DND5e and SW5e systems, the module comes pre-configured with dozens of
@@ -40,7 +40,7 @@ interactions.
 
 ## Features
 
-- Adds a new application to the token scene controls
+- Adds a new application as a sidebar directory
 - Provides a repository to create and share easy-to-use toggleable active effects
 - Includes dozens of pre-built effects for the DND5e and SW5e systems
 - First-class support for popular modules, such as Midi-QoL, Times Up, DAE, Active Token Lighting, and Token Magic FX

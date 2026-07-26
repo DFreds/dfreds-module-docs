@@ -1,10 +1,10 @@
 # User Guide
 
-Convenient Effects adds a new button to the token controls.
+Convenient Effects adds a new directory to the sidebar.
 
 ## Convenient Effects
 
-When the Convenient Effects button is pressed, the Convenient Effects app will open showing multiple collapsed folders. You can expand or collapse any folder and hover over an effect for a brief description of what it does. To apply an effect, select any number of tokens on the canvas and then select the effect you want from the list. This will toggle it on or off for all selected tokens.
+When the Convenient Effects tab is selected in the sidebar, the app opens showing multiple collapsed folders. You can expand or collapse any folder and hover over an effect for a brief description of what it does. To apply an effect, select any number of tokens on the canvas and then select the effect you want from the list. This will toggle it on or off for all selected tokens.
 
 ![Convenient Effects App](./img/convenient-effects-app.png)
 
@@ -197,7 +197,7 @@ LibWrapper provides an easy way to wrap Foundry methods while minimizing the cha
 
 #### Why have this dependency?
 
-Lib: DFreds UI Extender provides an easy way to add new buttons to the scene controls. In this case, Convenient Effects adds a button to the token controls on the left.
+Lib: DFreds UI Extender provides an easy way to add new UI elements to Foundry, including custom sidebar directories. In this case, Convenient Effects registers its app as a directory in the sidebar on the right.
 
 ## Helpful Modules
 
