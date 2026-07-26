@@ -35,13 +35,16 @@ this session, kept in a sidebar directory so you can catch up on whatever you
 missed.
 
 <!-- TODO screenshot: a notification with action buttons -->
-
 ## Features
 
 - Replaces the default notifications, so everything from Foundry and other modules is rendered by this module automatically
 - Adds a notification history sidebar directory, so you can catch up on anything you missed while looking away
 - Adds developer-defined action buttons to notifications, which remain usable from the history
 - Supports everything the default notifications do, including permanent, progress, and localized messages
+
+![Notifications](./img/notifications.png)
+
+![History](./img/history.png)
 
 ## Quick Start
 
