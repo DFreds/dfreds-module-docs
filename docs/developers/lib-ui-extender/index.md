@@ -18,6 +18,16 @@ tags:
 
 A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
+## Overview
+
+Lib: UI Extender lets a module add HUD buttons, scene control tools, and sidebar
+directories by registering them, rather than by wrapping core methods itself.
+Registrations all go through the library, so several modules can extend the same
+part of the interface without conflicting.
+
+This is a library. Install it alongside a module that requires it; on its own it
+does nothing.
+
 ## Features
 
 - Easily add new HUD controls to tokens, tiles, or drawings

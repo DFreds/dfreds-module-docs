@@ -21,21 +21,10 @@ A FoundryVTT module that allows configuring and editing of the status effects.
 
 ## Overview
 
-Status Effects enhances Foundry VTT's token status management by providing
-complete control over the status effects that appear on the token HUD. This
-module empowers Game Masters to customize their status effect options beyond the
-default set, allowing for a more tailored gaming experience.
-
-The module introduces an intuitive configuration interface where users can
-create, edit, and organize status effects with ease. Through a simple
-drag-and-drop interface, you can reorder status effects to match your preferred
-layout, ensuring quick access to the most frequently used statuses during
-gameplay.
-
-Whether you need to create custom status effects for unique game mechanics,
-modify existing ones to better match your campaign's needs, or simply reorganize
-the presentation of status options, Status Effects provides the tools necessary
-to streamline your token status management workflow.
+Status Effects gives you control over which status effects appear on the token
+HUD. A configuration sheet lets you create, edit, and drag-and-drop to reorder
+them, so you can add custom statuses for your own mechanics or cut the default
+set down to what your campaign actually uses.
 
 ![Status Effects](./img/status-effects.png)
 

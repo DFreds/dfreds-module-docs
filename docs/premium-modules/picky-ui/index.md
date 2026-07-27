@@ -21,11 +21,14 @@ A FoundryVTT module that allows you to hide aspects of the UI of your game.
 
 ## Overview
 
-Picky UI gives you control over which UI elements appear in your game. Through a
-simple config menu, you can toggle individual scene controls and entire sections
-on or off. When all tools in a section are disabled, that section automatically
-disappears, helping maintain a clean and focused interface that displays only
-the elements you need.
+Picky UI controls which parts of the Foundry interface are shown. Config menus
+toggle individual HUD buttons, sidebar directories, and scene control tools,
+while separate settings turn off the chat notifications, player list, hotbar,
+and scene navigation. When every tool in a scene control section is disabled,
+the section itself is hidden.
+
+Choices are per player and stored per game system, so a layout set up in one
+system does not carry into a world running another.
 
 ![Picky UI](./img/picky-ui.png)
 

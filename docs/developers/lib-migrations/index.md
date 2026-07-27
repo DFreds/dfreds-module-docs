@@ -16,7 +16,17 @@ tags:
 <br/>
 <br/>
 
-A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
+A FoundryVTT module library that makes it easy to run and track migrations.
+
+## Overview
+
+Lib: Migrations runs data migrations for a module when the shape of its stored
+data changes. You register your module, define its migrations, and call the run
+method yourself - the library never runs them on your behalf. It keeps track of
+which migrations have already succeeded so they are not applied twice.
+
+This is a library. Install it alongside a module that requires it; on its own it
+does nothing.
 
 ## Features
 

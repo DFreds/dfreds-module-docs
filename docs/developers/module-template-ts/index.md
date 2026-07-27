@@ -18,6 +18,17 @@ tags:
 
 A FoundryVTT module template that uses Typescript and Vite for development.
 
+## Overview
+
+Module Template TS is a GitHub template repository for starting a Foundry module
+written in Typescript. It provides the build pipeline, type definitions,
+linting, and release workflow up front, so a new module does not have to set
+them up from scratch. Builds run through Vite, types come from the pf2e system,
+and the module is symlinked into a Foundry data folder for development.
+
+This is a template rather than an installable module. Create a repository from
+it on GitHub and run the rename script to get started.
+
 ## Features
 
 - Full use of well-defined types provided by [pf2e](https://foundryvtt.com/packages/pf2e)

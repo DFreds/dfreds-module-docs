@@ -20,16 +20,10 @@ A module that allows pinning messages to the chat.
 
 ## Overview
 
-Chat Pins enhances Foundry VTT's chat functionality by allowing you to save and
-organize important messages for future reference. Rather than scrolling through
-chat history or losing messages when clearing chat, you can now pin critical
-information, rolls, or conversations with a simple right-click.
-
-The module adds a dedicated Chat Pin Log that serves as a curated collection of
-your pinned messages, accessible via a pin icon above the chat box. From this
-log, you can easily manage your pins and quickly jump back to the original
-message context in the main chat. When you clear the chat log, your pinned
-messages remain preserved, ensuring you never lose important information.
+Chat Pins lets you right-click any chat message to pin it. Pinned messages
+collect in a separate Chat Pin Log, opened from the pin icon above the chat box,
+where you can manage them or jump back to the original message. Flushing the
+chat log leaves them intact.
 
 ![Chat Pins](./img/chat-pins.png)
 

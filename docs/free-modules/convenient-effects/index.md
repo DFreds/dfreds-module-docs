@@ -21,22 +21,14 @@ A module that allows creation of easy-to-use toggleable active effects.
 Currently, the DND5e and SW5e systems come with pre-created effects, but any
 system can create their own effects.
 
-## Overview 
+## Overview
 
-Managing effects in tabletop roleplaying games can be complex and
-time-consuming. Game masters often need to track multiple simultaneous effects,
-from spell durations to status conditions, all while keeping the game running
-smoothly.
-
-This module simplifies effect management through an intuitive interface that's
-accessible right from its own sidebar directory. With just a few clicks, you can
-apply, remove, and track effects without disrupting the flow of your game.
-
-For DND5e and SW5e systems, the module comes pre-configured with dozens of
-commonly used effects, making it ready to use out of the box. The effects are
-designed to work seamlessly with popular modules like Midi-QoL and DAE,
-providing automatic tracking of effect durations, conditions, and their
-interactions.
+Convenient Effects collects toggleable active effects into their own sidebar
+directory, so applying or removing one is a click rather than a trip through an
+actor sheet. DND5e and SW5e ship with dozens of pre-built effects covering the
+common spells and conditions, and any system can define its own. The bundled
+effects are built to work with Midi-QoL, DAE, and Times Up, which handle
+automatic duration and condition tracking.
 
 ## Features
 

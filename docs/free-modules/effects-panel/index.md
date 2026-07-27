@@ -20,21 +20,12 @@ A module that adds a panel of active effects for the selected token.
 
 ## Overview
 
-Managing active effects in Foundry VTT often requires opening character sheets
-and navigating through menus, which can disrupt gameplay flow. The Effects Panel
-streamlines this process by providing quick access to effect management directly
-from the canvas.
-
-When you select a token, a convenient panel appears in the top-right corner
-displaying all active effects on that actor. This panel allows you to view
-effect details, remaining durations, expiration status, and descriptions by
-hovering over the icons. 
-
-The panel offers intuitive controls for effect management - double-click an
-effect to open its configuration, and right-click to quickly enable, disable, or
-delete effects based on your preferred settings. This streamlined interface
-eliminates the need to constantly open character sheets, keeping your focus on
-the game rather than the interface.
+The Effects Panel shows the active effects on the selected token in the top-right
+corner of the canvas, so you do not have to open a character sheet to see or
+manage them. Click an effect for its description, remaining duration, and
+expiration status, then click again to close it - only one is shown at a time.
+Double-click opens its configuration, and right-click enables, disables, or
+deletes it depending on your settings.
 
 ![Effects Panel](./img/effects-panel.png)
 

@@ -29,18 +29,14 @@ that you wait for further updates.
 
 ## Overview
 
-AI Helper enhances Foundry VTT by integrating artificial intelligence
-capabilities directly into your gaming experience. Whether you're facing
-writer's block while crafting character biographies, need help summarizing
-lengthy text, or want assistance generating creative content, this module
-leverages AI to streamline your creative process.
+AI Helper adds AI text generation to Foundry in two places: the chat and the
+text editors.
 
-The module seamlessly integrates with Foundry's chat system and text editors,
-providing multiple ways to interact with AI. Through chat commands, you can
-engage in persistent conversations with an AI that maintains context, or ask
-one-off questions about your game system. Additionally, the module adds
-convenient editor buttons that allow you to manipulate selected text or generate
-new content directly within any text editor.
+From chat commands you can hold a running conversation that keeps its context
+between messages, or ask a one-off question about your game system. In any text
+editor, added buttons let you rewrite the selected text or generate new content
+in place, which is useful for things like character biographies and summarising
+long passages.
 
 ![Chat](./img/chat.png)
 

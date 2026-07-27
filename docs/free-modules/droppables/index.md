@@ -20,11 +20,12 @@ A module which allows you to drag and drop an entire folder of tokens or journal
 
 ## Overview
 
-Droppables adds powerful drag-and-drop shortcuts to Foundry VTT. Drop entire
-folders of actors or journal entries onto the canvas at once, drop files onto the
-canvas to create tokens, tiles, sounds, or notes based on the active layer, or
-drop files onto a sidebar directory to instantly create the matching document -
-including importing exported `.json` files.
+Droppables extends what Foundry accepts on a drag and drop. A folder of actors
+or journal entries can be dropped onto the canvas to place all of its contents
+at once. A file dropped onto the canvas is uploaded and turned into a token,
+tile, sound, or note depending on the active layer. A file dropped onto a
+sidebar directory creates a document of that type with the file assigned, and an
+exported `.json` file dropped the same way is imported.
 
 ## Features
 

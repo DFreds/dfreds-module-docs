@@ -27,14 +27,10 @@ Note that this module is no longer needed for Foundry v14 and up, as it is inclu
 
 ## Overview
 
-Select Tool enhances Foundry VTT's layer controls by adding selection
-capabilities to all layers. While Foundry natively supports selecting multiple
-tokens, tiles, drawings, and walls, this module extends that functionality to
-templates, lights, sounds, and notes.
-
-With Select Tool, you can now select, copy, and paste multiple items on any
-layer, providing a consistent and intuitive workflow across all aspects of scene
-management.
+Select Tool adds a select tool to the layers that lack one. Foundry supports
+selecting multiple tokens, tiles, drawings, and walls on its own; this module
+extends the same behaviour to templates, lights, sounds, and notes, so items on
+any layer can be selected, copied, and pasted the same way.
 
 ## Features
 

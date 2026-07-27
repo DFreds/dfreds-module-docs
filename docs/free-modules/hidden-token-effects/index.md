@@ -20,7 +20,10 @@ A FoundryVTT module that hides effect icons on tokens.
 
 ## Overview
 
-Hidden Token Effects offers control over what effects appear to your players on other tokens.
+Hidden Token Effects hides the effect icons drawn on a token from users who do
+not have sufficient ownership of the effect. A single setting sets the ownership
+level required to see them, so players see the icons on their own tokens but not
+on everyone else's. Overlay effects are always shown regardless.
 
 ![Hidden Token Effects](./img/hidden-token-effects.png)
 

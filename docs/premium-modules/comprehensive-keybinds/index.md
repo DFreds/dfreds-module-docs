@@ -21,7 +21,11 @@ A FoundryVTT module that adds keybinds to standard Foundry actions.
 
 ## Overview
 
-Comprehensive Keybinds adds customizable keyboard shortcuts for quickly selecting controls, tools, and directories in Foundry VTT. It also provides keybinds for toggling directory expansion, changing roll modes, and closing the most recent window. These shortcuts streamline navigation and make common actions faster and more efficient.
+Comprehensive Keybinds adds keyboard shortcuts for actions that Foundry only
+exposes through the interface: selecting scene controls, selecting the tools
+within them, and switching sidebar directories. It also binds toggling directory
+expansion, changing the roll mode, and closing the most recent window. Every
+keybind is rebindable through Foundry's own controls configuration.
 
 ![Keybindings](./img/keybindings.png)
 
