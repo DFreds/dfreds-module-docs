@@ -48,19 +48,58 @@ missed.
 
 ## Quick Start
 
-There is nothing to configure. Once the module is enabled, all notifications are
-handled by it.
+There is nothing you have to configure. Once the module is enabled, all
+notifications are handled by it. Everything under [Settings](#settings) is
+optional.
 
 To see what you missed, open the notification history from the bell icon on the
 sidebar. Each entry shows the message and how long ago it appeared, and hovering
 the time shows the exact timestamp. If a notification had action buttons, those
 buttons still work from the history.
 
+When a notification arrives while the history is not visible, an orange dot
+appears on the bell icon. Unlike the chat notification dot, it does not fade on
+its own. It stays until you actually open the tab, since the whole point is
+catching up on something you missed.
+
 <!-- TODO screenshot: the notification history sidebar directory -->
 
 :::info
 The history is per-player and lasts for the current session only. Reloading your
 browser clears it. It holds the most recent 200 notifications.
+:::
+
+## Settings
+
+Every setting is client-scoped, so each player configures their own and nothing
+you change affects anyone else at the table.
+
+| Setting                    | Default           | Description                                                                                       |
+| -------------------------- | ----------------- | ------------------------------------------------------------------------------------------------- |
+| **Notification Position**  | Top Center        | Where notifications appear on screen. Nine positions are available, from top left to bottom right. |
+| **Maximum Notifications**  | 5                 | How many notifications can be shown at once, from 1 to 10.                                        |
+| **Notification Duration**  | 5 seconds         | How long a notification stays on screen before dismissing itself, from 1 to 30 seconds.           |
+| **Unread Indicator**       | All Notifications | Which notifications put a dot on the sidebar tab when the history is not visible.                 |
+
+Each position is offset so notifications stay clear of the sidebar, scene
+controls, and hotbar.
+
+**Unread Indicator** accepts:
+
+- **All Notifications** - any notification lights the dot
+- **Warnings and Errors** - informational and success notifications are ignored
+- **Errors Only** - only errors light the dot
+- **Never** - the dot is disabled entirely
+
+:::info
+Raising **Maximum Notifications** only affects what is on screen. Anything beyond
+the limit is queued and shown as earlier notifications dismiss, but it still
+enters the history immediately, so nothing is ever missed because of the queue.
+:::
+
+:::tip
+**Notification Duration** does not apply to permanent or progress notifications.
+Those stay until they are dismissed or complete.
 :::
 
 ## API

@@ -151,21 +151,29 @@ To enable this behavior, you need to enable the "Auto apply item effects to targ
 
 ![Midi Settings](./img/midi-settings.png)
 
-## Module Configuration
+## Settings
 
-![Settings](./img/settings.png)
+Both settings are world-scoped, so only a Game Master can change them and they
+apply to everyone.
 
-### App Controls Permission
+| Setting                       | Default     | Description                                                                                     |
+| ----------------------------- | ----------- | ------------------------------------------------------------------------------------------------ |
+| **App Controls Permission**   | Game Master | The minimum role required to open and use the Convenient Effects app from the token controls.   |
+| **Create Folders Permission** | Game Master | The minimum role required to create new effect folders in the app.                              |
 
-This setting dictates which roles should be able to access the token control to open the Convenient Effects app. All roles with privilege equal to or higher than the selected role are able to view and use the Convenient Effects app.
+Both accept Player, Trusted Player, Assistant GM, Game Master, or None. Every
+role at or above the selected one is granted the capability, and choosing
+**None** disables it for everyone, including Game Masters.
 
-This control can be disabled for everyone by setting the selection to 'None'.
+:::info
+Changing **App Controls Permission** requires a reload to take effect.
+:::
 
-### Create Folders Permission
-
-This setting dictates which roles should be able to create new folders in the app. All roles with privilege equal to or higher than the selected role are able to create folders.
-
-This control can be disabled for everyone by setting the selection to 'None'.
+:::caution
+**Create Folders Permission** is not sufficient on its own. A user must also have
+Foundry's own permission to create items, otherwise folder creation will still
+fail for them.
+:::
 
 **NOTE**: The provided role needs to be able to create items.
 

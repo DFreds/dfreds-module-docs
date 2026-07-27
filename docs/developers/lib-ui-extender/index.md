@@ -25,11 +25,16 @@ A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 - Easily add new sidebar directories
 - Fully typed library included in repository for Typescript projects
 
-## Configuration
+## Settings
 
-Settings are provided to view details of registered components.
+| Menu             | Description                                                             |
+| ---------------- | ------------------------------------------------------------------------ |
+| **Registration** | View details of the HUD buttons, scene controls, and directories that modules have registered. |
 
-![Settings](./img/settings.png)
+:::info
+This menu is restricted to Game Masters. It is read-only and exists for
+debugging - nothing in it changes how the library behaves.
+:::
 
 ![Registration](./img/registration.png)
 

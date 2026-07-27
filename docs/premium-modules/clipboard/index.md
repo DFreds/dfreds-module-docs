@@ -74,11 +74,15 @@ efficient than ever.
 
 ![Clipboard Notes](./img/clipboard-notes.png)
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+| Setting       | Default | Description                                                             |
+| ------------- | ------- | ------------------------------------------------------------------------ |
+| **Max Items** | 10      | The maximum number of items held on the clipboard at once, from 1 to 50. |
 
-![Settings](./img/settings.png)
+:::info
+This is a client setting, so each player configures their own.
+:::
 
 ## Keybindings
 

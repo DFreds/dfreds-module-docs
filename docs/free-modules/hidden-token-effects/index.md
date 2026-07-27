@@ -26,17 +26,36 @@ Hidden Token Effects offers control over what effects appear to your players on 
 
 ## Features
 
-- Automatically hides any effect icons that do originate from an actor or item
-the user owns 
-- Easily configure when icons appear based on the level of
-ownership (limited, observer, owner)
+- Automatically hides any effect icons that do not originate from an actor or
+item the user owns
+- Easily configure when icons appear based on the level of ownership (limited,
+observer, owner)
 - Overlay icons always appear
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+| Setting              | Default | Description                                                |
+| -------------------- | ------- | ---------------------------------------------------------- |
+| **Permission Level** | Owner   | The ownership level a user needs to see a token's effects. |
 
-![Settings](./img/settings.png)
+**Permission Level** accepts:
+
+- **Disabled** - turn the hiding off, so every effect icon is visible to everyone
+- **None** - no ownership required, so every effect icon is visible
+- **Limited** - limited ownership or higher
+- **Observer** - observer ownership or higher
+- **Owner** - only users who own the effect's actor or item
+
+:::info
+This is a world setting, so only a Game Master can change it and it applies to
+everyone. Changing it redraws the effects on every token immediately, with no
+reload required.
+:::
+
+:::note
+Overlay effects are exempt from this setting and are always drawn, whatever the
+permission level.
+:::
 
 ## Required Modules
 

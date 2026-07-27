@@ -45,11 +45,22 @@ to streamline your token status management workflow.
 - Provides a simple to use config sheet to drag/drop or create new status effects
 - Optionally allows hiding the default status effects HUD button
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+| Setting                         | Default  | Description                                            |
+| ------------------------------- | -------- | ------------------------------------------------------ |
+| **Hide Default Status Effects** | Disabled | Hide the default token HUD status effects button.      |
 
-![Settings](./img/settings.png)
+Alongside it is one config menu:
+
+| Menu               | Description                                        |
+| ------------------ | -------------------------------------------------- |
+| **Status Effects** | Configure the status effects that are available.   |
+
+:::info
+**Hide Default Status Effects** is a world setting, so only a Game Master can
+change it and it applies to everyone.
+:::
 
 Configure your status effects:
 

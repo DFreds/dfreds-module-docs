@@ -44,11 +44,30 @@ including importing exported `.json` files.
   - **Roll Tables**, **Cards**, and **Macros** - dropped images
 - Drop an exported `.json` file onto its sidebar directory to import it as a new document
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+Every setting is client-scoped, so each player configures their own and nothing
+you change affects anyone else at the table.
 
-![Settings](./img/settings.png)
+| Setting                                 | Default  | Description                                                                                                                             |
+| --------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Drop Style**                          | Dialog   | How the contents of a dropped folder are arranged on the canvas.                                                                        |
+| **Enable Unlinked Actor Drop Handler**  | Disabled | Show a dialog asking how many tokens to drop when dropping an unlinked actor onto the canvas.                                            |
+| **Enable Canvas Drag/Upload**           | Enabled  | Allow dragging and uploading tokens, tiles, audio, and journal entries onto the canvas based on the active layer.                        |
+| **Enable Sidebar Drag/Upload**          | Enabled  | Allow dropping files onto a sidebar directory to create a document of that type. Media is uploaded and assigned, `.json` exports are imported. |
+
+**Drop Style** accepts:
+
+- **Dialog** - prompt for one of the options below each time
+- **Stack** - drop everything on the same spot
+- **Random** - scatter across the canvas
+- **Horizontal Line** - arrange left to right
+- **Vertical Line** - arrange top to bottom
+
+:::tip
+Holding **Shift** while dropping an unlinked actor bypasses the
+**Enable Unlinked Actor Drop Handler** dialog, whether or not the setting is on.
+:::
 
 ## Examples
 

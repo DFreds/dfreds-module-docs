@@ -40,8 +40,13 @@ been customized.
 - Displays what settings are client based or world based
 - Shows when a setting is not set to its default value
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+| Setting                         | Default | Description                                                                                                        |
+| ------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------ |
+| **Show Non-Default Indicators** | Enabled | Mark settings that are not set to their default value with an indicator, and show the default value below them.    |
 
-![Settings](./img/settings.png)
+:::info
+This is a client setting, so each player configures their own. The world/client
+scope icons described above are always shown and are not configurable.
+:::

@@ -37,13 +37,32 @@ the elements you need.
 - Toggle on and off any scene controls 
   - Automatically hides entire sections when all contained tools are disabled
   - Seamlessly works with other modules that add new controls, including those using [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender)
-- Toggle on and off the player list, hotbar, or scene navigation
+- Toggle on and off the chat notifications, player list, hotbar, or scene navigation
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+Every setting is client-scoped, so each player configures their own and nothing
+you change affects anyone else at the table.
 
-![Settings](./img/settings.png)
+| Setting                        | Default | Description                                   |
+| ------------------------------ | ------- | --------------------------------------------- |
+| **Enable Chat Notifications**  | Enabled | Whether chat notifications appear.            |
+| **Enable Player List**         | Enabled | Whether the player list appears.              |
+| **Enable Hotbar**              | Enabled | Whether the hotbar appears.                   |
+| **Enable Scene Navigation**    | Enabled | Whether the scene navigation appears.         |
+
+Three further config menus sit alongside these, each opening its own dialog:
+
+| Menu             | Description                                    |
+| ---------------- | ---------------------------------------------- |
+| **Directories**  | Configure which sidebar directories appear.    |
+| **HUD**          | Configure which HUD buttons appear.            |
+| **Scene Controls** | Configure which scene control buttons appear. |
+
+:::info
+The three config menus store their choices per game system, so a layout you set
+up in one system will not carry over to a world running a different one.
+:::
 
 Configure the HUD on tokens, tiles, and drawings:
 

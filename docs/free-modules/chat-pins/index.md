@@ -40,11 +40,21 @@ messages remain preserved, ensuring you never lose important information.
 - Jump to the location of the pin in the main chat log by right-clicking it in the pinned chat log
 - When flushing the entire chat log, all pinned messages will remain
 
-## Configuration
+## Settings
 
-Settings are provided to configure the module.
+| Setting            | Default     | Description                                         |
+| ------------------ | ----------- | --------------------------------------------------- |
+| **Pin Permission** | Game Master | The minimum role required to pin or unpin messages. |
 
-![Settings](./img/settings.png)
+**Pin Permission** accepts Player, Trusted Player, Assistant GM, Game Master, or
+None. Choosing None disables pinning for everyone.
+
+:::info
+This is a world setting, so only a Game Master can change it and it applies to
+everyone. Meeting the role requirement lets you pin messages you own outright.
+Pinning messages owned by *other* people additionally needs socketlib, since
+those requests are routed through a connected GM - see below.
+:::
 
 ## Required Modules
 
@@ -52,3 +62,10 @@ Settings are provided to configure the module.
   library that wraps core Foundry methods to make it easier for module
   developers to add functionality. Note that if you for some reason don't want
   to install this, a shim will be used instead.
+
+## Recommended Modules
+
+- [socketlib](https://foundryvtt.com/packages/socketlib) by Farling -
+  Allows any user with the required role to pin any message, by routing the
+  request through a connected GM. Without it, users can only pin and unpin
+  messages they own, and the option is hidden entirely on messages they do not.
