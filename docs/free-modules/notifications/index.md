@@ -21,53 +21,24 @@ A module that replaces and expands on the default notifications.
 
 ## Overview
 
-Foundry's notifications are useful, but they are also fleeting. If you tab away
-for a moment, whatever appeared while you were gone is simply gone too. And
-because a notification is only ever a line of text, a module that wants to tell
-you something actionable has no way to let you act on it.
+Notifications replaces Foundry's notification system, rendering everything raised
+by Foundry or by another module with no changes needed on their part. It adds two
+things the core system does not have: **action buttons** that run something when
+clicked, and a **history** of the session's notifications in a sidebar directory,
+so one that appeared while you were looking elsewhere can still be read and acted
+on.
 
-Notifications replaces the default notification system entirely. Every
-notification raised by Foundry or by any other module is rendered by this
-module automatically, with no changes needed on their part. On top of that, it
-adds two things the core system has no concept of: **action buttons** that let a
-notification do something when clicked, and a **history** of everything shown
-this session, kept in a sidebar directory so you can catch up on whatever you
-missed.
-
-<!-- TODO screenshot: a notification with action buttons -->
 ## Features
 
 - Replaces the default notifications, so everything from Foundry and other modules is rendered by this module automatically
 - Adds a notification history sidebar directory, so you can catch up on anything you missed while looking away
+- Marks the sidebar tab with an unread indicator when something arrives while the history is not visible, which stays until you open it
 - Adds developer-defined action buttons to notifications, which remain usable from the history
 - Supports everything the default notifications do, including permanent, progress, and localized messages
 
 ![Notifications](./img/notifications.png)
 
 ![History](./img/history.png)
-
-## Quick Start
-
-There is nothing you have to configure. Once the module is enabled, all
-notifications are handled by it. Everything under [Settings](#settings) is
-optional.
-
-To see what you missed, open the notification history from the bell icon on the
-sidebar. Each entry shows the message and how long ago it appeared, and hovering
-the time shows the exact timestamp. If a notification had action buttons, those
-buttons still work from the history.
-
-When a notification arrives while the history is not visible, an orange dot
-appears on the bell icon. Unlike the chat notification dot, it does not fade on
-its own. It stays until you actually open the tab, since the whole point is
-catching up on something you missed.
-
-<!-- TODO screenshot: the notification history sidebar directory -->
-
-:::info
-The history is per-player and lasts for the current session only. Reloading your
-browser clears it. It holds the most recent 200 notifications.
-:::
 
 ## Settings
 
