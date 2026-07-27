@@ -16,7 +16,7 @@ tags:
 <br/>
 <br/>
 
-A module that adds a panel of active effects for the selected token.
+A FoundryVTT module that adds a panel of active effects for the selected token.
 
 ## Overview
 

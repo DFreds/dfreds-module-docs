@@ -16,3 +16,6 @@ premium:
 module:
   label: Module
   description: Docs related to all modules
+deprecated-v14:
+  label: Deprecated v14
+  description: Notes that a module was deprecated in Foundry v14

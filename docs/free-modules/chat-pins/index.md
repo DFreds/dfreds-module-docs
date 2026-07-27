@@ -16,7 +16,7 @@ tags:
 <br/>
 <br/>
 
-A module that allows pinning messages to the chat.
+A FoundryVTT module that allows pinning messages to the chat.
 
 ## Overview
 

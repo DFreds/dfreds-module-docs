@@ -1,5 +1,4 @@
 ---
-draft: true
 sidebar_position: 7
 tags:
   - free
@@ -17,7 +16,7 @@ tags:
 <br/>
 <br/>
 
-A module that replaces and expands on the default notifications.
+A FoundryVTT module that replaces and expands on the default notifications.
 
 ## Overview
 

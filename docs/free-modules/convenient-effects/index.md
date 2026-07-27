@@ -16,7 +16,7 @@ tags:
 <br/>
 <br/>
 
-A module that allows creation of easy-to-use toggleable active effects.
+A FoundryVTT module that allows creation of easy-to-use toggleable active effects.
 
 Currently, the DND5e and SW5e systems come with pre-created effects, but any
 system can create their own effects.
