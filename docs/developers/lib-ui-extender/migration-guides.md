@@ -11,6 +11,24 @@ continuing to use Lib: DFreds UI Extender.
 All up-to-date types are defined in the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 :::
 
+## New in UI Extender v2.4.0
+
+Nothing was removed or changed. Directories gained two new positioning options.
+
+- `DirectoryInput.before`
+  - Insert the directory directly above the directory with the given ID
+- `DirectoryInput.after`
+  - Insert the directory directly below the directory with the given ID
+
+Both take precedence over `order`, which continues to work exactly as before, and
+`before` wins if both are provided. An ID that does not exist falls through to
+the next option.
+
+Prefer these over `order` when the position depends on another directory.
+`order` is a positional index resolved after every other module's directory has
+already been inserted, so the index you would need to pass changes depending on
+which other modules are enabled.
+
 ## Version 13 to Version 14 - Starts with UI Extender v2.3.0
 
 Nothing was removed or changed that previously existed. However, there are new
