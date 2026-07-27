@@ -243,7 +243,10 @@ export function mySampleModule() {
         id: "sample",
         tooltip: "Sample",
         icon: "fas fa-robot",
-        order: 1,
+        before: "settings", // directly above the settings directory - takes precedence over `after` and `order`
+        after: "items", // directly below the items directory - takes precedence over `order`
+        order: 1, // positional index, resolved after other modules have inserted theirs
+
         applicationClass: SampleApplication,
     });
   })
