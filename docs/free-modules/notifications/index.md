@@ -41,15 +41,12 @@ on.
 
 ## Settings
 
-Every setting is client-scoped, so each player configures their own and nothing
-you change affects anyone else at the table.
-
-| Setting                    | Default           | Description                                                                                       |
-| -------------------------- | ----------------- | ------------------------------------------------------------------------------------------------- |
-| **Notification Position**  | Top Center        | Where notifications appear on screen. Nine positions are available, from top left to bottom right. |
-| **Maximum Notifications**  | 5                 | How many notifications can be shown at once, from 1 to 10.                                        |
-| **Notification Duration**  | 5 seconds         | How long a notification stays on screen before dismissing itself, from 1 to 30 seconds.           |
-| **Unread Indicator**       | All Notifications | Which notifications put a dot on the sidebar tab when the history is not visible.                 |
+| Setting                   | Scope  | Default           | Description                                                                                        |
+| ------------------------- | ------ | ----------------- | -------------------------------------------------------------------------------------------------- |
+| **Notification Position** | Client | Top Center        | Where notifications appear on screen. Nine positions are available, from top left to bottom right. |
+| **Maximum Notifications** | Client | 5                 | How many notifications can be shown at once, from 1 to 10.                                         |
+| **Notification Duration** | Client | 5 seconds         | How long a notification stays on screen before dismissing itself, from 1 to 30 seconds.            |
+| **Unread Indicator**      | Client | All Notifications | Which notifications put a dot on the sidebar tab when the history is not visible.                  |
 
 Each position is offset so notifications stay clear of the sidebar, scene
 controls, and hotbar.

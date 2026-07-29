@@ -44,15 +44,12 @@ system does not carry into a world running another.
 
 ## Settings
 
-Every setting is client-scoped, so each player configures their own and nothing
-you change affects anyone else at the table.
-
-| Setting                        | Default | Description                                   |
-| ------------------------------ | ------- | --------------------------------------------- |
-| **Enable Chat Notifications**  | Enabled | Whether chat notifications appear.            |
-| **Enable Player List**         | Enabled | Whether the player list appears.              |
-| **Enable Hotbar**              | Enabled | Whether the hotbar appears.                   |
-| **Enable Scene Navigation**    | Enabled | Whether the scene navigation appears.         |
+| Setting                       | Scope  | Default | Description                           |
+| ----------------------------- | ------ | ------- | ------------------------------------- |
+| **Enable Chat Notifications** | Client | Enabled | Whether chat notifications appear.    |
+| **Enable Player List**        | Client | Enabled | Whether the player list appears.      |
+| **Enable Hotbar**             | Client | Enabled | Whether the hotbar appears.           |
+| **Enable Scene Navigation**   | Client | Enabled | Whether the scene navigation appears. |
 
 Three further config menus sit alongside these, each opening its own dialog:
 

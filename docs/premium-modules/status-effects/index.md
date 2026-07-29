@@ -36,20 +36,15 @@ set down to what your campaign actually uses.
 
 ## Settings
 
-| Setting                         | Default  | Description                                            |
-| ------------------------------- | -------- | ------------------------------------------------------ |
-| **Hide Default Status Effects** | Disabled | Hide the default token HUD status effects button.      |
+| Setting                         | Scope | Default  | Description                                       |
+| ------------------------------- | ----- | -------- | ------------------------------------------------- |
+| **Hide Default Status Effects** | World | Disabled | Hide the default token HUD status effects button. |
 
 Alongside it is one config menu:
 
 | Menu               | Description                                        |
 | ------------------ | -------------------------------------------------- |
 | **Status Effects** | Configure the status effects that are available.   |
-
-:::info
-**Hide Default Status Effects** is a world setting, so only a Game Master can
-change it and it applies to everyone.
-:::
 
 Configure your status effects:
 

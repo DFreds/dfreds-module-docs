@@ -36,14 +36,11 @@ sees them is controlled by role.
 
 ## Settings
 
-Every setting is world-scoped, so only a Game Master can change them and they
-apply to everyone.
-
-| Setting                     | Default          | Description                                                                                            |
-| --------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------ |
-| **Chat Message Permission** | Game Master      | The minimum role required to see chat messages when effects are applied or removed.                    |
-| **Show Effect Descriptions**| On Add or Remove | When to include the effect's description in the chat message.                                          |
-| **Send Chat to Actor Owner**| Disabled         | Send effect messages to the users who own the affected actor, even if their role would otherwise hide them. |
+| Setting                      | Scope | Default          | Description                                                                                                 |
+| ---------------------------- | ----- | ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Chat Message Permission**  | World | Game Master      | The minimum role required to see chat messages when effects are applied or removed.                         |
+| **Show Effect Descriptions** | World | On Add or Remove | When to include the effect's description in the chat message.                                               |
+| **Send Chat to Actor Owner** | World | Disabled         | Send effect messages to the users who own the affected actor, even if their role would otherwise hide them. |
 
 **Chat Message Permission** accepts Player, Trusted Player, Assistant GM, or
 Game Master.

@@ -34,11 +34,11 @@ any setting that is no longer at its default and shows what that default was.
 
 ## Settings
 
-| Setting                         | Default | Description                                                                                                        |
-| ------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------ |
-| **Show Non-Default Indicators** | Enabled | Mark settings that are not set to their default value with an indicator, and show the default value below them.    |
+| Setting                         | Scope  | Default | Description                                                                                                     |
+| ------------------------------- | ------ | ------- | --------------------------------------------------------------------------------------------------------------- |
+| **Show Non-Default Indicators** | Client | Enabled | Mark settings that are not set to their default value with an indicator, and show the default value below them. |
 
 :::info
-This is a client setting, so each player configures their own. The world/client
-scope icons described above are always shown and are not configurable.
+The world/client scope icons described above are always shown and are not
+configurable.
 :::

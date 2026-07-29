@@ -47,38 +47,25 @@ deletes it depending on your settings.
 
 ## Settings
 
-### Per-Player Settings
+| Setting                                          | Scope  | Default  | Description                                                                       |
+| ------------------------------------------------ | ------ | -------- | --------------------------------------------------------------------------------- |
+| **Show Disabled Effects**                        | Client | Enabled  | Show disabled effects in the panel with a grey tint.                              |
+| **Show Passive Effects**                         | Client | Disabled | Show passive effects in the panel.                                                |
+| **Show Duration Overlays**                       | Client | Enabled  | Show an overlay icon over each effect indicating its duration.                    |
+| **Allow Right-Clicking on Item Effects**         | Client | Disabled | Allow the right-click behavior to run on effects provided by items.               |
+| **Icon Size**                                    | Client | 42       | The size of the icons in the panel, from 16 to 100.                               |
+| **Passive Effects Right-Click Behavior**         | Client | Disable  | What right-clicking a passive effect does.                                        |
+| **Temporary Effects Right-Click Behavior**       | Client | Dialog   | What right-clicking a temporary effect does.                                      |
+| **Passive Effects Shift Right-Click Behavior**   | Client | Disable  | What shift right-clicking a passive effect does.                                  |
+| **Temporary Effects Shift Right-Click Behavior** | Client | Delete   | What shift right-clicking a temporary effect does.                                |
+| **Allow Right-Click**                            | World  | Player   | The minimum role required to run the right-click behavior on an effect.           |
+| **View Permission**                              | World  | Player   | The minimum role required to see the effects panel at all.                        |
+| **View Details Permission**                      | World  | Player   | The minimum role required to see effect details such as duration and description. |
 
-These are client-scoped, so each player configures their own.
-
-| Setting                                       | Default | Description                                                                          |
-| --------------------------------------------- | ------- | ------------------------------------------------------------------------------------ |
-| **Show Disabled Effects**                     | Enabled | Show disabled effects in the panel with a grey tint.                                 |
-| **Show Passive Effects**                      | Disabled| Show passive effects in the panel.                                                   |
-| **Show Duration Overlays**                    | Enabled | Show an overlay icon over each effect indicating its duration.                       |
-| **Allow Right-Clicking on Item Effects**      | Disabled| Allow the right-click behavior to run on effects provided by items.                  |
-| **Icon Size**                                 | 42      | The size of the icons in the panel, from 16 to 100.                                  |
-| **Passive Effects Right-Click Behavior**      | Disable | What right-clicking a passive effect does.                                           |
-| **Temporary Effects Right-Click Behavior**    | Dialog  | What right-clicking a temporary effect does.                                         |
-| **Passive Effects Shift Right-Click Behavior**| Disable | What shift right-clicking a passive effect does.                                     |
-| **Temporary Effects Shift Right-Click Behavior** | Delete | What shift right-clicking a temporary effect does.                                |
-
-Each of the four right-click behaviors accepts **Dialog** (prompt for what to
-do), **Delete**, or **Disable**.
-
-### World Settings
-
-These are world-scoped, so only a Game Master can change them and they apply to
-everyone.
-
-| Setting                     | Default | Description                                                                                       |
-| --------------------------- | ------- | ------------------------------------------------------------------------------------------------- |
-| **Allow Right-Click**       | Player  | The minimum role required to run the right-click behavior on an effect.                           |
-| **View Permission**         | Player  | The minimum role required to see the effects panel at all.                                        |
-| **View Details Permission** | Player  | The minimum role required to see effect details such as duration and description.                 |
-
-Each accepts Player, Trusted Player, Assistant GM, Game Master, or None.
-Choosing **None** disables that capability for everyone.
+The four right-click behaviors each accept **Dialog** (prompt for what to do),
+**Delete**, or **Disable**. The three permissions each accept Player, Trusted
+Player, Assistant GM, Game Master, or None, where **None** disables that
+capability for everyone.
 
 :::tip
 The per-player show/hide overrides described above are separate from

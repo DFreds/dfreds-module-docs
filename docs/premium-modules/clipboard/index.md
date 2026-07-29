@@ -70,13 +70,9 @@ into another.
 
 ## Settings
 
-| Setting       | Default | Description                                                             |
-| ------------- | ------- | ------------------------------------------------------------------------ |
-| **Max Items** | 10      | The maximum number of items held on the clipboard at once, from 1 to 50. |
-
-:::info
-This is a client setting, so each player configures their own.
-:::
+| Setting       | Scope  | Default | Description                                                              |
+| ------------- | ------ | ------- | ------------------------------------------------------------------------ |
+| **Max Items** | Client | 10      | The maximum number of items held on the clipboard at once, from 1 to 50. |
 
 ## Keybindings
 

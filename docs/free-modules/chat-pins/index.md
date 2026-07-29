@@ -36,18 +36,17 @@ chat log leaves them intact.
 
 ## Settings
 
-| Setting            | Default     | Description                                         |
-| ------------------ | ----------- | --------------------------------------------------- |
-| **Pin Permission** | Game Master | The minimum role required to pin or unpin messages. |
+| Setting            | Scope | Default     | Description                                         |
+| ------------------ | ----- | ----------- | --------------------------------------------------- |
+| **Pin Permission** | World | Game Master | The minimum role required to pin or unpin messages. |
 
 **Pin Permission** accepts Player, Trusted Player, Assistant GM, Game Master, or
 None. Choosing None disables pinning for everyone.
 
 :::info
-This is a world setting, so only a Game Master can change it and it applies to
-everyone. Meeting the role requirement lets you pin messages you own outright.
-Pinning messages owned by *other* people additionally needs socketlib, since
-those requests are routed through a connected GM - see below.
+Meeting the role requirement lets you pin messages you own outright. Pinning
+messages owned by *other* people additionally needs socketlib, since those
+requests are routed through a connected GM - see below.
 :::
 
 ## Required Modules

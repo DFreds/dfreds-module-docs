@@ -153,13 +153,10 @@ To enable this behavior, you need to enable the "Auto apply item effects to targ
 
 ## Settings
 
-Both settings are world-scoped, so only a Game Master can change them and they
-apply to everyone.
-
-| Setting                       | Default     | Description                                                                                     |
-| ----------------------------- | ----------- | ------------------------------------------------------------------------------------------------ |
-| **App Controls Permission**   | Game Master | The minimum role required to open and use the Convenient Effects app from the token controls.   |
-| **Create Folders Permission** | Game Master | The minimum role required to create new effect folders in the app.                              |
+| Setting                       | Scope | Default     | Description                                                                                   |
+| ----------------------------- | ----- | ----------- | --------------------------------------------------------------------------------------------- |
+| **App Controls Permission**   | World | Game Master | The minimum role required to open and use the Convenient Effects app from the token controls. |
+| **Create Folders Permission** | World | Game Master | The minimum role required to create new effect folders in the app.                            |
 
 Both accept Player, Trusted Player, Assistant GM, Game Master, or None. Every
 role at or above the selected one is granted the capability, and choosing

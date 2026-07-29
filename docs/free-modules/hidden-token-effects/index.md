@@ -37,9 +37,9 @@ observer, owner)
 
 ## Settings
 
-| Setting              | Default | Description                                                |
-| -------------------- | ------- | ---------------------------------------------------------- |
-| **Permission Level** | Owner   | The ownership level a user needs to see a token's effects. |
+| Setting              | Scope | Default | Description                                                |
+| -------------------- | ----- | ------- | ---------------------------------------------------------- |
+| **Permission Level** | World | Owner   | The ownership level a user needs to see a token's effects. |
 
 **Permission Level** accepts:
 
@@ -50,9 +50,8 @@ observer, owner)
 - **Owner** - only users who own the effect's actor or item
 
 :::info
-This is a world setting, so only a Game Master can change it and it applies to
-everyone. Changing it redraws the effects on every token immediately, with no
-reload required.
+Changing this redraws the effects on every token immediately, with no reload
+required.
 :::
 
 :::note
