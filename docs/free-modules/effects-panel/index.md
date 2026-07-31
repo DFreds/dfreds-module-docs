@@ -45,6 +45,17 @@ deletes it depending on your settings.
   are per player, override the visibility settings, and are managed from the
   toggle at the top of the panel
 
+## Showing and Hiding Individual Effects
+
+The toggle button (sliders icon) at the top of the panel enters **manage mode**,
+where every effect is shown with an eye badge. Click an effect's icon to flip
+whether it shows (open eye) or hides (crossed-out eye). Click the toggle again to
+exit; right-click it to clear all choices.
+
+Choices are per player, keyed by effect name, and override the visibility
+settings - so you can leave **Show Passive Effects** off and still pin a passive
+to show, or hide one noisy effect without disabling its category.
+
 ## Settings
 
 | Setting                                          | Scope  | Default  | Description                                                                       |
@@ -68,10 +79,9 @@ Player, Assistant GM, Game Master, or None, where **None** disables that
 capability for everyone.
 
 :::tip
-The per-player show/hide overrides described above are separate from
-**Show Passive Effects** and **Show Disabled Effects**, and take precedence over
-them. Use the toggle at the top of the panel to surface a couple of important
-passives without turning on every passive.
+Per-effect show/hide choices (see [Showing and Hiding Individual
+Effects](#showing-and-hiding-individual-effects)) take precedence over **Show
+Passive Effects** and **Show Disabled Effects**.
 :::
 
 ## Required Modules
