@@ -587,11 +587,10 @@ function sampleApiUsage(): void {
     registerTokenMovedEvent(api);
     registerChatKeywordEvent(api);
 
-    registerLogContextAction(api);
     registerBlinkTokenAction(api);
 
     console.log(
-      `${SAMPLE_MODULE_ID} | registered 2 sample events and 2 sample actions`,
+      `${SAMPLE_MODULE_ID} | registered 2 sample events and 1 sample action`,
     );
   });
 }
