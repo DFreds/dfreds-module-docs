@@ -40,10 +40,11 @@ an actor event. Start a path with a context name to read from something else:
 
 Values can be plain text or numbers, an expression such as
 `@system.attributes.hp.max / 2`, or a regular expression with the pattern
-operator.
+operator. Dice are not rolled here, only in actions.
 
 **Restrictions** limit a trigger to combat, to certain scenes, or to a
-percentage chance.
+percentage chance. An event that is not about a scene counts as happening on
+the **active** scene, not the one you have open.
 
 :::tip
 The context prefix is how you stop a trigger reacting to its own changes. An
@@ -53,7 +54,9 @@ itself.
 
 ## Actions
 
-Actions run in order from top to bottom and can be reordered by dragging.
+Actions run in order from top to bottom and can be reordered by dragging. If one
+of them fails, the rest are skipped, which is covered under
+[Execution](#execution).
 
 | Group            | Actions                                                                                                                                              |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -72,6 +75,11 @@ Every action works on whatever the event was about unless you fill in **Act
 On**, which points that one action at a fixed document instead. Chat messages
 and notifications accept `{{actor.name}}` style substitution using any of the
 names listed on the Event tab.
+
+**Change a property** and **adjust a number** can both roll dice. Type `2d6` to
+write a rolled amount, or `-1d4` to take one away. Anything starting with `@` is
+read from the target, such as `-@system.details.level`, and the two can be mixed
+in one value.
 
 The five actions that happen on a player's own screen - play a sound, show a
 notification, pan to the token, show an image, and target the token - also pick
@@ -108,7 +116,7 @@ never have to unpack anything.
 | `document`            | What the event was about.                                                |
 | `actor`               | The actor involved.                                                      |
 | `token`               | The token **drawn on the canvas**. See the warning below.                |
-| `tokenDocument`       | The token's document. Use this to read a token's data.                   |
+| `tokenDocument`       | The token's document, wherever it is placed. Use this to read its data.  |
 | `item`, `effect`      | The item or active effect involved.                                      |
 | `combat`, `combatant` | The combat and combatant involved.                                       |
 | `region`, `scene`     | The region and scene involved.                                           |
@@ -118,6 +126,7 @@ never have to unpack anything.
 | `event`               | The id of the event that fired.                                          |
 | `trigger`             | The trigger itself, including its name and id.                           |
 | `speaker`             | A speaker object, ready to hand to `ChatMessage.create`.                 |
+| `depth`               | How many triggers deep this one is. Pass it on when running another.     |
 
 Every name is always defined, so you never get a reference error. The ones the
 event does not provide are `null` instead, and the Event tab lists which names a
@@ -128,8 +137,9 @@ given event fills in.
 the gamemaster's client, so `token` is `null` whenever that gamemaster is not
 looking at the scene the token is on. In plain terms, a script that works while
 you watch a fight will stop working the moment you switch scenes. Read data off
-`tokenDocument`, which is always there, and keep `token` for things that only
-make sense on screen.
+`tokenDocument`, which is there for any actor with a token placed on a scene no
+matter which scene is open, and keep `token` for things that only make sense on
+screen.
 :::
 
 ## Execution
@@ -144,6 +154,16 @@ Use Script Macros permission.
 Triggers do not fire when no gamemaster is logged in. The module warns you about
 this on load if the world has triggers configured.
 :::
+
+Actions run one at a time, from the top of the list down, and each one finishes
+before the next starts. If an action fails, the trigger stops there and the
+actions below it do not run. This is by design, as an action further down the
+list can count on one above it having executing successfully. A script that
+cannot find what it is looking for, or an action pointed at something that has
+since been deleted, will end the run.
+
+The Log tab records how many actions ran before the trigger stopped, along with
+the error, so a run that ends early is easy to tell apart from one that finished.
 
 ## Recursion
 
@@ -164,6 +184,19 @@ They arrive disabled so you can turn them on one at a time. Some open their note
 with **Needs setting up** because they want something only you can provide, such
 as a sound file, a roll table, or a macro. Loading them again refreshes them in
 place rather than making duplicates, and leaves your own triggers alone.
+
+## Sharing Triggers
+
+**Export** at the bottom of the configuration window writes every trigger in the
+world to a file. **Import** reads one back and asks how it should arrive:
+
+- **Add** keeps the triggers you already have and puts the imported ones after
+  them.
+- **Replace All** deletes every trigger in the world first.
+
+Either way, an imported trigger takes the place of one you already have with the
+same id. That is what lets you export a set of triggers, change them elsewhere,
+and import them again to update them rather than end up with two of each.
 
 ## Logging
 
