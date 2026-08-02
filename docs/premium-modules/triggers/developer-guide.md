@@ -32,6 +32,26 @@ Because filters are skipped, the trigger runs whether or not it would normally
 match. That makes it useful for a button or a macro that should do the same
 thing a trigger does.
 
+:::info
+`runTrigger` only does anything on the active gamemaster's client, the one that
+runs every other trigger. Call it from a world script that every client runs and
+the trigger still runs once, on that client. Call it as a player and nothing
+happens, because the actions behind a trigger write to the world with
+gamemaster permissions.
+:::
+
+Calling `runTrigger` from inside a trigger, from a script action for instance,
+should pass on the `depth` that script was given, so the chain keeps counting
+towards the maximum trigger depth setting:
+
+```js
+await api.runTrigger("N1yQGDIzWNTsIZ5y", actor, { depth: depth + 1 });
+```
+
+Without it the new run starts at zero, and two triggers calling each other never
+reach the cap. A run that is already past the cap is refused and says so in the
+console.
+
 ## Registering Actions
 
 An action is something a trigger can do. Register it on the
@@ -142,9 +162,17 @@ api.registerAction({
 
 :::warning
 Client actions cross the socket, so their context is rebuilt from uuids on the
-receiving end. `actor`, `token`, `item`, `effect`, `combat` and `scene` survive
-that trip. `combatant` and `region` do not, so read those in a `gm` action
-instead.
+receiving end. `actor`, `token`, `item`, `effect`, `combat`, `combatant`,
+`region` and `scene` all survive that trip. `changed` and `previous` do too. A
+document the receiving client cannot see is empty there, so an action that must
+read one should be a `gm` action instead.
+:::
+
+:::info
+Only an action marked `runsOn: "client"` can be asked to run across the socket,
+and only when a gamemaster is the one asking. An action marked `runsOn: "gm"`
+runs on the gamemaster's own client and nowhere else, so it can safely do things
+a player is not allowed to do.
 :::
 
 ## Registering Events
@@ -170,6 +198,8 @@ Hooks.on("dfreds-triggers.setup", (api) => {
 
     register(dispatch) {
       Hooks.on("updateToken", (token, changed, options, userId) => {
+        // Hooks fire everywhere, and only one client runs triggers
+        if (!game.user.isActiveGM) return;
         if (!("x" in changed) && !("y" in changed)) return;
 
         dispatch(this.id, {
@@ -206,6 +236,13 @@ Hooks.on("dfreds-triggers.setup", (api) => {
 `contextKeys` is what the editor lists under **What This Event Gives You**, so it
 should match what your context actually fills in. A name listed there but never
 set reads as a promise the event does not keep.
+
+:::tip
+Foundry hooks fire on every connected client, and `dispatch` does nothing on the
+clients that do not run triggers. Your hook still built a context to hand it,
+though, so start the hook with `if (!game.user.isActiveGM) return;` and that work
+never happens on a player's client. The built in events all do this.
+:::
 
 ### The Event Context
 
@@ -494,8 +531,8 @@ function registerChatKeywordEvent(api: TriggersApi): void {
  * Briefly fades the token in and out. Runs on each listening player's own client.
  *
  * `client` actions are forwarded over the socket, so the context they receive
- * is rebuilt from uuids on the far side. Actor, token, item, effect, combat and
- * scene survive that trip; combatant and region do not.
+ * is rebuilt from uuids on the far side. Every document on the context survives
+ * that trip, but anything the far side cannot look up by uuid does not.
  */
 function registerBlinkTokenAction(api: TriggersApi): void {
   api.registerAction({
