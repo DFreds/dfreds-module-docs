@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # User Guide
 
 Triggers are created and edited from **Configure Triggers** in the module
@@ -184,14 +188,13 @@ what it should match is the fix.
 
 ## Examples
 
-The module ships with examples covering every event and action, split into a
-basic set and a complex set. **Load Examples** at the bottom of the
-configuration window adds them all to your world.
+The module ships with fifty examples covering every event and action.
+**Load Examples** at the bottom of the configuration window adds them all to your
+world, switched off so you can turn them on one at a time. Loading them again
+refreshes them in place rather than making duplicates, and leaves your own
+triggers alone.
 
-They arrive disabled so you can turn them on one at a time. Some open their notes
-with **Needs setting up** because they want something only you can provide, such
-as a sound file, a roll table, or a macro. Loading them again refreshes them in
-place rather than making duplicates, and leaves your own triggers alone.
+See [Examples](./examples) for what each one does.
 
 ## Sharing Triggers
 

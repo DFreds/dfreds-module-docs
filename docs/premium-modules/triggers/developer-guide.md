@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Developer Guide
 
 Triggers exposes an API for macro writers and for modules that want to add their

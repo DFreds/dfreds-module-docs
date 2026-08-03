@@ -35,7 +35,7 @@ predefined action can still run as a macro or script.
 - Actions for effects, documents, chat, combat, sounds, notifications, and delays
 - Macro and script actions for anything not covered
 - Import and export triggers as JSON
-- Comes with dozens of pre-built trigger examples
+- Comes with fifty pre-built trigger examples
 - Includes an API for other modules to add their own events and actions
 
 ## Quick Start
@@ -44,12 +44,15 @@ predefined action can still run as a macro or script.
 1. Click **Load Examples** at the bottom to add the bundled examples
 1. Enable one that looks close to what you want, then edit it in place
 
+The [Examples](./examples) page lists what each of them does.
+
 ![Configure Triggers](./img/triggers-config.png)
 
 ## Advanced Usage
 
 If you are a regular user, see the [User Guide](./user-guide) for more details
-on all the features provided.
+on all the features provided, and [Examples](./examples) for the triggers that
+come with the module.
 
 If you are a developer or want to learn how to use the API, check out the
 [Developer Guide](./developer-guide).
