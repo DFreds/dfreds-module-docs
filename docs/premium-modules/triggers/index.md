@@ -1,6 +1,5 @@
 ---
 sidebar_position: 5
-draft: true
 tags:
   - premium
   - module
@@ -44,6 +43,8 @@ predefined action can still run as a macro or script.
 1. Open **Configure Triggers** from the module settings
 1. Click **Load Examples** at the bottom to add the bundled examples
 1. Enable one that looks close to what you want, then edit it in place
+
+![Configure Triggers](./img/triggers-config.png)
 
 ## Advanced Usage
 

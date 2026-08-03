@@ -4,9 +4,13 @@ Triggers are created and edited from **Configure Triggers** in the module
 settings. Each one is built on three tabs: the event to watch for, the filters
 that narrow it down, and the actions to run.
 
+![Configure Triggers](./img/triggers-config.png)
+
 ## Events
 
 An event decides what the trigger watches for.
+
+![Event Tab](./img/trigger-config-event.png)
 
 | Group          | Events                                                              |
 | -------------- | ------------------------------------------------------------------- |
@@ -26,6 +30,8 @@ and lets conditions see what that property held before the change.
 ## Filters
 
 Filters decide whether a trigger that heard its event should actually run.
+
+![Filters Tab](./img/trigger-config-filters.png)
 
 **Applies To** narrows by document. Leave it on any document, drag in specific
 documents, or pick document types.
@@ -57,6 +63,8 @@ itself.
 Actions run in order from top to bottom and can be reordered by dragging. If one
 of them fails, the rest are skipped, which is covered under
 [Execution](#execution).
+
+![Actions Tab](./img/trigger-config-actions.png)
 
 | Group            | Actions                                                                                                                                              |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
