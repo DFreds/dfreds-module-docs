@@ -23,40 +23,38 @@ A FoundryVTT module template that uses Typescript and Vite for development.
 Module Template TS is a GitHub template repository for starting a Foundry module
 written in Typescript. It provides the build pipeline, type definitions,
 linting, and release workflow up front, so a new module does not have to set
-them up from scratch. Builds run through Vite, types come from the pf2e system,
-and the module is symlinked into a Foundry data folder for development.
+them up from scratch. Builds run through Vite, Foundry types come from an npm
+package, and the module is symlinked into a Foundry data folder for development.
 
 This is a template rather than an installable module. Create a repository from
 it on GitHub and run the rename script to get started.
 
 ## Features
 
-- Full use of well-defined types provided by [pf2e](https://foundryvtt.com/packages/pf2e)
+- Full use of well-defined Foundry types from [@dfreds/foundry-types](https://www.npmjs.com/package/@dfreds/foundry-types), installed like any other dependency
 - Symlink integration, so you aren't directly messing with the foundry data folder
 - Use of [nvm](https://github.com/nvm-sh/nvm) and npm for node and package management
 - Use of [vite](https://vite.dev/) for building
 - Commands to handle extracting and compiling Foundry compendium packs
 - Commands to build for production, staging, or development
 - Commands to configure and run different versions of FoundryVTT
-- Tools to automatically rename the name of the module, update the types, and enforce code linting
+- Tools to automatically rename the name of the module and enforce code linting
 - Powerful GitHub actions that handle releases, (optionally) posting updates to
 a Discord channel, and optionally publishing the release to Foundry
 
 ## Getting Started
 
-1. Ensure you have the pf2e repo cloned from github (`git clone git@github.com:foundryvtt/pf2e.git`)
 1. Use the template button on Github to create a new repo. Make sure that the "Repository name" is the same name as the identifier of your new module. This is important since the folder name NEEDS to match the identifier when the module is linked to Foundry
     - Example:
         - Owner: DFreds
         - Repository name: `dfreds-new-cool-module`
 1. Clone the repo OUTSIDE of the Foundry data path
 1. Copy `foundryconfig.example.json` to `foundryconfig.json`
-1. Within `foundryconfig.json`, update the `dataPath`, `pf2e`, and `fvtt` paths
+1. Within `foundryconfig.json`, update the `dataPath` and `fvtt` paths
     - Example:
         - ```json
             {
                 "dataPath": "C:\\Users\\DFreds\\AppData\\Local\\FoundryVTT\\Data",
-                "pf2eRepoPath": "C:\\src\\foundry-modules\\pf2e",
                 "fvtt": {
                     "11": "C:\\src\\foundry-versions\\FoundryVTT-11.315",
                     "12": "C:\\src\\foundry-versions\\FoundryVTT-12.331",
@@ -72,8 +70,6 @@ a Discord channel, and optionally publishing the release to Foundry
     - Installs all dependencies according to the `package-lock.json`
 1. Run `npm run rename-module`
     - Replaces all occurrences of `dfreds-module-template-ts` and `DFreds Module Template TS` in the project with your desired module identifier and name
-1. Run `npm run update-types`
-    - Copies all pf2e types to the `/types` folder using the pf2e path set in `foundryconfig.json`
 1. Run `npm run lint:fix`
     - Fixes and formats all files (except types). Optional step to maintain consistent styling.
 1. Run `npm run build`
@@ -157,16 +153,31 @@ Prompts you to start a node version of foundry that is configured in the
 this command and go to `localhost:{configured-port}`. The configured port is
 usually localhost:30000, but could be different depending on if you changed it.
 
-### `npm run update-types`
+## Foundry types
 
-Updates the pf2e types that provide base Foundry types. It's recommended to run
-this periodically.
+Foundry's own types come from the
+[@dfreds/foundry-types](https://www.npmjs.com/package/@dfreds/foundry-types)
+package, which `npm ci` installs along with everything else. There is nothing to
+copy or update by hand.
+
+The version number is the Foundry version it describes, so `14.365.0` is for
+Foundry 14.365. To move to a newer Foundry release, change the version in
+`package.json` and run `npm install`.
+
+Two things in the template connect it up, and you should not need to touch
+either:
+
+- `tsconfig.json` points `@client/*` and `@common/*` at the installed package
+- `src/ts/module.ts` starts with a line that loads the global names such as
+  `game` and `Hooks`
 
 :::warning
-Since this is dependent on an external integration, types may be slow to update
-or inaccurate, especially when a new version of Foundry releases. You can always
-change the types yourself in `types/foundry`. You might have to if something isn't
-yet added by the pf2e team.
+The definitions are maintained by hand, so a new Foundry release can arrive
+before they catch up. If something is missing or wrong, add it to a `.d.ts` file
+in your own module and TypeScript will merge it with what the package provides.
+Reporting it on the
+[package repository](https://github.com/DFreds/dfreds-foundry-types) gets it
+fixed for everyone.
 :::
 
 ### `npm run lint:fix`
