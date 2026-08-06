@@ -68,6 +68,7 @@ While not strictly required, the functionalities provided by these modules
 drastically improve the usage of this module.
 
 - [DFreds Convenient Effects](https://foundryvtt.com/packages/dfreds-convenient-effects)
-  by DFreds - Adds its own action for applying a convenient effect, which handles
-  nested and dynamic effects rather than copying an effect directly. It appears
-  under Effects in the action picker when the module is active.
+  by DFreds - Adds its own actions for adding, removing, and toggling a
+  convenient effect by name, which handles nested and dynamic effects rather
+  than copying an effect directly. They appear under Effects in the action
+  picker when the module is active.

@@ -79,3 +79,7 @@ vast amount of automation relating to advantage and disadvantage
 - [Token Magic FX](https://foundryvtt.com/packages/tokenmagic) by SecretFire -
 Certain effects and spells can have an effect applied, and this module allows
 active effects to do that. Note that this requires DAE active as well.
+- [DFreds Triggers](../../premium-modules/triggers) by DFreds - Runs actions on
+its own when something happens in your world. With both modules active, three
+extra actions appear under Effects in its action picker, which add, remove, and
+toggle a convenient effect by name.
