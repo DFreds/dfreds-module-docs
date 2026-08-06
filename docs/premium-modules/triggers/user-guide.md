@@ -138,7 +138,7 @@ never have to unpack anything.
 | `event`               | The id of the event that fired.                                          |
 | `trigger`             | The trigger itself, including its name and id.                           |
 | `speaker`             | A speaker object, ready to hand to `ChatMessage.create`.                 |
-| `depth`               | How many triggers deep this one is. Pass it on when running another.     |
+| `depth`               | How many triggers deep this one is. Counted for you.                     |
 
 Every name is always defined, so you never get a reference error. The ones the
 event does not provide are `null` instead, and the Event tab lists which names a

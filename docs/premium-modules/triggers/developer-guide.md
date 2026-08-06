@@ -44,17 +44,10 @@ happens, because the actions behind a trigger write to the world with
 gamemaster permissions.
 :::
 
-Calling `runTrigger` from inside a trigger, from a script action for instance,
-should pass on the `depth` that script was given, so the chain keeps counting
-towards the maximum trigger depth setting:
-
-```js
-await api.runTrigger("N1yQGDIzWNTsIZ5y", actor, { depth: depth + 1 });
-```
-
-Without it the new run starts at zero, and two triggers calling each other never
-reach the cap. A run that is already past the cap is refused and says so in the
-console.
+Called from inside a trigger, from a script action for instance, `runTrigger`
+works out where in the chain it is on its own, so two triggers calling each
+other still reach the maximum trigger depth setting. A run already past the cap
+is refused and says so in the console.
 
 ## Registering Actions
 
@@ -213,7 +206,6 @@ Hooks.on("dfreds-triggers.setup", (api) => {
           token,
           scene: token.parent,
           user: game.users.get(userId) ?? game.user,
-          depth: 0,
         });
       });
     },
@@ -252,14 +244,13 @@ never happens on a player's client. The built in events all do this.
 
 The context you dispatch is what filters, conditions, and templates all read
 from. `document` and `user` are required; fill in whichever relations your event
-knows about and leave the rest.
+knows about and leave the rest. 
 
 | Key        | Description                                                                 |
 | ---------- | --------------------------------------------------------------------------- |
 | `event`    | The id of the event producing the context.                                  |
 | `document` | What the event is about. Filters and conditions resolve against this.       |
 | `user`     | The user whose action caused the event.                                     |
-| `depth`    | How many trigger generations deep this is. Use `0` for a user driven event. |
 | `actor`    | Makes `{{actor.name}}` and paths like `actor.type` resolve.                 |
 | `token`    | Used for chat speakers and for anything that acts on a token.               |
 | `item`     | The item involved, when there is one.                                       |
@@ -316,7 +307,6 @@ api.registerEvent({
         event: this.id,
         document: message,
         user: game.users.get(userId) ?? game.user,
-        depth: 0,
       });
     });
   },
@@ -405,7 +395,7 @@ function buildTokenContext(
   eventId: string,
   token: TokenDocument,
   userId: string,
-): TriggerEventContext {
+): DispatchedEventContext {
   return {
     event: eventId,
     document: token as unknown as Document,
@@ -413,7 +403,6 @@ function buildTokenContext(
     token,
     scene: token.parent as Scene | null,
     user: game.users.get(userId) ?? game.user,
-    depth: 0,
   };
 }
 
@@ -511,7 +500,6 @@ function registerChatKeywordEvent(api: TriggersApi): void {
             token,
             scene,
             user: game.users.get(userId) ?? game.user,
-            depth: 0,
           });
         },
       );
