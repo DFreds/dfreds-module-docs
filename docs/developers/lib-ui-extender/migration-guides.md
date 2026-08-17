@@ -11,6 +11,24 @@ continuing to use Lib: DFreds UI Extender.
 All up-to-date types are defined in the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 :::
 
+## New in UI Extender v2.5.0
+
+Nothing was removed or changed. There is a new registration type for adding a
+button to the Settings sidebar tab.
+
+- `uiExtender.registerSettingsButton(input: SettingsButtonInput)`
+  - Adds a button to a new **Module Settings** section in the Settings sidebar
+    tab, placed between the "Settings and Configuration" and "Help and
+    Documentation" sections
+
+`SettingsButtonInput` takes `moduleId`, a `name` for the button text (a plain
+string or a localization key), a Font Awesome `icon` class, an
+`applicationClass` to open when clicked, and an optional `gmOnly` flag.
+
+The Module Settings section is only added when at least one button is visible to
+the current user, so a section never shows up empty. Buttons are sorted
+alphabetically by name across all modules.
+
 ## New in UI Extender v2.4.0
 
 Nothing was removed or changed. Directories gained two new positioning options.

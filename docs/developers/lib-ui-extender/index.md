@@ -20,8 +20,9 @@ A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
 ## Overview
 
-Lib: UI Extender lets a module add HUD buttons, scene control tools, and sidebar
-directories by registering them, rather than by wrapping core methods itself.
+Lib: UI Extender lets a module add HUD buttons, scene control tools, sidebar
+directories, and settings buttons by registering them, rather than by wrapping
+core methods itself.
 Registrations all go through the library, so several modules can extend the same
 part of the interface without conflicting.
 
@@ -33,13 +34,14 @@ does nothing.
 - Easily add new HUD controls to tokens, tiles, or drawings
 - Easily add new scene controls to any layer controls (token, tiles, drawings, walls, etc.)
 - Easily add new sidebar directories
+- Easily add a button to the Settings sidebar that opens your module's settings
 - Fully typed library included in repository for Typescript projects
 
 ## Settings
 
 | Menu             | Description                                                             |
 | ---------------- | ------------------------------------------------------------------------ |
-| **Registration** | View details of the HUD buttons, scene controls, and directories that modules have registered. |
+| **Registration** | View details of the HUD buttons, scene controls, directories, and settings buttons that modules have registered. |
 
 :::info
 This menu is restricted to Game Masters. It is read-only and exists for
@@ -252,6 +254,59 @@ export function mySampleModule() {
   })
 }
 ```
+
+### Register Settings Button
+
+A settings button is a button in the Settings sidebar tab that opens one of your
+module's applications. All registered buttons appear together in a **Module
+Settings** section, which sits between the "Settings and Configuration" and
+"Help and Documentation" sections. The section only shows up if at least one
+module has registered a button.
+
+Buttons are listed alphabetically by name, so the order does not change as
+players enable and disable modules.
+
+```js
+registerSettingsButton(input: SettingsButtonInput)
+```
+
+For the type information for `SettingsButtonInput`, look at the types defined in
+the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
+
+An example:
+
+```js
+const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
+
+class MySettingsApplication extends HandlebarsApplicationMixin(ApplicationV2) {
+    static DEFAULT_OPTIONS = {
+        window: {
+            title: "My Module Settings",
+        },
+    };
+
+    static PARTS = {
+        settings: {
+            template: `modules/${MODULE_ID}/templates/settings.hbs`,
+        },
+    };
+}
+
+export function mySampleModule() {
+  Hooks.once("uiExtender.init", (uiExtender) => {
+    uiExtender.registerSettingsButton({
+        moduleId: MODULE_ID,
+        name: "My Module Settings", // can also be a localization key
+        icon: "fa-solid fa-robot",
+        gmOnly: true, // optional - only show the button to Game Masters
+        applicationClass: MySettingsApplication,
+    });
+  })
+}
+```
+
+The application is constructed with no arguments and rendered each time the
+button is clicked.
 
 ## Handlebar Helpers
 
