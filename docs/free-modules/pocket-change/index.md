@@ -49,9 +49,15 @@ Open **Configure Treasure Table** in the module settings. It has three tabs.
   is generated at all
 - **Roll Tables** - the tiers and rows that turn a roll into an amount
 
+![Configuration tab](./img/treasure-table-configuration.png)
+
 Filters are split into required checks, which an actor must all pass, and any-of
 checks, where one is enough. That lets you require an NPC while accepting
 several creature types.
+
+![Filters tab](./img/treasure-table-filters.png)
+
+![Roll Tables tab](./img/treasure-table-roll-tables.png)
 
 :::tip
 Anywhere you type an actor value, suggestions appear as you type. A value that
@@ -65,6 +71,8 @@ Every actor sheet has a **Generate Currency** control in its header for GMs. It
 ignores the filters, and replaces whatever currency the actor is carrying rather
 than adding to it, so you can roll until you are happy with the result.
 
+![Generate Currency control](./img/generate-currency.png)
+
 ## Settings
 
 | Setting               | Scope | Default | Description                                                          |
@@ -74,6 +82,8 @@ than adding to it, so you can roll until you are happy with the result.
 
 The chat message goes to GMs only. It shows every roll that was made and what
 each one came to, then the currency the actor ended up with.
+
+![Chat message](./img/chat-message.png)
 
 Currency is never generated for linked tokens, for actors with a player owner,
 or for anyone who is not a GM.
