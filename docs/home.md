@@ -5,8 +5,7 @@ slug: /
 
 # Home
 
-Welcome to the DFreds Module wiki! I'm Derek (aka DFreds) and I create modules and macros for
-FoundryVTT. 
+Welcome to the DFreds Module wiki! I'm Derek aka DFreds and I've been creating high-quality, well-maintained modules for FoundryVTT since early 2021.
 
 This wiki includes instructions, features, documentation, and other information for all of my premium and free modules.
 
