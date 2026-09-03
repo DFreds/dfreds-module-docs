@@ -12,7 +12,7 @@ tags:
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
 <a target="_blank" href="https://foundryvtt.com/packages/dfreds-status-effects"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br />
-<img src="https://img.shields.io/badge/Version-v3.2.1-007ec6?style=for-the-badge&labelColor=555555" />
+<img src="https://img.shields.io/badge/Version-v3.2.3-007ec6?style=for-the-badge&labelColor=555555" />
 <img src="https://img.shields.io/badge/14-fe6a1f?style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version" />
 <br/>
 <br/>
@@ -33,6 +33,7 @@ set down to what your campaign actually uses.
 - Adds a new button to the token config for new status effects
 - Provides a simple to use config sheet to drag/drop or create new status effects
 - Optionally allows hiding the default status effects HUD button
+- Adds a button to the Settings sidebar that opens the config sheet
 
 ## Settings
 
@@ -46,6 +47,10 @@ Alongside it is one config menu:
 | ------------------ | -------------------------------------------------- |
 | **Status Effects** | Configure the status effects that are available.   |
 
+**Status Effects** also appears as a button in the Settings sidebar, under the
+**Module Settings** heading. It opens the same window, and only Game Masters
+can see it.
+
 Configure your status effects:
 
 ![Config](./img/config.png)
@@ -56,7 +61,7 @@ Configure your status effects:
 library that wraps core Foundry methods to make it easier for modules
 developers. Note that if you for some reason don't want to install this, a shim
 will be used instead.
-- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry
+- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry. It provides the token HUD button and the Settings sidebar button.
 - [Lib: DFreds Migrations](https://foundryvtt.com/packages/lib-dfreds-migrations) by DFreds - A library that makes it easy to handle data migrations
 
 ## Helpful Modules
