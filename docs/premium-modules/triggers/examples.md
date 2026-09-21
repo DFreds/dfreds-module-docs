@@ -4,12 +4,22 @@ sidebar_position: 2
 
 # Examples
 
-The module ships with fifty ready made triggers, split into a basic set and a
-complex set. **Load Examples** at the bottom of the configuration window adds
-them all to your world.
+The module ships with ready made triggers in sets. **Load Examples** at the
+bottom of the configuration window asks which sets you want and adds them to
+your world.
 
-They arrive switched off so you can turn them on one at a time. Loading them
-again refreshes them in place rather than making duplicates, and leaves your own
+| Set     | What is in it                                                                |
+| ------- | ---------------------------------------------------------------------------- |
+| Basic   | One idea each, and the place to start                                        |
+| Complex | Several steps at once, showing what triggers can be built up to              |
+| D&D 5e  | Built on the D&D 5e events and actions, and only offered in a D&D 5e world   |
+
+Basic and Complex are ticked to begin with. The D&D 5e set is there to tick as
+well when you are playing D&D 5e, and is not offered at all in another system,
+because its triggers are built on events that only exist there.
+
+They arrive switched off so you can turn them on one at a time. Loading a set
+again refreshes it in place rather than making duplicates, and leaves your own
 triggers alone.
 
 :::info
@@ -93,6 +103,28 @@ deliberately misbehaving so you can see what goes wrong and why.
 | Complex 19: A macro instead of several triggers          | One macro covering three statuses with different wording, where the interface would have wanted three triggers.     |
 | Complex 20: Borrowing another trigger's actions          | Runs the action list that lives in Complex 21, so several triggers can share one list.                              |
 | Complex 21: A list of actions meant to be borrowed       | The shared list itself. Left switched off, since it is meant to be run by another trigger rather than fire on its own. |
+
+## D&D 5e Examples
+
+These are built on the D&D 5e events and actions, so they are only offered when
+you are playing D&D 5e. Tick D&D 5e when you load examples to add them.
+
+| Trigger                                                      | What it does                                                                                        |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| DnD5e 1: Call out a heavy hit                                | Calls out an actor losing 15 or more hit points in one go.                                          |
+| DnD5e 2: Call out healing                                    | The other side of the one above: calls out an actor regaining hit points.                           |
+| DnD5e 3: A long rest clears all exhaustion                   | A house rule. A long rest clears every level of exhaustion rather than one.                         |
+| DnD5e 4: A long rest grants a few temporary hit points       | A house rule. Characters wake from a long rest with a few temporary hit points.                     |
+| DnD5e 5: A natural one on a death save                       | Calls out a natural one on a death save, which costs two failures.                                  |
+| DnD5e 6: Say what concentration broke                        | Names the spell an actor stopped concentrating on, however it ended.                                |
+| DnD5e 7: Keep a private note of every spell cast             | Keeps a private note, for you only, of every spell cast.                                            |
+| DnD5e 8: Cheer a critical hit                                | Cheers a natural twenty on an attack.                                                               |
+| DnD5e 9: Whisper stealth checks to the gamemaster            | Whispers Stealth checks to you so the table does not see how well someone hid.                      |
+| DnD5e 10: Poison damage at the start of a turn               | Poison damage at the start of a poisoned creature's turn, through the system so resistance applies. |
+| DnD5e 11: Dropping to zero ends concentration                | Ends concentration when an actor drops to zero hit points.                                          |
+| DnD5e 12: Ask everyone to take a short rest when combat ends | Asks each character's player to take a short rest when combat ends, so they can spend hit dice.     |
+| DnD5e 13: Roll perception for everyone when combat starts    | Rolls Perception for every character when combat starts.                                            |
+| DnD5e 14: A lair action every round                          | Uses a monster's Lair Action feature at the top of every round, by name.                            |
 
 ## Where to Go Next
 

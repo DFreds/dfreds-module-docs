@@ -12,7 +12,7 @@ tags:
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
 <a target="_blank" href="https://foundryvtt.com/packages/dfreds-triggers"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br />
-<img src="https://img.shields.io/badge/Version-v1.1.0-007ec6?style=for-the-badge&labelColor=555555" />
+<img src="https://img.shields.io/badge/Version-v1.2.0-007ec6?style=for-the-badge&labelColor=555555" />
 <img src="https://img.shields.io/badge/14-fe6a1f?style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version" />
 <br/>
 <br/>
@@ -35,13 +35,14 @@ predefined action can still run as a macro or script.
 - Actions for effects, documents, chat, combat, sounds, notifications, and delays
 - Macro and script actions for anything not covered
 - Import and export triggers as JSON
-- Comes with fifty pre-built trigger examples
+- Comes with pre-built trigger examples, including a set for D&D 5e
 - Includes an API for other modules to add their own events and actions
+- Events and actions built for D&D 5e, which show up only in a D&D 5e world
 
 ## Quick Start
 
 1. Open **Configure Triggers** from the module settings
-1. Click **Load Examples** at the bottom to add the bundled examples
+1. Click **Load Examples** at the bottom and pick which sets to add
 1. Enable one that looks close to what you want, then edit it in place
 
 The [Examples](./examples) page lists what each of them does.
@@ -67,6 +68,9 @@ If you are a developer or want to learn how to use the API, check out the
 While not strictly required, the functionalities provided by these modules
 drastically improve the usage of this module.
 
+- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender)
+  by DFreds - Adds a **Configure Triggers** button to the Settings sidebar so
+  you can open the trigger list without going through the module settings.
 - [DFreds Convenient Effects](https://foundryvtt.com/packages/dfreds-convenient-effects)
   by DFreds - Adds its own actions for adding, removing, and toggling a
   convenient effect by name, which handles nested and dynamic effects rather

@@ -90,7 +90,7 @@ Hooks.on("dfreds-triggers.setup", (api) => {
 | `id`          | Unique within the action registry. Namespace it with your module id.                         |
 | `label`       | A localization key, shown in the action picker.                                              |
 | `description` | A localization key for one sentence saying what the action does, shown under its title.      |
-| `group`       | One of `effects`, `documents`, `chat`, `combat`, `audioVisual`, `flow`, `advanced`, `debug`. |
+| `group`       | One of `effects`, `documents`, `chat`, `combat`, `audioVisual`, `flow`, `advanced`, `debug`, `dnd5e`. |
 | `icon`        | A Font Awesome class.                                                                        |
 | `runsOn`      | `gm` to run once on the gamemaster, `client` to forward it to players.                       |
 | `schema`      | Builds the action's form. Must return fresh field instances on every call.                   |
@@ -345,6 +345,39 @@ wired up, because the engine has already wired everything it knows about.
 If a module that registered an action is later disabled, triggers using it are
 left alone rather than invalidated. The action shows as unknown in the editor
 and is skipped at runtime, and starts working again when the module comes back.
+:::
+
+## Events and Actions for One System
+
+Both `registerEvent` and `registerAction` take an optional `isAvailable`. Return
+`false` from it and the definition is left out of the pickers entirely, which is
+how something that only makes sense in one game system stays out of the way
+everywhere else.
+
+```js
+api.registerAction({
+  id: "my-module.applyDamage",
+  // ...
+  isAvailable: () => game.system.id === "dnd5e",
+});
+```
+
+It costs nothing in other systems. `isAvailable` is checked before the engine
+wires an event's hooks at `ready`, so an event that is not available never
+registers a hook at all. It is checked again before an action runs, so an action
+that has become unavailable is skipped rather than throwing.
+
+A trigger built around one of these is not invalidated when the world changes
+system. The event or action shows as unknown in the editor and is skipped at
+runtime, and its stored configuration comes back untouched when the system does.
+
+:::info
+Triggers ships its own D&D 5e events and actions built exactly this way, under
+the `dnd5e` group. They are worth reading as a worked example if you are adding
+your own, particularly for how they get at a player's rolls: most `dnd5e.*`
+hooks fire only on the client that acted, so an event built on one would never
+reach the gamemaster. Reading the chat message the system posts instead works
+for everyone, because documents are broadcast to every client.
 :::
 
 ## Hooks
