@@ -18,6 +18,12 @@ Certain effects have multiple types of effects to choose from when adding or rem
 
 **Note**: Built-in nested effects are hidden by default. They can be shown as normal in the Convenient Effects app by toggling the Show Nested Effects icon in the app as indicated by the tree.
 
+### Effects With Levels
+
+Some effects have levels instead of only being on or off. For instance, Exhaustion in DND5e has six levels. These effects are indicated by a plus and minus icon in the app. Click the effect to add one level, or shift + click it to remove one level. You can also right-click the effect and choose "Increment" or "Decrement".
+
+**Note**: In DND5e 6.0 or later, Exhaustion uses the system's own leveled condition. In older versions, it changes the actor's exhaustion value directly. In both cases, the system applies the penalties for each level.
+
 ## Modifying Effects
 
 Convenient Effects allows you to create your own effects using the standard active effect sheet as well as update or delete any existing effects.
