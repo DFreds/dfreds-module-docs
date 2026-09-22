@@ -57,6 +57,20 @@ const config: Config = {
     ],
   ],
 
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        // Docs are served from the site root, not /docs
+        docsRouteBasePath: '/',
+        indexBlog: true,
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+      },
+    ],
+  ],
+
   themeConfig: {
     // announcementBar: {
     //   id: 'status-effects-supporters',
@@ -66,15 +80,6 @@ const config: Config = {
     //   isCloseable: true,
     // },
     image: 'img/dfreds-social-card.jpg',
-    algolia: {
-      appId: 'V92TN6YDYA',
-      apiKey: 'fea86a831910e81825da696f080e88c9',
-      indexName: 'dfreds-module-vercel',
-      replaceSearchResultPathname: {
-        from: '/docs/',
-        to: '/',
-      },
-    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
