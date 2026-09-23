@@ -12,7 +12,7 @@ tags:
 <img src="https://img.shields.io/badge/Any%20System-00aaaa?style=for-the-badge"/>
 <a target="_blank" href="https://foundryvtt.com/packages/dfreds-comprehensive-keybinds"><img src="https://img.shields.io/badge/Download-2e2e2e?style=for-the-badge"/></a>
 <br />
-<img src="https://img.shields.io/badge/Version-v2.0.1-007ec6?style=for-the-badge&labelColor=555555" />
+<img src="https://img.shields.io/badge/Version-v2.1.0-007ec6?style=for-the-badge&labelColor=555555" />
 <img src="https://img.shields.io/badge/14-fe6a1f?style=for-the-badge&logo=foundryvirtualtabletop&label=Foundry%20Version" />
 <br/>
 <br/>
@@ -44,3 +44,5 @@ keybind is rebindable through Foundry's own controls configuration.
     - Default keybinding is Alt + (Arrow keys, Numpad 0)
   - Closing the most recent active window only
     - Default keybinding is Shift + Escape
+  - Closing all open windows
+    - No default keybinding. Bind Close Active App to Escape and this to Shift + Escape to swap Foundry's default Escape behavior
