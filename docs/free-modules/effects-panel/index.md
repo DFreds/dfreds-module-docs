@@ -40,6 +40,8 @@ deletes it depending on your settings.
   single click
 - Configure visibility settings for different effect types and adjust panel
   behavior to match your preferences
+- Effects with **Show Icon** set to **Always** are shown in the panel even
+  when passive effects are hidden
 - Pick individual effects to always show or always hide, so you can surface a
   couple of important passives without turning on every passive. These choices
   are per player, override the visibility settings, and are managed from the
@@ -55,6 +57,10 @@ exit; right-click it to clear all choices.
 Choices are per player, keyed by effect name, and override the visibility
 settings - so you can leave **Show Passive Effects** off and still pin a passive
 to show, or hide one noisy effect without disabling its category.
+
+Effects with **Show Icon** set to **Always** in their configuration show by
+default, even when **Show Passive Effects** is off. This includes most status
+effects added from the token HUD. Use manage mode to hide any you do not want.
 
 ## Settings
 
