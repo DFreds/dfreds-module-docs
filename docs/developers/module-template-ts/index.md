@@ -77,9 +77,10 @@ a Discord channel, and optionally publishing the release to Foundry
 1. Run `npm run link`
     - Symlinks the built `/dist` folder to your Foundry data path set in `foundryconfig.json`
 
-:::warning
-If you don't plan on using any 3rd party dependencies, then be sure to remove `vendor.mjs` from the `module.json` file, as well as any regular dependencies (non-dev dependencies) in `package.json`.
-    - Note that the UUID dependency was included to get started. It's likely you don't need this specific dependency, but the module won't build without at least one dependency if the references to `vendor.mjs` exists in the project.
+:::info
+Code from 3rd party dependencies is built into `vendor.mjs`. If the module has no
+3rd party dependencies, the build creates an empty `vendor.mjs` instead, so you
+can leave it in `module.json`.
 :::
 
 ## Optional Build Steps
@@ -145,6 +146,19 @@ You still need to refresh Foundry to see the changes (Esc -> Reload)
 At the moment, any changes to files in the `static` folder needs a full re-run
 of this command. They will not be updated on save.
 :::
+
+### `npm run hot`
+
+Starts a development server on `localhost:30001` that sits in front of Foundry.
+Open Foundry at `localhost:30001` instead of its usual port. Foundry must
+already be running, and the module must have been built and linked once.
+
+Changes show up without rebuilding:
+
+- Style changes apply right away, without a reload.
+- Changes to `lang/en.json` and `.hbs` templates apply right away, and open
+  windows redraw.
+- TypeScript changes reload the page.
 
 ### `npm run foundry`
 
