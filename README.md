@@ -1,44 +1,29 @@
-# Website
+# DFreds Modules Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+The documentation site for DFreds Modules, built with [Docusaurus](https://docusaurus.io/) and served at https://www.dfreds-modules.com.
 
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
+## Installation
 
 ```
-$ yarn start
+npm ci
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
+## Local Development
 
 ```
-$ yarn build
+npm start
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This starts a local server and opens a browser window. Most changes show up live without a restart.
 
-### Deployment
-
-Using SSH:
+## Build
 
 ```
-$ USE_SSH=true yarn deploy
+npm run build
 ```
 
-Not using SSH:
+This generates the static site into the `build` directory.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+## Deployment
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-// Contact us page? https://theripper93.com/#contact
-// Patreon/Foundry integration https://theripper93.com/info/installation
+Push to `main`. Vercel builds and deploys the site.
