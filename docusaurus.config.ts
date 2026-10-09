@@ -79,7 +79,7 @@ const config: Config = {
     //   textColor: '#091e42',
     //   isCloseable: true,
     // },
-    image: 'img/dfreds-social-card.jpg',
+    image: 'img/dfreds-social-card.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
