@@ -53,6 +53,7 @@ Free modules can be installed in two ways:
 
 ### Method 2: Manual Installation
 
-1. Visit the [GitHub releases page](https://github.com/dfreds/dfreds-modules/releases)
-2. Download the latest release of the desired module
-3. Extract the files to your Foundry VTT modules directory OR install via the link to the module.json
+1. Visit the [DFreds modules on GitHub](https://github.com/topics/dfreds-modules)
+2. Open the repository for the desired module and go to its Releases page
+3. Download the latest release of the module
+4. Extract the files to your Foundry VTT modules directory OR install via the link to the module.json
