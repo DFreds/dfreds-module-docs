@@ -1,14 +1,14 @@
 module-news:
   label: Module News
   permalink: /module-news
-  description: Module News tag description
+  description: New modules, releases, and monthly recaps of module changes.
 
 promotions:
   label: Promotions
   permalink: /promotions
-  description: Promotions tag description
+  description: Discounts and partner offers for Patreon members.
 
 announcements:
   label: Announcements
   permalink: /announcements
-  description: Announcements tag description
+  description: General news about DFreds Modules, Patreon, Discord, and Foundry releases.
