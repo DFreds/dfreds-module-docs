@@ -9,3 +9,5 @@ tags: [module-news]
 Hi all!
 
 DFreds Picky UI is now out of the Early Access phase and available for all Patreon tiers!
+
+<!-- truncate -->

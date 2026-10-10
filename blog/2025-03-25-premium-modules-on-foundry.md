@@ -8,6 +8,8 @@ tags: [module-news]
 
 Happy to announce that DFreds Status Effects and DFreds Clipboard are both now available on the Foundry platform!
 
+<!-- truncate -->
+
 https://foundryvtt.com/packages/dfreds-clipboard 
 
 https://foundryvtt.com/packages/dfreds-status-effects 

@@ -10,6 +10,8 @@ Hey everyone!
 
 I'm announcing a new premium module: **DFreds Clipboard**.
 
+<!-- truncate -->
+
 It will be available for the Early Access tier for at least the next month, before moving to the Supporter tier.
 
 You can download it straight from Foundry [here](https://foundryvtt.com/packages/dfreds-clipboard)!

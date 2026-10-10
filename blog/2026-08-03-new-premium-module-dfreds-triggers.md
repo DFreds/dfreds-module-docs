@@ -10,6 +10,8 @@ Hi everyone! 👋
 
 I'm announcing a new premium module: **DFreds Triggers**.
 
+<!-- truncate -->
+
 It allows you to define events, conditions, and actions to help automate
 your game. You pick the event to watch for, add conditions that narrow down
 when it fires, and then list the actions to run. All triggers can be setup

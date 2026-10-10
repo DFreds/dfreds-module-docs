@@ -10,6 +10,8 @@ Hey all!
 
 Happy to announce another partnership with [The MAD Network](https://themad.network/) to offer discount codes for all of my Patreon member!
 
+<!-- truncate -->
+
 The MAD Network offers fantastic TTRPG products for multiple genres and systems, including 1000s of Battlemaps and Advanced Maps for Foundry VTT. Check out their [shop](https://shop.themad.network/) for details!
 
 To get the discount codes, subscribe to the correct tier and then visit one of the following links:

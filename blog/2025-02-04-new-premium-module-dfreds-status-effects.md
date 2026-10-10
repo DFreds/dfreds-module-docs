@@ -11,6 +11,8 @@ Hey all!
 I'm happy to announce my newest module and first premium module: **DFreds Status
 Effects**.
 
+<!-- truncate -->
+
 It will be available for the Early Access tier for at least the next month,
 before moving to the Supporter tier.
 

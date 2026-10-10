@@ -10,6 +10,8 @@ Hey everyone!
 
 I'm announcing a new premium module: **DFreds Picky UI**.
 
+<!-- truncate -->
+
 It will be available for the Early Access tier for at least the next month, before moving to the Supporter tier. However, it could be longer if the Foundry v13 release is not out by that time.
 
 You can download it straight from Foundry, but the Foundry page is [here](https://foundryvtt.com/packages/dfreds-picky-ui)!

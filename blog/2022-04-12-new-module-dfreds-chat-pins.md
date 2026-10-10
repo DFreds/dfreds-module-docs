@@ -8,4 +8,6 @@ tags: [module-news]
 
 Hey all! Just released a new module that fixed a pain point in my life. Check it out!
 
+<!-- truncate -->
+
 https://foundryvtt.com/packages/dfreds-chat-pins

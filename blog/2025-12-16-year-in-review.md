@@ -10,6 +10,8 @@ Hi all! 👋
 
 I figured I'd give an update on the last year of work around my modules. Some stats on 2025!
 
+<!-- truncate -->
+
 ### 😮 Over 500 new Patreon members - Welcome!
 
 ### 🐝 1,316 individual commits and improvements

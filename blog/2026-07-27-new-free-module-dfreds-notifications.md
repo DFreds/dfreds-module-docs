@@ -10,6 +10,8 @@ Hi everyone! 👋
 
 I'm announcing a new free module: **DFreds Notifications**.
 
+<!-- truncate -->
+
 It replaces Foundry's notifications entirely, so everything raised by Foundry or by any other module is rendered by it automatically. Everything shown during the session is kept in its own sidebar directory, so a notification you missed isn't gone for good, and module authors can attach action buttons that still work from that history.
 
 It's available for everyone right now!

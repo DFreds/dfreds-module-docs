@@ -11,6 +11,8 @@ Hi everyone! 👋
 **DFreds Pocket Change** has been sitting untouched for a couple of years. It's
 back, rebuilt from the ground up, and it works in Foundry v14.
 
+<!-- truncate -->
+
 If you haven't used it before, it puts money on an actor so your players have
 something to loot. Drop a token on the canvas and the module rolls up currency
 for it and writes it onto the actor.

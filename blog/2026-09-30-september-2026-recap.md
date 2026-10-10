@@ -8,6 +8,8 @@ tags: [module-news]
 
 Hope the start of fall has treated your tables well.
 
+<!-- truncate -->
+
 Here is what changed across my modules this month!
 
 ## Premium Modules
