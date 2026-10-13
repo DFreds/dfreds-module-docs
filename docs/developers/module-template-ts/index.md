@@ -69,7 +69,7 @@ a Discord channel, and optionally publishing the release to Foundry
 1. Run `npm ci`
     - Installs all dependencies according to the `package-lock.json`
 1. Run `npm run rename-module`
-    - Replaces all occurrences of `dfreds-module-template-ts` and `DFreds Module Template TS` in the project with your desired module identifier and name
+    - Replaces all occurrences of `dfreds-module-template-ts`, `DFreds Module Template TS`, and the template description in the project with your desired module identifier, name, and description
 1. Run `npm run lint:fix`
     - Fixes and formats all files (except types). Optional step to maintain consistent styling.
 1. Run `npm run build`
@@ -167,6 +167,13 @@ Prompts you to start a node version of foundry that is configured in the
 this command and go to `localhost:{configured-port}`. The configured port is
 usually localhost:30000, but could be different depending on if you changed it.
 
+### `npm run lint:fix`
+
+Fixes any lint issues to reduce the diff in Git. It's recommended to run this
+periodically or before each commit. Alternatively, you could install extensions
+like ESLint, EditorConfig, Prettier, and Prettier ESLint in VSCode to do it on
+save.
+
 ## Foundry types
 
 Foundry's own types come from the
@@ -193,13 +200,6 @@ Reporting it on the
 [package repository](https://github.com/DFreds/dfreds-foundry-types) gets it
 fixed for everyone.
 :::
-
-### `npm run lint:fix`
-
-Fixes any lint issues to reduce the diff in Git. It's recommended to run this
-periodically or before each commit. Alternatively, you could install extensions
-like ESLint, EditorConfig, Prettier, and Prettier ESLint in VSCode to do it on
-save.
 
 ## Static Files
 
