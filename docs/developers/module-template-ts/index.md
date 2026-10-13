@@ -72,8 +72,8 @@ a Discord channel, and optionally publishing the release to Foundry
     - Replaces all occurrences of `dfreds-module-template-ts`, `DFreds Module Template TS`, and the template description in the project with your desired module identifier, name, and description
 1. Run `npm run lint:fix`
     - Fixes and formats all files (except types). Optional step to maintain consistent styling.
-1. Run `npm run build`
-    - Builds the app into the `/dist` folder
+1. Run `npm run stage`
+    - Builds the app into the `/dist` folder and keeps the lock file
 1. Run `npm run link`
     - Symlinks the built `/dist` folder to your Foundry data path set in `foundryconfig.json`
 
