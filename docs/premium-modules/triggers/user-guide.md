@@ -51,7 +51,8 @@ an actor event. Start a path with a context name to read from something else:
 
 Values can be plain text or numbers, an expression such as
 `@system.attributes.hp.max / 2`, or a regular expression with the pattern
-operator. Dice are not rolled here, only in actions.
+operator. Your game system's short forms, such as `@abilities.str.mod`, work
+too. Dice are not rolled here, only in actions.
 
 **Restrictions** limit a trigger to combat, to certain scenes, or to a
 percentage chance. An event that is not about a scene counts as happening on
@@ -93,7 +94,8 @@ names listed on the Event tab.
 **Change a property** and **adjust a number** can both roll dice. Type `2d6` to
 write a rolled amount, or `-1d4` to take one away. Anything starting with `@` is
 read from the target, such as `-@system.details.level`, and the two can be mixed
-in one value.
+in one value. Your game system's short forms, such as `@abilities.str.mod`, work
+too.
 
 The five actions that happen on a player's own screen - play a sound, show a
 notification, pan to the token, show an image, and target the token - also pick
