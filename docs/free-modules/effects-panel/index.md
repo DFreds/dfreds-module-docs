@@ -46,6 +46,8 @@ deletes it depending on your settings.
   couple of important passives without turning on every passive. These choices
   are per player, override the visibility settings, and are managed from the
   toggle at the top of the panel
+- Use `{{token.<path>}}` in an effect or item description to show a value from
+  the token, such as `{{token.name}}`
 
 ## Showing and Hiding Individual Effects
 
@@ -61,6 +63,23 @@ to show, or hide one noisy effect without disabling its category.
 Effects with **Show Icon** set to **Always** in their configuration show by
 default, even when **Show Passive Effects** is off. This includes most status
 effects added from the token HUD. Use manage mode to hide any you do not want.
+
+## Token Values in Descriptions
+
+Effect descriptions, and the descriptions of the items that provide effects, can
+include `{{token.<path>}}` placeholders. When the panel shows the description,
+it replaces each placeholder with that value from the token. For example:
+
+```text
+{{token.name}} is blinded and cannot see.
+```
+
+shows as "Goblin is blinded and cannot see." for a token named Goblin.
+
+Any property on the token can be used, such as `{{token.name}}` or
+`{{token.elevation}}`. The token is the selected token. If no token is selected,
+it is your assigned character's token, or its prototype token if it is not on
+the scene. A placeholder that does not match a property is left as written.
 
 ## Settings
 
