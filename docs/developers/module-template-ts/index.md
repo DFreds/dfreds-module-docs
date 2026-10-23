@@ -35,7 +35,7 @@ it on GitHub and run the rename script to get started.
 - Symlink integration, so you aren't directly messing with the foundry data folder
 - Use of [nvm](https://github.com/nvm-sh/nvm) and npm for node and package management
 - Use of [vite](https://vite.dev/) for building
-- Commands to handle extracting and compiling Foundry compendium packs
+- Commands to pack compendiums from JSON in git and unpack edits made in Foundry back to JSON
 - Commands to build for production, staging, or development
 - Commands to configure and run different versions of FoundryVTT
 - Tools to automatically rename the name of the module and enforce code linting
@@ -203,7 +203,45 @@ fixed for everyone.
 
 ## Static Files
 
-Assets, fonts, language files, packs, templates, and the module.json can all exist in the `/static` folder in anyway you see fit. When built, any static files or folders will exist in `/dist` directly.
+Assets, fonts, language files, templates, and the module.json can all exist in the `/static` folder in anyway you see fit. When built, any static files or folders will exist in `/dist` directly. Compendium packs do not go here. See [Compendium Packs](#compendium-packs).
+
+## Compendium Packs
+
+Compendium content is built inside Foundry, then saved to git as JSON files in
+`src/packs`. Foundry reads the packs from `dist/packs`, which is not in git.
+
+To create or change a pack:
+
+1. Add the pack to `packs` in `static/module.json`, with a `path` like
+   `packs/my-pack`. Then run `npm run stage` (or `dev` or `watch`).
+1. Run `npm run pack` to build `dist/packs` from the JSON in `src/packs`. For a
+   new pack there is nothing to build yet, so this does nothing.
+1. In Foundry, unlock the pack, make your changes, and close the world.
+1. Run `npm run unpack` to write the changes back to `src/packs`, then commit
+   them.
+
+### `npm run pack`
+
+Builds each pack in `module.json` from `src/packs` into `dist/packs`. If a pack
+already exists in `dist/packs`, it asks before replacing it, since that would
+lose any changes made in Foundry that were not unpacked. The release workflow
+runs this after the build.
+
+### `npm run unpack`
+
+Writes each pack in `dist/packs` back to JSON in `src/packs`. Documents deleted
+in Foundry are removed. Files whose only change is a timestamp are left alone,
+so they do not show up in git.
+
+:::warning
+Foundry locks a pack while the world using it is open. Close the world before
+running `npm run pack` or `npm run unpack`.
+:::
+
+:::info
+`npm run clean` and the build commands keep `dist/packs`, so rebuilding does
+not lose changes made in Foundry.
+:::
 
 ## Updating Node
 
