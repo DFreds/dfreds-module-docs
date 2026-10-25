@@ -33,6 +33,8 @@ sees them is controlled by role.
 - Configure if the effect description should be shown or not
 - Control the minimum role that can see the messages
 - Optionally send the messages to the owners of the affected actor, regardless of role
+- Aura effects from Chris's Premades are not sent to chat, since they are added
+  and removed as tokens move
 
 ## Settings
 
