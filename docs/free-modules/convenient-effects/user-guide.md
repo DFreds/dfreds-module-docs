@@ -159,14 +159,28 @@ To enable this behavior, you need to enable the "Auto apply item effects to targ
 
 ## Settings
 
-| Setting                       | Scope | Default     | Description                                                                                   |
-| ----------------------------- | ----- | ----------- | --------------------------------------------------------------------------------------------- |
-| **App Controls Permission**   | World | Game Master | The minimum role required to open and use the Convenient Effects app from the token controls. |
-| **Create Folders Permission** | World | Game Master | The minimum role required to create new effect folders in the app.                            |
+| Setting                       | Scope | Default     | Description                                                                                                      |
+| ----------------------------- | ----- | ----------- | ---------------------------------------------------------------------------------------------------------------- |
+| **App Controls Permission**   | World | Game Master | The minimum role required to open and use the Convenient Effects app from the token controls.                    |
+| **Create Folders Permission** | World | Game Master | The minimum role required to create new effect folders in the app.                                               |
+| **Apply Effects Permission**  | World | Player      | The minimum role required to add or remove Convenient Effects, whether from the app, a macro, or another module. |
 
-Both accept Player, Trusted Player, Assistant GM, Game Master, or None. Every
-role at or above the selected one is granted the capability, and choosing
-**None** disables it for everyone, including Game Masters.
+**App Controls Permission** and **Create Folders Permission** accept Player,
+Trusted Player, Assistant GM, Game Master, or None. Every role at or above the
+selected one is granted the capability, and choosing **None** disables it for
+everyone, including Game Masters.
+
+**Apply Effects Permission** accepts Player, Trusted Player, Assistant GM, or
+Game Master. Game Masters can always apply effects.
+
+:::info
+Applying an effect lets a user add or remove it on any actor, not only the
+actors they own. This is how a player can cast Bless on an ally or Bane on an
+enemy. The Game Master's client applies the effect on the player's behalf, and
+it checks **Apply Effects Permission** first, so a user below that role cannot
+apply effects through the app, a macro, or another module. To stop players from
+applying effects, set it to **Game Master**.
+:::
 
 :::info
 Changing **App Controls Permission** requires a reload to take effect.
