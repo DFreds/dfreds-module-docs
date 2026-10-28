@@ -52,10 +52,20 @@ debugging - nothing in it changes how the library behaves.
 
 ## Usage
 
-To use this in your own module, you can do any of the following:
+To use this in your own module, register your UI elements inside the
+`uiExtender.init` hook, using the `uiExtender` instance it provides:
 
-- Use the `uiExtender.init` hook (which fires based on Foundry's `init` hook) and register your UI elements on the provided instance of `uiExtender`
-- Use the `window.uiExtender` (accessible as just `uiExtender` in console and code) and register in Foundry's init method.
+```js
+Hooks.once("uiExtender.init", (uiExtender) => {
+  uiExtender.registerSceneControl({ ... });
+});
+```
+
+:::warning
+Register everything inside the `uiExtender.init` hook. UI Extender creates the
+registered elements during Foundry's `setup` hook, so anything registered after
+that, such as in a `setup` or `ready` hook, is ignored.
+:::
 
 :::info
 Everything will be ready to render when the Foundry `setup` hook is complete.
@@ -70,7 +80,7 @@ between Foundry Versions.
 
 Lib: DFreds UI Extender provides a few hooks.
 
-- `uiExtender.init` - This is called once on Foundry's `init` hook. It should be used to register your controls using the provided instance of `uiExtender`.
+- `uiExtender.init` - This is called once on Foundry's `init` hook. Register all of your controls here, using the provided instance of `uiExtender`. Registrations made after this hook are ignored.
 - `uiExtender.setup` - This is called once on Foundry's `setup` hook. At this point, all controls will be created and available when they render.
 
 ## API Methods
