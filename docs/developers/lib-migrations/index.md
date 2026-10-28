@@ -61,8 +61,10 @@ You cannot register your module or any migrations in the Foundry `init` hook.
 
 Lib: DFreds Migrations provides a few hooks.
 
+- `migrations.init` - This is called once on Foundry's `init` hook, right after the `migrations` instance is created. It receives the `migrations` instance. Do not register your module or migrations here; use `migrations.setup`.
 - `migrations.setup` - This is called once on Foundry's `setup` hook. It should be used to register your module and migrations using the provided instance of `migrations`.
 - `migrations.ready` - This is called once on Foundry's `ready` hook. At this point, migrations can be run (you must call this yourself).
+- `migrations.run` - This is called after each migration runs during `runAll`. It receives the migration and `true` if it succeeded or `false` if it failed. It is only called for the active GM, since migrations only run for them.
 
 ## API Methods
 
