@@ -11,6 +11,60 @@ continuing to use Lib: DFreds UI Extender.
 All up-to-date types are defined in the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 :::
 
+## New in UI Extender v2.6.0
+
+Nothing was removed. HUD buttons can now use native DOM elements instead of
+jQuery.
+
+Add `nativeDom: true` to `registerHudButton`. The handlers then get:
+
+| Handler            | Without `nativeDom`                          | With `nativeDom: true`               |
+| ------------------ | -------------------------------------------- | ------------------------------------ |
+| `onClick`          | `JQuery.ClickEvent`, `JQuery` button         | `MouseEvent`, `HTMLButtonElement`    |
+| `onRightClick`     | `JQuery.ContextMenuEvent`, `JQuery` button   | `MouseEvent`, `HTMLButtonElement`    |
+| `onRenderComplete` | `JQuery` html                                | `HTMLElement` html                   |
+
+Before:
+
+```js
+uiExtender.registerHudButton({
+  moduleId: MODULE_ID,
+  hudType: "token",
+  tooltip: "My Button",
+  icon: `<i class="fas fa-image"></i>`,
+  location: "div.right",
+  onClick: (event, button, data, hud) => {
+    button.toggleClass("active");
+  },
+  onRenderComplete: (hud, html, data) => {
+    html.find(".my-element").addClass("ready");
+  },
+});
+```
+
+After:
+
+```js
+uiExtender.registerHudButton({
+  moduleId: MODULE_ID,
+  hudType: "token",
+  nativeDom: true,
+  tooltip: "My Button",
+  icon: `<i class="fas fa-image"></i>`,
+  location: "div.right",
+  onClick: (event, button, data, hud) => {
+    button.classList.toggle("active");
+  },
+  onRenderComplete: (hud, html, data) => {
+    html.querySelector(".my-element")?.classList.add("ready");
+  },
+});
+```
+
+HUD buttons registered without `nativeDom: true` still work the same way, but
+log a compatibility warning. The jQuery handlers will be removed in v3.0.0, and
+native DOM elements will be the only option.
+
 ## New in UI Extender v2.5.0
 
 Nothing was removed or changed. There is a new registration type for adding a

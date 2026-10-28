@@ -127,6 +127,10 @@ registerHudButton(input: HudButtonInput)
 For the type information for `HudButtonInput`, look at the types defined in
 the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 
+Set `nativeDom: true` so the handlers get native DOM elements and events. Without
+it, the handlers get jQuery objects, which are deprecated and will be removed in
+v3.0.0. See the [Migration Guides](./migration-guides) for details.
+
 Some examples:
 
 ```js
@@ -135,19 +139,20 @@ export function mySampleModule() {
     uiExtender.registerHudButton({
       moduleId: MODULE_ID,
       hudType: "token",
+      nativeDom: true,
       tooltip: "Show Art Button",
       icon: `<i class="fas fa-image fa-fw"></i>`,
       location: "div.left",
       onClick: (
-        _event: JQuery.ClickEvent,
-        _button: JQuery,
+        _event: MouseEvent,
+        _button: HTMLButtonElement,
         _token: any,
       ) => {
           console.log("clicked");
       },
       onRightClick: (
-        _event: JQuery.ContextMenuEvent,
-        _button: JQuery,
+        _event: MouseEvent,
+        _button: HTMLButtonElement,
         _token: any,
       ) => {
           console.log("right clicked");
@@ -157,12 +162,13 @@ export function mySampleModule() {
     uiExtender.registerHudButton({
       moduleId: MODULE_ID,
       hudType: "tile",
+      nativeDom: true,
       tooltip: "Show Art Button",
       icon: `<i class="fas fa-image fa-fw"></i>`,
       location: "div.left",
       onClick: (
-        _event: JQuery.ClickEvent,
-        _button: JQuery,
+        _event: MouseEvent,
+        _button: HTMLButtonElement,
         tile: any,
       ) => {
         new ImagePopout(tile.texture, {
@@ -171,8 +177,8 @@ export function mySampleModule() {
         }).render(true);
       },
       onRightClick: (
-        _event: JQuery.ContextMenuEvent,
-        _button: JQuery,
+        _event: MouseEvent,
+        _button: HTMLButtonElement,
         tile: any,
       ) => {
         new ImagePopout(tile.texture, {
@@ -185,12 +191,13 @@ export function mySampleModule() {
     uiExtender.registerHudButton({
       moduleId: MODULE_ID,
       hudType: "drawing",
+      nativeDom: true,
       tooltip: "Say Hi",
       icon: `<i class="fas fa-robot fa-fw"></i>`,
       location: "div.right",
       onClick: (
-        _event: JQuery.ClickEvent,
-        _button: JQuery,
+        _event: MouseEvent,
+        _button: HTMLButtonElement,
         drawing: any,
       ) => {
         ui.notifications.info(
