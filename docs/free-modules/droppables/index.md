@@ -84,10 +84,3 @@ Holding **Shift** while dropping an unlinked actor bypasses the
 
 ### File Dropping on Notes Layer
 ![Dropping Notes](./img/droppable-notes.gif)
-
-## Required Modules
-
-- [libWrapper](https://foundryvtt.com/packages/lib-wrapper) by ruipin - A
-  library that wraps core Foundry methods to make it easier for module
-  developers to add functionality. Note that if you for some reason don't want
-  to install this, a shim will be used instead.
