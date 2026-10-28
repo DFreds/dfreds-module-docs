@@ -31,9 +31,15 @@ set down to what your campaign actually uses.
 ## Features
 
 - Adds a status effects button to the token HUD
-- Provides a simple to use config sheet to drag/drop or create new status effects
+- Click an effect in the token HUD to toggle it, or right-click to toggle it as an overlay
+- Provides a simple to use config sheet to create, edit, duplicate, delete, and drag to reorder status effects
+- Drag and drop effects onto the config sheet from items, actors, or the Convenient Effects app
+- Import and export status effects as JSON from the config sheet
+- Optionally show effect descriptions in the config sheet
 - Optionally allows hiding the default status effects HUD button
 - Adds a button to the Settings sidebar that opens the config sheet
+- Effects added from Convenient Effects are toggled through Convenient Effects
+- Provides an API for use in macros and other modules
 
 ## Settings
 
