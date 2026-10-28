@@ -30,7 +30,7 @@ set down to what your campaign actually uses.
 
 ## Features
 
-- Adds a new button to the token config for new status effects
+- Adds a status effects button to the token HUD
 - Provides a simple to use config sheet to drag/drop or create new status effects
 - Optionally allows hiding the default status effects HUD button
 - Adds a button to the Settings sidebar that opens the config sheet
