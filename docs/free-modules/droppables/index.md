@@ -63,8 +63,8 @@ exported `.json` file dropped the same way is imported.
 - **Vertical Line** - arrange top to bottom
 
 :::tip
-Holding **Shift** while dropping an unlinked actor bypasses the
-**Enable Unlinked Actor Drop Handler** dialog, whether or not the setting is on.
+Hold **Shift** while dropping an unlinked actor to show the
+**Enable Unlinked Actor Drop Handler** dialog, even when the setting is off.
 :::
 
 ## Examples
