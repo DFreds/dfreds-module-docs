@@ -30,6 +30,7 @@ sees them is controlled by role.
 ## Features
 
 - Sends chat messages when an effect is added, removed, or expires
+- Configure if messages should be sent on add and remove, on add only, or on remove only
 - Configure if the effect description should be shown or not
 - Control the minimum role that can see the messages
 - Optionally send the messages to the owners of the affected actor, regardless of role
@@ -41,11 +42,18 @@ sees them is controlled by role.
 | Setting                      | Scope | Default          | Description                                                                                                 |
 | ---------------------------- | ----- | ---------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Chat Message Permission**  | World | Game Master      | The minimum role required to see chat messages when effects are applied or removed.                         |
+| **Send Chat Messages**       | World | On Add or Remove | When to send chat messages for effects. Effects that expire count as being removed.                         |
 | **Show Effect Descriptions** | World | On Add or Remove | When to include the effect's description in the chat message.                                               |
 | **Send Chat to Actor Owner** | World | Disabled         | Send effect messages to the users who own the affected actor, even if their role would otherwise hide them. |
 
 **Chat Message Permission** accepts Player, Trusted Player, Assistant GM, or
 Game Master.
+
+**Send Chat Messages** accepts:
+
+- **On Add or Remove** - send a message when an effect is applied or removed
+- **On Add Only** - send a message only when an effect is applied
+- **On Remove Only** - send a message only when an effect is removed or expires
 
 **Show Effect Descriptions** accepts:
 
