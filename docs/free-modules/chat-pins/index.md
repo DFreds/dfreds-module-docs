@@ -49,14 +49,12 @@ messages owned by *other* people additionally needs socketlib, since those
 requests are routed through a connected GM - see below.
 :::
 
-## Required Modules
+## Recommended Modules
 
 - [libWrapper](https://foundryvtt.com/packages/lib-wrapper) by ruipin - A
   library that wraps core Foundry methods to make it easier for module
   developers to add functionality. Note that if you for some reason don't want
   to install this, a shim will be used instead.
-
-## Recommended Modules
 
 - [socketlib](https://foundryvtt.com/packages/socketlib) by Farling -
   Allows any user with the required role to pin any message, by routing the
