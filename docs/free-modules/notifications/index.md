@@ -42,12 +42,12 @@ on.
 
 ## Settings
 
-| Setting                   | Scope  | Default           | Description                                                                                        |
-| ------------------------- | ------ | ----------------- | -------------------------------------------------------------------------------------------------- |
-| **Notification Position** | Client | Top Center        | Where notifications appear on screen. Nine positions are available, from top left to bottom right. |
-| **Maximum Notifications** | Client | 5                 | How many notifications can be shown at once, from 1 to 10.                                         |
-| **Notification Duration** | Client | 5 seconds         | How long a notification stays on screen before dismissing itself, from 1 to 30 seconds.            |
-| **Unread Indicator**      | Client | All Notifications | Which notifications put a dot on the sidebar tab when the history is not visible.                  |
+| Setting                   | Scope  | Default           | Description                                                                                                                 |
+| ------------------------- | ------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Notification Position** | Client | Top Center        | Where notifications appear on screen: top left, top center, top right, center, bottom left, bottom center, or bottom right. |
+| **Maximum Notifications** | Client | 5                 | How many notifications can be shown at once, from 1 to 10.                                                                  |
+| **Notification Duration** | Client | 5 seconds         | How long a notification stays on screen before dismissing itself, from 1 to 30 seconds.                                     |
+| **Unread Indicator**      | Client | All Notifications | Which notifications put a dot on the sidebar tab when the history is not visible.                                           |
 
 Each position is offset so notifications stay clear of the sidebar, scene
 controls, and hotbar.
@@ -104,8 +104,6 @@ the correct types for the added options.
 
 Pass `actions` to add buttons to a notification. Each button runs its callback
 when clicked, and dismisses the notification unless told otherwise.
-
-<!-- TODO screenshot: a notification with two action buttons -->
 
 ```js
 notifications.warn("Your token was moved off the grid", {
@@ -185,7 +183,9 @@ api.clearHistory(); // Empty the history
 ```
 
 Each history entry contains the `id`, `type`, `message`, and `timestamp` of the
-notification, along with any `actions` it was given.
+notification, along with any `actions` it was given. It also has `muteKey`, the
+original message used to mute it, and `notification`, the notification object
+itself.
 
 ## Required Modules
 
