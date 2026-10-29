@@ -59,7 +59,7 @@ Overlay effects are exempt from this setting and are always drawn, whatever the
 permission level.
 :::
 
-## Required Modules
+## Recommended Modules
 
 - [libWrapper](https://foundryvtt.com/packages/lib-wrapper) by ruipin - A
   library that wraps core Foundry methods to make it easier for module

@@ -80,8 +80,11 @@ You can toggle the clipboard application with `Ctrl+Shift+C` by default.
 
 ## Required Modules
 
+- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry
+
+## Recommended Modules
+
 - [libWrapper](https://foundryvtt.com/packages/lib-wrapper) by ruipin - A
   library that wraps core Foundry methods to make it easier for module
   developers to add functionality. Note that if you for some reason don't want
   to install this, a shim will be used instead.
-- [Lib: DFreds UI Extender](https://foundryvtt.com/packages/lib-dfreds-ui-extender) by DFreds - A library that makes it easy to add new UI elements to Foundry
