@@ -103,6 +103,9 @@ The four right-click behaviors each accept **Dialog** (prompt for what to do),
 Player, Assistant GM, Game Master, or None, where **None** disables that
 capability for everyone.
 
+Firefox opens its own context menu on shift right-click, so Firefox users
+should alt right-click instead to run the shift right-click behaviors.
+
 :::tip
 Per-effect show/hide choices (see [Showing and Hiding Individual
 Effects](#showing-and-hiding-individual-effects)) take precedence over **Show
