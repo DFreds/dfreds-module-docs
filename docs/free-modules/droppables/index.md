@@ -37,13 +37,13 @@ exported `.json` file dropped the same way is imported.
   - **Sound layer** - dropped audio files as ambient sounds
   - **Notes layer** - dropped images, PDFs, videos, or text files as a journal entry pinned to the canvas
 - Drop images directly from browsers to automatically set the images for tokens, tiles, or notes
-- Drop a file onto a sidebar directory to upload it and automatically create a document of that type with the file assigned:
+- Drop a file onto a sidebar directory or an open compendium to upload it and automatically create a document of that type with the file assigned:
   - **Actors** and **Items** - dropped images, prompting for the subtype
   - **Scenes** - dropped images as the scene background
   - **Journal** - dropped images, PDFs, videos, or text files as journal entry pages
   - **Playlists** - dropped audio files as playlist sounds
   - **Roll Tables**, **Cards**, and **Macros** - dropped images
-- Drop an exported `.json` file onto its sidebar directory to import it as a new document
+- Drop an exported `.json` file onto its sidebar directory or an open compendium to import it as a new document
 
 ## Settings
 
