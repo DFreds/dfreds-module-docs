@@ -49,6 +49,10 @@ sees them is controlled by role.
 **Chat Message Permission** accepts Player, Trusted Player, Assistant GM, or
 Game Master.
 
+A player whose role is too low to see the message does not see it for their own
+changes either, as long as a Game Master is connected. With no Game Master
+connected, the player who made the change sees the message.
+
 **Send Chat Messages** accepts:
 
 - **On Add or Remove** - send a message when an effect is applied or removed
