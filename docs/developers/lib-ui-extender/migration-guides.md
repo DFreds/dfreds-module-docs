@@ -11,6 +11,45 @@ continuing to use Lib: DFreds UI Extender.
 All up-to-date types are defined in the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 :::
 
+## New in UI Extender v2.7.0
+
+Nothing was removed. `registerSceneControl` is renamed to
+`registerSceneControlTool`, since it adds a tool to a scene control. The input
+is the same.
+
+Before:
+
+```js
+uiExtender.registerSceneControl({
+  moduleId: MODULE_ID,
+  name: "tokens",
+  tool: { name: "myTool", title: "My Tool", icon: "fas fa-robot", button: true },
+});
+```
+
+After:
+
+```js
+uiExtender.registerSceneControlTool({
+  moduleId: MODULE_ID,
+  name: "tokens",
+  tool: { name: "myTool", title: "My Tool", icon: "fas fa-robot", button: true },
+});
+```
+
+`registerSceneControl` still works the same way, but logs a compatibility
+warning. It will be removed in v3.0.0.
+
+TypeScript types are renamed to match:
+
+| Before                  | After                   | What it is                                   |
+| ----------------------- | ----------------------- | -------------------------------------------- |
+| `SceneControlInput`     | `SceneControlToolInput` | The input for `registerSceneControlTool`     |
+| `SceneControlToolInput` | `SceneControlToolData`  | The `tool` data inside that input            |
+
+Code that uses these type names directly must use the new names after updating
+the types.
+
 ## New in UI Extender v2.6.0
 
 Nothing was removed. HUD buttons can now use native DOM elements instead of

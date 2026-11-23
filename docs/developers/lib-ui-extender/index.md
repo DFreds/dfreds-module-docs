@@ -32,7 +32,7 @@ does nothing.
 ## Features
 
 - Easily add new HUD controls to tokens, tiles, or drawings
-- Easily add new scene controls to any layer controls (token, tiles, drawings, walls, etc.)
+- Easily add new scene control tools to any layer controls (token, tiles, drawings, walls, etc.)
 - Easily add new sidebar directories
 - Easily add a button to the Settings sidebar that opens your module's settings
 - Fully typed library included in repository for Typescript projects
@@ -57,7 +57,7 @@ To use this in your own module, register your UI elements inside the
 
 ```js
 Hooks.once("uiExtender.init", (uiExtender) => {
-  uiExtender.registerSceneControl({ ... });
+  uiExtender.registerSceneControlTool({ ... });
 });
 ```
 
@@ -87,18 +87,18 @@ Lib: DFreds UI Extender provides a few hooks.
 
 Currently, these are the supported API methods:
 
-### Register Scene Control
+### Register Scene Control Tool
 
-A scene control is a button that is located on a specific layer. Under the hood,
-this uses the `getSceneControlButtons` hook.
+A scene control tool is a button that is located on a specific layer. Under the
+hood, this uses the `getSceneControlButtons` hook.
 
 ![Scene Control](./img/scene-control.png)
 
 ```js
-registerSceneControl(input: SceneControlInput)
+registerSceneControlTool(input: SceneControlToolInput)
 ```
 
-For the type information for `SceneControlInput`, look at the types defined in
+For the type information for `SceneControlToolInput`, look at the types defined in
 the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
 
 An example:
@@ -106,7 +106,7 @@ An example:
 ```js
 export function mySampleModule() {
   Hooks.once("uiExtender.init", (uiExtender) => {
-    uiExtender.registerSceneControl({
+    uiExtender.registerSceneControlTool({
       moduleId: MODULE_ID,
       name: "tokens",
       tool: {
@@ -123,6 +123,12 @@ export function mySampleModule() {
     });
 }
 ```
+
+:::warning
+`registerSceneControl` is deprecated since v2.7.0 and will be removed in v3.0.0.
+It still works, but logs a compatibility warning. Use `registerSceneControlTool`
+instead.
+:::
 
 ### Register HUD Button
 
