@@ -20,7 +20,7 @@ A FoundryVTT module library that adds easy ways to extend the base Foundry UI.
 
 ## Overview
 
-Lib: UI Extender lets a module add HUD buttons, scene control tools, sidebar
+Lib: UI Extender lets a module add HUD buttons, scene controls, scene control tools, sidebar
 directories, and settings buttons by registering them, rather than by wrapping
 core methods itself.
 Registrations all go through the library, so several modules can extend the same
@@ -32,6 +32,7 @@ does nothing.
 ## Features
 
 - Easily add new HUD controls to tokens, tiles, or drawings
+- Easily add new scene controls, each with its own set of tools
 - Easily add new scene control tools to any layer controls (token, tiles, drawings, walls, etc.)
 - Easily add new sidebar directories
 - Easily add a button to the Settings sidebar that opens your module's settings
@@ -87,6 +88,59 @@ Lib: DFreds UI Extender provides a few hooks.
 
 Currently, these are the supported API methods:
 
+### Register Scene Control
+
+A scene control is a button in the scene controls with its own set of tools,
+such as the Tokens or Walls controls. Under the hood, this uses the
+`getSceneControlButtons` hook.
+
+```js
+registerSceneControl(input: SceneControlInput)
+```
+
+For the type information for `SceneControlInput`, look at the types defined in
+the repository [here](https://github.com/DFreds/lib-dfreds-ui-extender/blob/main/types/uiExtender/index.d.ts).
+
+- `before` and `after` place the scene control next to another one by name,
+  such as `"walls"`. `before` takes precedence over `after`, which takes
+  precedence over `control.order`. If the named scene control does not exist,
+  the next option is used, then the end of the scene controls.
+- `gmOnly` shows the scene control only to GM users.
+- `control.layer` is the canvas layer that is activated with the scene control.
+- `control.tools` is a list. A tool without an `order` is placed by its position
+  in the list.
+
+Tools can be added to a registered scene control with
+`registerSceneControlTool`, using the scene control's `name`.
+
+An example:
+
+```js
+Hooks.once("uiExtender.init", (uiExtender) => {
+  uiExtender.registerSceneControl({
+    moduleId: MODULE_ID,
+    after: "walls",
+    gmOnly: true,
+    control: {
+      name: "myControl",
+      title: "My Control",
+      icon: "fas fa-robot",
+      layer: "walls",
+      tools: [
+        { name: "mySelect", title: "Select", icon: "fas fa-hand-pointer" },
+        {
+          name: "myButton",
+          title: "Say Hello",
+          icon: "fas fa-bell",
+          button: true,
+          onChange: () => ui.notifications.info("Hello"),
+        },
+      ],
+    },
+  });
+});
+```
+
 ### Register Scene Control Tool
 
 A scene control tool is a button that is located on a specific layer. Under the
@@ -125,9 +179,9 @@ export function mySampleModule() {
 ```
 
 :::warning
-`registerSceneControl` is deprecated since v2.7.0 and will be removed in v3.0.0.
-It still works, but logs a compatibility warning. Use `registerSceneControlTool`
-instead.
+Passing a `tool` to `registerSceneControl` is deprecated since v2.7.0 and will
+stop working in v3.0.0. It still adds the tool, but logs a compatibility
+warning. Use `registerSceneControlTool` instead.
 :::
 
 ### Register HUD Button

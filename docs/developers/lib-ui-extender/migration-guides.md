@@ -13,9 +13,10 @@ All up-to-date types are defined in the repository [here](https://github.com/DFr
 
 ## New in UI Extender v2.7.0
 
-Nothing was removed. `registerSceneControl` is renamed to
-`registerSceneControlTool`, since it adds a tool to a scene control. The input
-is the same.
+Nothing was removed. Adding a tool to a scene control moves from
+`registerSceneControl` to `registerSceneControlTool`. The input is the same.
+`registerSceneControl` now registers a whole new scene control with its own
+tools. See [Register Scene Control](./index.md#register-scene-control).
 
 Before:
 
@@ -37,8 +38,8 @@ uiExtender.registerSceneControlTool({
 });
 ```
 
-`registerSceneControl` still works the same way, but logs a compatibility
-warning. It will be removed in v3.0.0.
+Passing a `tool` to `registerSceneControl` still adds the tool, but logs a
+compatibility warning. It will stop working in v3.0.0.
 
 TypeScript types are renamed to match:
 
